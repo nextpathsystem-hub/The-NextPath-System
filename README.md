@@ -660,7 +660,7 @@ footer {
     <div style="padding-bottom:60px;">
       <div style="font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px;"><span style="display:block;width:24px;height:1.5px;background:var(--gold);"></span>À propos</div>
       <h1 style="font-family:'Playfair Display',serif;font-size:56px;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:20px;">Grace<br><em style="color:var(--gold);">Kabondo</em></h1>
-      <p style="font-size:16px;color:rgba(245,240,232,0.65);line-height:1.7;max-width:460px;margin-bottom:32px;">Fondatrice de NextPath System · Originaire de Lubumbashi, RDC · Basée en France</p>
+      <p style="font-size:16px;color:rgba(245,240,232,0.65);line-height:1.7;max-width:460px;margin-bottom:32px;">Fondatrice de NextPath System </p>
       <div style="display:flex;gap:10px;flex-wrap:wrap;">
         <span style="font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:7px 16px;border:1px solid rgba(201,168,76,0.4);border-radius:2px;color:var(--gold);">Master Sciences du Médicament</span>
         <span style="font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:7px 16px;border:1px solid rgba(201,168,76,0.4);border-radius:2px;color:var(--gold);">Nantes Université</span>
@@ -707,7 +707,7 @@ footer {
             </div>
             <div style="display:flex;gap:16px;padding:16px 20px;border-bottom:1px solid var(--border);">
               <span style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);min-width:80px;margin-top:2px;">Rôle</span>
-              <span style="font-size:14px;color:var(--text-dark);">Fondatrice & CEO · NextPath System</span>
+              <span style="font-size:14px;color:var(--text-dark);">Fondatrice · NextPath System</span>
             </div>
             <div style="display:flex;gap:16px;padding:16px 20px;">
               <span style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);min-width:80px;margin-top:2px;">Contact</span>
