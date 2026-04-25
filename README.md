@@ -310,6 +310,7 @@ footer {
     <li><a href="#" onclick="showPage('programme')">The Grace Effect</a></li>
     <li><a href="#" onclick="showPage('test')">NextPath Test</a></li>
     <li><a href="#" onclick="showPage('grace')">À propos de Grace</a></li>
+    <li><a href="#" onclick="showPage('home');setTimeout(()=>document.getElementById('avis-section').scrollIntoView({behavior:'smooth'}),100)">Avis</a></li>
     <li><a href="#" onclick="showPage('contact')">Contact</a></li>
     <li><a href="https://tally.so/r/ZjGJQB" target="_blank" class="nav-cta">Rejoindre</a></li>
   </ul>
@@ -387,6 +388,114 @@ footer {
       </div>
     </div>
   </div>
+
+  <!-- SECTION AVIS -->
+  <div class="section section-alt" id="avis-section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:56px;">
+        <div class="section-tag" style="justify-content:center;"><span style="display:none"></span>Témoignages</div>
+        <h2 class="section-title" style="text-align:center;">Ce qu'ils disent de <em>NextPath System</em></h2>
+        <div class="divider" style="margin:24px auto;"></div>
+        <p class="section-body" style="text-align:center;margin:0 auto;">Des vrais retours de la communauté. Chaque témoignage compte.</p>
+      </div>
+
+      <!-- AVIS EXISTANTS — à remplir au fur et à mesure -->
+      <div id="avis-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:56px;">
+
+        <div style="background:#fff;border:1px solid var(--border);border-radius:4px;padding:32px;border-top:3px solid var(--gold);">
+          <div style="display:flex;gap:4px;margin-bottom:16px;">
+            <span style="color:var(--gold);font-size:16px;">★★★★★</span>
+          </div>
+          <p style="font-size:14px;color:var(--text-mid);line-height:1.8;margin-bottom:20px;font-style:italic;">"NextPath System m'a aidé à comprendre qui je suis vraiment. Pour la première fois, je sais vers quoi je veux aller."</p>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:40px;height:40px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--gold);font-size:14px;">K</div>
+            <div>
+              <div style="font-size:13px;font-weight:600;color:var(--navy);">Kevine M.</div>
+              <div style="font-size:11px;color:var(--text-light);letter-spacing:.06em;text-transform:uppercase;">Kinshasa, RDC</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:#fff;border:1px solid var(--border);border-radius:4px;padding:32px;border-top:3px solid var(--gold);">
+          <div style="display:flex;gap:4px;margin-bottom:16px;">
+            <span style="color:var(--gold);font-size:16px;">★★★★★</span>
+          </div>
+          <p style="font-size:14px;color:var(--text-mid);line-height:1.8;margin-bottom:20px;font-style:italic;">"Le contenu de Grace parle vraiment à notre réalité en tant que jeunes congolais. C'est rare et précieux."</p>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:40px;height:40px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--gold);font-size:14px;">J</div>
+            <div>
+              <div style="font-size:13px;font-weight:600;color:var(--navy);">Junior T.</div>
+              <div style="font-size:11px;color:var(--text-light);letter-spacing:.06em;text-transform:uppercase;">Lubumbashi, RDC</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:#fff;border:1px solid var(--border);border-radius:4px;padding:32px;border-top:3px solid var(--gold);">
+          <div style="display:flex;gap:4px;margin-bottom:16px;">
+            <span style="color:var(--gold);font-size:16px;">★★★★★</span>
+          </div>
+          <p style="font-size:14px;color:var(--text-mid);line-height:1.8;margin-bottom:20px;font-style:italic;">"J'attendais ce type de contenu depuis longtemps. Grace explique des choses que j'aurais voulu entendre à 17 ans."</p>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:40px;height:40px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--gold);font-size:14px;">A</div>
+            <div>
+              <div style="font-size:13px;font-weight:600;color:var(--navy);">Astrid N.</div>
+              <div style="font-size:11px;color:var(--text-light);letter-spacing:.06em;text-transform:uppercase;">Bruxelles, Diaspora</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FORMULAIRE POUR LAISSER UN AVIS -->
+      <div style="background:var(--navy);border-radius:4px;padding:56px;max-width:700px;margin:0 auto;text-align:center;">
+        <div style="font-size:32px;margin-bottom:16px;">✍️</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:28px;color:var(--gold);margin-bottom:12px;">Laisse ton avis</h3>
+        <p style="font-size:14px;color:rgba(245,240,232,0.7);margin-bottom:32px;line-height:1.8;">Tu as regardé une vidéo, passé le NextPath Test ou participé à un programme ? Partage ton expérience — ton témoignage peut changer la trajectoire d'un autre jeune.</p>
+
+        <div style="display:flex;flex-direction:column;gap:14px;text-align:left;">
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+            <div>
+              <label style="display:block;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Ton prénom *</label>
+              <input type="text" id="avis-prenom" placeholder="Ex : Grace" style="width:100%;padding:12px 16px;border:1px solid rgba(201,168,76,0.3);border-radius:2px;background:rgba(255,255,255,0.05);color:var(--cream);font-family:'Montserrat',sans-serif;font-size:13px;outline:none;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(201,168,76,0.3)'">
+            </div>
+            <div>
+              <label style="display:block;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Ville & Pays *</label>
+              <input type="text" id="avis-ville" placeholder="Ex : Kinshasa, RDC" style="width:100%;padding:12px 16px;border:1px solid rgba(201,168,76,0.3);border-radius:2px;background:rgba(255,255,255,0.05);color:var(--cream);font-family:'Montserrat',sans-serif;font-size:13px;outline:none;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(201,168,76,0.3)'">
+            </div>
+          </div>
+
+          <div>
+            <label style="display:block;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Ta note *</label>
+            <div style="display:flex;gap:8px;" id="star-rating">
+              <span onclick="setRating(1)" style="font-size:28px;cursor:pointer;color:rgba(201,168,76,0.3);transition:color .15s;" data-star="1">★</span>
+              <span onclick="setRating(2)" style="font-size:28px;cursor:pointer;color:rgba(201,168,76,0.3);transition:color .15s;" data-star="2">★</span>
+              <span onclick="setRating(3)" style="font-size:28px;cursor:pointer;color:rgba(201,168,76,0.3);transition:color .15s;" data-star="3">★</span>
+              <span onclick="setRating(4)" style="font-size:28px;cursor:pointer;color:rgba(201,168,76,0.3);transition:color .15s;" data-star="4">★</span>
+              <span onclick="setRating(5)" style="font-size:28px;cursor:pointer;color:rgba(201,168,76,0.3);transition:color .15s;" data-star="5">★</span>
+            </div>
+          </div>
+
+          <div>
+            <label style="display:block;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Ton témoignage *</label>
+            <textarea id="avis-texte" placeholder="Partage ton expérience avec NextPath System — une vidéo, le test, un programme... Parle librement." rows="4" style="width:100%;padding:12px 16px;border:1px solid rgba(201,168,76,0.3);border-radius:2px;background:rgba(255,255,255,0.05);color:var(--cream);font-family:'Montserrat',sans-serif;font-size:13px;outline:none;resize:vertical;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(201,168,76,0.3)'"></textarea>
+          </div>
+
+          <div style="text-align:center;margin-top:8px;">
+            <button onclick="soumettreAvis()" style="background:var(--gold);color:var(--navy);font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:16px 40px;border:none;border-radius:2px;cursor:pointer;transition:all .25s;" onmouseover="this.style.background='#fff'" onmouseout="this.style.background='var(--gold)'">Envoyer mon témoignage</button>
+          </div>
+
+          <div id="avis-confirmation" style="display:none;text-align:center;padding:16px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.3);border-radius:2px;">
+            <span style="font-size:16px;">🎉</span>
+            <p style="font-size:13px;color:var(--gold);margin-top:4px;font-weight:500;">Merci pour ton témoignage ! Grace le lira personnellement.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
 
 <!-- PAGE MISSION -->
@@ -551,7 +660,7 @@ footer {
     <div style="padding-bottom:60px;">
       <div style="font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px;"><span style="display:block;width:24px;height:1.5px;background:var(--gold);"></span>À propos</div>
       <h1 style="font-family:'Playfair Display',serif;font-size:56px;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:20px;">Grace<br><em style="color:var(--gold);">Kabondo</em></h1>
-      <p style="font-size:16px;color:rgba(245,240,232,0.65);line-height:1.7;max-width:460px;margin-bottom:32px;">Fondatrice de NextPath System</p>
+      <p style="font-size:16px;color:rgba(245,240,232,0.65);line-height:1.7;max-width:460px;margin-bottom:32px;">Fondatrice de NextPath System · Originaire de Lubumbashi, RDC · Basée en France</p>
       <div style="display:flex;gap:10px;flex-wrap:wrap;">
         <span style="font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:7px 16px;border:1px solid rgba(201,168,76,0.4);border-radius:2px;color:var(--gold);">Master Sciences du Médicament</span>
         <span style="font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:7px 16px;border:1px solid rgba(201,168,76,0.4);border-radius:2px;color:var(--gold);">Nantes Université</span>
@@ -594,11 +703,11 @@ footer {
             </div>
             <div style="display:flex;gap:16px;padding:16px 20px;border-bottom:1px solid var(--border);">
               <span style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);min-width:80px;margin-top:2px;">Formation</span>
-              <span style="font-size:14px;color:var(--text-dark);line-height:1.6;">Licence Chimie-Biologie · France<br>Master Sciences du Médicament · France</span>
+              <span style="font-size:14px;color:var(--text-dark);line-height:1.6;">Licence Chimie-Biologie · Nantes Université<br>Master Sciences du Médicament · France</span>
             </div>
             <div style="display:flex;gap:16px;padding:16px 20px;border-bottom:1px solid var(--border);">
               <span style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);min-width:80px;margin-top:2px;">Rôle</span>
-              <span style="font-size:14px;color:var(--text-dark);">Fondatrice </span>
+              <span style="font-size:14px;color:var(--text-dark);">Fondatrice & CEO · NextPath System</span>
             </div>
             <div style="display:flex;gap:16px;padding:16px 20px;">
               <span style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);min-width:80px;margin-top:2px;">Contact</span>
@@ -631,7 +740,7 @@ footer {
           <div class="divider"></div>
           <p class="section-body" style="margin-bottom:40px;">Que tu sois étudiant(e) en RDC, membre de la diaspora, partenaire ou simplement curieux(se) — il y a une place pour toi dans le mouvement NextPath System.</p>
           <a href="https://instagram.com/nextpath.system" target="_blank" class="social-link"><span class="social-platform">Instagram</span><span class="social-handle">@nextpath.system</span></a>
-          <a href="https://www.youtube.com/@NextPathSystem" target="_blank" class="social-link"><span class="social-platform">YouTube</span><span class="social-handle">The NextPath System</span></a>
+          <a href="https://www.youtube.com/@TheNextPathSystem" target="_blank" class="social-link"><span class="social-platform">YouTube</span><span class="social-handle">The NextPath System</span></a>
           <a href="https://tiktok.com/@nextpath.system" target="_blank" class="social-link"><span class="social-platform">TikTok</span><span class="social-handle">@nextpath.system</span></a>
           <a href="https://wa.me/33766131603" target="_blank" class="social-link"><span class="social-platform">WhatsApp</span><span class="social-handle">+33 7 66 13 16 03</span></a>
           <a href="mailto:nextpathsystem@gmail.com" class="social-link"><span class="social-platform">Email</span><span class="social-handle">nextpathsystem@gmail.com</span></a>
@@ -667,6 +776,53 @@ function showPage(pageId) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   var target = document.getElementById('page-' + pageId);
   if (target) { target.classList.add('active'); window.scrollTo(0, 0); }
+}
+
+var currentRating = 0;
+function setRating(n) {
+  currentRating = n;
+  document.querySelectorAll('#star-rating span').forEach(function(s) {
+    s.style.color = parseInt(s.dataset.star) <= n ? 'var(--gold)' : 'rgba(201,168,76,0.3)';
+  });
+}
+
+function soumettreAvis() {
+  var prenom = document.getElementById('avis-prenom').value.trim();
+  var ville = document.getElementById('avis-ville').value.trim();
+  var texte = document.getElementById('avis-texte').value.trim();
+
+  if (!prenom || !ville || !texte || currentRating === 0) {
+    alert('Merci de remplir tous les champs et de donner une note.');
+    return;
+  }
+
+  // Ajouter l'avis dans la grille dynamiquement
+  var initiale = prenom.charAt(0).toUpperCase();
+  var etoiles = '';
+  for (var i = 0; i < currentRating; i++) etoiles += '★';
+
+  var newCard = document.createElement('div');
+  newCard.style.cssText = 'background:#fff;border:1px solid var(--border);border-radius:4px;padding:32px;border-top:3px solid var(--gold);';
+  newCard.innerHTML = '<div style="display:flex;gap:4px;margin-bottom:16px;"><span style="color:var(--gold);font-size:16px;">' + etoiles + '</span></div>' +
+    '<p style="font-size:14px;color:var(--text-mid);line-height:1.8;margin-bottom:20px;font-style:italic;">"' + texte + '"</p>' +
+    '<div style="display:flex;align-items:center;gap:12px;">' +
+    '<div style="width:40px;height:40px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:Playfair Display,serif;font-weight:700;color:var(--gold);font-size:14px;">' + initiale + '</div>' +
+    '<div><div style="font-size:13px;font-weight:600;color:var(--navy);">' + prenom + '</div>' +
+    '<div style="font-size:11px;color:var(--text-light);letter-spacing:.06em;text-transform:uppercase;">' + ville + '</div></div></div>';
+
+  document.getElementById('avis-grid').appendChild(newCard);
+
+  // Afficher confirmation
+  document.getElementById('avis-confirmation').style.display = 'block';
+
+  // Réinitialiser le formulaire
+  document.getElementById('avis-prenom').value = '';
+  document.getElementById('avis-ville').value = '';
+  document.getElementById('avis-texte').value = '';
+  currentRating = 0;
+  document.querySelectorAll('#star-rating span').forEach(function(s) {
+    s.style.color = 'rgba(201,168,76,0.3)';
+  });
 }
 </script>
 </body>
