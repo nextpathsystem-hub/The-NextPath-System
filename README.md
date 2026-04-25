@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -1084,7 +1083,7 @@
       <div class="programme-cta">
         <h3>Rejoins The Grace Effect</h3>
         <p>15 places disponibles pour la première cohorte. <strong style="color:var(--gold);">Totalement gratuit.</strong> Ne laisse pas ta place à quelqu'un d'autre.</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvA440a9h65ZcFT4XXJUoPJBelQbqrmUgU27X1pDnX6I-XkQ/viewform?usp=header" target="_blank" class="btn-primary">Devenir membre — C'est gratuit</a>
+        <a href="https://tally.so/r/ZjGJQB" target="_blank" class="btn-primary">Devenir membre — C'est gratuit</a>
       </div>
     </div>
   </div>
@@ -1178,7 +1177,7 @@
     <p class="contact-email">
       Pour toute collaboration ou question : <a href="mailto:nextpathsystem@gmail.com">nextpathsystem@gmail.com</a>
     </p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvA440a9h65ZcFT4XXJUoPJBelQbqrmUgU27X1pDnX6I-XkQ/viewform?usp=header" target="_blank" class="btn-primary">Devenir membre — C'est gratuit</a>
+    <a href="https://tally.so/r/81Jey5" target="_blank" class="btn-primary">Devenir membre — C'est gratuit</a>
   </div>
 </section>
 
