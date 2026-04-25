@@ -631,7 +631,7 @@ footer {
           <div class="divider"></div>
           <p class="section-body" style="margin-bottom:40px;">Que tu sois étudiant(e) en RDC, membre de la diaspora, partenaire ou simplement curieux(se) — il y a une place pour toi dans le mouvement NextPath System.</p>
           <a href="https://instagram.com/nextpath.system" target="_blank" class="social-link"><span class="social-platform">Instagram</span><span class="social-handle">@nextpath.system</span></a>
-          <a href="https://www.youtube.com/@TheNextPathSystem" target="_blank" class="social-link"><span class="social-platform">YouTube</span><span class="social-handle">The NextPath System</span></a>
+          <a href="https://www.youtube.com/@NextPathSystem" target="_blank" class="social-link"><span class="social-platform">YouTube</span><span class="social-handle">The NextPath System</span></a>
           <a href="https://tiktok.com/@nextpath.system" target="_blank" class="social-link"><span class="social-platform">TikTok</span><span class="social-handle">@nextpath.system</span></a>
           <a href="https://wa.me/33766131603" target="_blank" class="social-link"><span class="social-platform">WhatsApp</span><span class="social-handle">+33 7 66 13 16 03</span></a>
           <a href="mailto:nextpathsystem@gmail.com" class="social-link"><span class="social-platform">Email</span><span class="social-handle">nextpathsystem@gmail.com</span></a>
