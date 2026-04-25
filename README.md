@@ -703,7 +703,7 @@ footer {
             </div>
             <div style="display:flex;gap:16px;padding:16px 20px;border-bottom:1px solid var(--border);">
               <span style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);min-width:80px;margin-top:2px;">Formation</span>
-              <span style="font-size:14px;color:var(--text-dark);line-height:1.6;">Licence Chimie-Biologie · Nantes Université<br>Master Sciences du Médicament · France</span>
+              <span style="font-size:14px;color:var(--text-dark);line-height:1.6;">Licence Chimie-Biologie · France<br>Master Sciences du Médicament · France</span>
             </div>
             <div style="display:flex;gap:16px;padding:16px 20px;border-bottom:1px solid var(--border);">
               <span style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);min-width:80px;margin-top:2px;">Rôle</span>
