@@ -405,7 +405,7 @@ footer { background:var(--navy); padding:40px 80px; display:flex; justify-conten
 <div class="page active" id="page-home">
   <div class="hero">
     <div class="hero-left">
-      <div class="hero-tag">NextPath System · Jeunesse Africaine</div>
+      <div class="hero-tag">NextPath System ·Pour la Jeunesse Africaine</div>
       <h1 data-fr="Tu as plus de valeur<br>que tu ne <em>le crois.</em>" data-en="You are worth more<br>than you <em>believe.</em>">Tu as plus de valeur<br>que tu ne <em>le crois.</em></h1>
       <p class="hero-sub" data-fr="Une plateforme dédiée à la jeunesse africaine — 15 à 25 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment." data-en="A platform dedicated to African youth — 15 to 25 years old — to know themselves, explore their potential and build a path that truly fits them.">Une plateforme dédiée à la jeunesse africaine — 15 à 25 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.</p>
       <div class="hero-actions">
@@ -480,7 +480,7 @@ footer { background:var(--navy); padding:40px 80px; display:flex; justify-conten
     <div class="container">
       <div style="text-align:center;margin-bottom:48px;">
         <div class="section-tag" style="justify-content:center;"><span style="display:none"></span><span data-fr="Témoignages" data-en="Testimonials">Témoignages</span></div>
-        <h2 class="section-title" style="text-align:center;" data-fr='Ce qu'ils disent de <em>NextPath</em>' data-en='What they say about <em>NextPath</em>'>Ce qu'ils disent de <em>NextPath</em></h2>
+        <h2 class="section-title" style="text-align:center;" data-fr='Ce <qu'ils> disent de <em>NextPath</em>'data-en='What they say about <em>NextPath</em>'>Ce qu'ils disent de <em>NextPath</em></h2>
       </div>
       <div class="avis-grid" id="avis-grid">
         <div class="avis-card">
