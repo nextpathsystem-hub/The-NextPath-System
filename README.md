@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="fr" id="html-root">
 <head>
 <meta charset="UTF-8">
@@ -480,7 +479,7 @@ footer { background:var(--navy); padding:40px 80px; display:flex; justify-conten
     <div class="container">
       <div style="text-align:center;margin-bottom:48px;">
         <div class="section-tag" style="justify-content:center;"><span style="display:none"></span><span data-fr="Témoignages" data-en="Testimonials">Témoignages</span></div>
-        <h2 class="section-title" style="text-align:center;" data-fr='Ce <qu'ils> disent de <em>NextPath</em>'data-en='What they say about <em>NextPath</em>'>Ce qu'ils disent de <em>NextPath</em></h2>
+        <h2 class="section-title" style="text-align:center;" data-fr='Ce qu'ils disent de <em>NextPath</em>'data-en='What they say about <em>NextPath</em>'>Ce qu'ils disent de <em>NextPath</em></h2>
       </div>
       <div class="avis-grid" id="avis-grid">
         <div class="avis-card">
