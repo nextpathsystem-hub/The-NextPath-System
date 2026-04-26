@@ -586,7 +586,7 @@ footer { background:var(--navy); padding:40px 80px; display:flex; justify-conten
           <span class="prog-icon">🧠</span>
           <div class="prog-badge" data-fr="Outil gratuit · 10 min" data-en="Free tool · 10 min">Outil gratuit · 10 min</div>
           <div class="prog-name">NextPath Test</div>
-          <p class="prog-desc" data-fr="20 questions pour révéler ton profil de personnalité, tes forces naturelles, tes blocages et les directions qui te correspondent. Gratuit, sans inscription." data-en="20 questions to reveal your personality profile, natural strengths, blocks and directions that suit you. Free, no registration.">20 questions pour révéler ton profil de personnalité, tes forces naturelles, tes blocages et les directions qui te correspondent. Gratuit, sans inscription.</p>
+          <p class="prog-desc" data-fr="13 questions pour révéler ton profil de personnalité, tes forces naturelles, tes blocages et les directions qui te correspondent. Gratuit, sans inscription." data-en="20 questions to reveal your personality profile, natural strengths, blocks and directions that suit you. Free, no registration.">13 questions pour révéler ton profil de personnalité, tes forces naturelles, tes blocages et les directions qui te correspondent. Gratuit, sans inscription.</p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvA440a9h65ZcFT4XXJUoPJBelQbqrmUgU27X1pDnX6I-XkQ/viewform?usp=header" target="_blank" class="btn-secondary" onclick="event.stopPropagation()" data-fr="Passer le test" data-en="Take the test">Passer le test</a>
         </div>
       </div>
@@ -664,7 +664,7 @@ footer { background:var(--navy); padding:40px 80px; display:flex; justify-conten
   <div class="section" style="padding-top:80px;">
     <div class="container">
       <div class="section-tag" data-fr="Nos dernières vidéos" data-en="Our latest videos">Nos dernières vidéos</div>
-      <h2 class="section-title" data-fr='Contenu pour <em>t'éveiller.</em>' data-en='Content to <em>awaken you.</em>'>Contenu pour <em>t'éveiller.</em></h2>
+      <h2 class="section-title" data-fr='Contenu pour<em>te stimuler'.</em>' data-en='Content to <em>awaken you.</em>'>Contenu pour <em>t'éveiller.</em></h2>
       <div class="divider"></div>
       <p class="section-body" style="margin-bottom:40px;" data-fr="Retrouve toutes nos vidéos sur YouTube. Des contenus concrets pour te connaître, te libérer et construire ton chemin." data-en="Find all our videos on YouTube. Concrete content to know yourself, free yourself and build your path.">Retrouve toutes nos vidéos sur YouTube. Des contenus concrets pour te connaître, te libérer et construire ton chemin.</p>
 
