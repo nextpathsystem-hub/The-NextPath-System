@@ -637,7 +637,7 @@ footer {
         <div class="section-tag" style="justify-content:center;"><span style="display:none"></span>Outil gratuit</div>
         <h2 class="section-title" style="text-align:center;">Le <em>NextPath Test</em></h2>
         <div class="divider" style="margin:24px auto;"></div>
-        <p class="section-body" style="text-align:center;margin:0 auto;">20 questions. 10 minutes. Un portrait complet de qui tu es — ta personnalité, tes forces naturelles, tes blocages et les directions qui te correspondent vraiment.</p>
+        <p class="section-body" style="text-align:center;margin:0 auto;">13 questions. 5 minutes. Un portrait complet de qui tu es — ta personnalité, tes forces naturelles, tes blocages et les directions qui te correspondent vraiment.</p>
       </div>
       <div class="profiles-grid">
         <div class="profile-card"><span class="profile-icon">🧠</span><div class="profile-name">L'Éclaireur</div><p class="profile-desc">Analytique, rigoureux(se). Sciences, recherche, enseignement, droit.</p></div>
