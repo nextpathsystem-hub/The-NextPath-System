@@ -453,16 +453,12 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       </div>
 
       <div style="text-align:center;margin-top:48px;">
-        <a href="https://www.youtube.com/@TheNextPathSystem" target="_blank" class="btn btn-navy" id="btn-yt">Voir toutes les vidéos sur YouTube ↗</a>
+        <a href="https://www.youtube.com/@NextPathSystem" target="_blank" class="btn btn-navy" id="btn-yt">Voir toutes les vidéos sur YouTube ↗</a>
       </div>
 
       <!-- GUIDE POUR GRACE -->
       <div style="margin-top:48px;background:var(--light);border-radius:4px;padding:32px;border-left:3px solid var(--gold);">
         <h4 style="font-family:'Playfair Display',serif;font-size:18px;color:var(--navy);margin-bottom:12px;">
-    </div>
-  </div>
-</div>
-
 <!-- ══ RESSOURCES ══ -->
 <div class="page" id="page-ressources">
   <div class="section" style="padding-top:80px;">
@@ -505,8 +501,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       </div>
 
       <div style="margin-top:40px;background:var(--light);border-radius:4px;padding:32px;border-left:3px solid var(--gold);">
-        <h4 style="font-family:'Playfair Display',serif;font-size:18px;color:var(--navy);margin-bottom:12px;">📌 Comment ajouter un PDF sur ce site ?</h4>
-        <p style="font-size:14px;color:var(--mid);line-height:1.8;margin-bottom:12px;">Étape 1 — Upload ton PDF sur Google Drive et copie le lien de partage public.<br>Étape 2 — Dans le fichier HTML, cherche le commentaire <code style="background:#fff;padding:2px 6px;border-radius:2px;font-size:12px;">AIDE GRACE</code> dans la section Ressources.<br>Étape 3 — Copie un bloc <code style="background:#fff;padding:2px 6px;border-radius:2px;font-size:12px;">pdf-card soon</code>, change la classe en <code style="background:#fff;padding:2px 6px;border-radius:2px;font-size:12px;">pdf-card available</code>, ajoute <code style="background:#fff;padding:2px 6px;border-radius:2px;font-size:12px;">href="TON_LIEN"</code> et remplace le titre et la description.<br>Étape 4 — Sauvegarde et redéploie sur Netlify (glisse le fichier sur netlify.com).</p>
+        <h4 style="font-family:'Playfair Display',serif;font-size:18px;color:var(--navy);margin-bottom:12px;">
       </div>
 
       <div style="margin-top:48px;background:var(--navy);border-radius:4px;padding:48px;text-align:center;">
