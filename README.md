@@ -458,9 +458,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
 
       <!-- GUIDE POUR GRACE -->
       <div style="margin-top:48px;background:var(--light);border-radius:4px;padding:32px;border-left:3px solid var(--gold);">
-        <h4 style="font-family:'Playfair Display',serif;font-size:18px;color:var(--navy);margin-bottom:12px;">📌 Comment ajouter une vidéo sur ce site ?</h4>
-        <p style="font-size:14px;color:var(--mid);line-height:1.8;">Pour ajouter une nouvelle vidéo, ouvre le fichier HTML dans un éditeur de texte (Notepad, TextEdit ou VS Code). Cherche le commentaire <code style="background:#fff;padding:2px 6px;border-radius:2px;font-size:12px;">AIDE GRACE</code> dans le code. Copie un bloc complet commençant par <code style="background:#fff;padding:2px 6px;border-radius:2px;font-size:12px;">&lt;a href=</code> et se terminant par <code style="background:#fff;padding:2px 6px;border-radius:2px;font-size:12px;">&lt;/a&gt;</code>. Colle-le juste en dessous du dernier. Remplace le lien YouTube, le titre et la description. Sauvegarde et c&rsquo;est en ligne.</p>
-      </div>
+        <h4 style="font-family:'Playfair Display',serif;font-size:18px;color:var(--navy);margin-bottom:12px;">
     </div>
   </div>
 </div>
