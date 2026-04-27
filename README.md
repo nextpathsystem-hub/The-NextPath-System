@@ -185,8 +185,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <li><a href="#" onclick="go('home')">Accueil</a></li>
     <li><a href="#" onclick="go('mission')">Notre mission</a></li>
     <li><a href="#" onclick="go('programmes')">Nos programmes</a></li>
-    <li><a href="#" onclick="go('videos')">Vidéos</a></li>
-    <li><a href="#" onclick="go('ressources')">Ressources</a></li>
+    <li><a href="#" onclick="go('ressources')">Nos ressources</a></li>
     <li><a href="#" onclick="go('grace')">À propos</a></li>
     <li><a href="#" onclick="go('contact')">Contact</a></li>
     <li><a href="https://tally.so/r/ZjGJQB" target="_blank" class="nav-cta">Rejoindre</a></li>
@@ -199,8 +198,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
   <a href="#" onclick="go('home');toggleMenu()">Accueil</a>
   <a href="#" onclick="go('mission');toggleMenu()">Notre mission</a>
   <a href="#" onclick="go('programmes');toggleMenu()">Nos programmes</a>
-  <a href="#" onclick="go('videos');toggleMenu()">Vidéos</a>
-  <a href="#" onclick="go('ressources');toggleMenu()">Ressources</a>
+  <a href="#" onclick="go('ressources');toggleMenu()">Nos ressources</a>
   <a href="#" onclick="go('grace');toggleMenu()">À propos</a>
   <a href="#" onclick="go('contact');toggleMenu()">Contact</a>
   <a href="https://tally.so/r/ZjGJQB" target="_blank" style="color:var(--gold);font-weight:700;">Rejoindre The Grace Effect</a>
@@ -408,108 +406,107 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
   </div>
 </div>
 
-<!-- ══ VIDÉOS ══ -->
-<div class="page" id="page-videos">
-  <div class="section" style="padding-top:80px;">
-    <div class="container">
-      <div class="stag" id="tag-videos">Nos dernières vidéos</div>
-      <h2 class="stitle" id="h2-videos">Contenu pour <em>t&rsquo;éveiller.</em></h2>
-      <div class="divider"></div>
-      <p class="sbody" style="margin-bottom:12px;" id="p-videos">Retrouve toutes nos vidéos sur YouTube. Des contenus concrets pour te connaître, te libérer et construire ton chemin.</p>
-      
-      <!-- AIDE GRACE : Pour ajouter une vidéo, copie un bloc .yt-card et modifie le lien href, le titre et la description -->
-      <div class="yt-grid" id="yt-grid">
-
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="yt-card">
-          <div class="yt-thumb" style="background:linear-gradient(135deg,#0D1B3E 0%,#1a2d5a 100%);">
-            <div class="yt-play"></div>
-          </div>
-          <div class="yt-info">
-            <div class="yt-title">Ton diplôme d&rsquo;État peut te rendre utile si tu sais l&rsquo;utiliser</div>
-            <div class="yt-meta">The Waken Series · NextPath System</div>
-          </div>
-        </a>
-
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="yt-card">
-          <div class="yt-thumb" style="background:linear-gradient(135deg,#0D1B3E 0%,#1a2d5a 100%);">
-            <div class="yt-play"></div>
-          </div>
-          <div class="yt-info">
-            <div class="yt-title">On nous a tout appris sauf à construire notre avenir</div>
-            <div class="yt-meta">The Waken Series · NextPath System</div>
-          </div>
-        </a>
-
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="yt-card">
-          <div class="yt-thumb" style="background:linear-gradient(135deg,#0D1B3E 0%,#1a2d5a 100%);">
-            <div class="yt-play"></div>
-          </div>
-          <div class="yt-info">
-            <div class="yt-title">Comment construire son identité et augmenter sa valeur ?</div>
-            <div class="yt-meta">The Waken Series · NextPath System</div>
-          </div>
-        </a>
-
-      </div>
-
-      <div style="text-align:center;margin-top:48px;">
-        <a href="https://www.youtube.com/@NextPathSystem" target="_blank" class="btn btn-navy" id="btn-yt">Voir toutes les vidéos sur YouTube ↗</a>
-      </div>
-
-      <!-- GUIDE POUR GRACE -->
-      <div style="margin-top:48px;background:var(--light);border-radius:4px;padding:32px;border-left:3px solid var(--gold);">
-        <h4 style="font-family:'Playfair Display',serif;font-size:18px;color:var(--navy);margin-bottom:12px;">
-<!-- ══ RESSOURCES ══ -->
+<!-- ══ NOS RESSOURCES ══ -->
 <div class="page" id="page-ressources">
   <div class="section" style="padding-top:80px;">
     <div class="container">
-      <div class="stag" id="tag-res">Ressources gratuites</div>
-      <h2 class="stitle" id="h2-res">Guides &amp; <em>outils</em></h2>
+
+      <!-- TITRE -->
+      <div class="stag" id="tag-res">Nos ressources</div>
+      <h2 class="stitle" id="h2-res">Vidéos &amp; <em>guides</em></h2>
       <div class="divider"></div>
-      <p class="sbody" style="margin-bottom:40px;" id="p-res">Des ressources concrètes pour avancer — guides PDF, outils d&rsquo;orientation, exercices pratiques. Télécharge gratuitement.</p>
+      <p class="sbody" style="margin-bottom:56px;" id="p-res">Retrouve ici toutes nos vidéos YouTube et nos guides PDF — des contenus concrets pour te connaître, te libérer et construire ton chemin.</p>
 
-      <!-- AIDE GRACE : Pour ajouter un PDF, copie un bloc .pdf-card.available et modifie le lien href, le titre et la description. Pour un PDF "bientôt disponible", laisse class="pdf-card soon" sans href -->
-      <div class="pdf-grid" id="pdf-grid">
-
-        <div class="pdf-card soon">
-          <div class="pdf-icon">📄</div>
-          <div>
-            <div class="pdf-title">Guide : Comment identifier ton potentiel</div>
-            <div class="pdf-desc">3 étapes concrètes pour découvrir tes forces naturelles et les connecter à un chemin réel.</div>
-            <div class="pdf-dl" style="opacity:.5;">Bientôt disponible</div>
-          </div>
+      <!-- SECTION VIDÉOS -->
+      <div style="margin-bottom:64px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:12px;">
+          <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);" id="h3-vid">Dernières vidéos</h3>
+          <a href="https://www.youtube.com/@NextPathSystem" target="_blank" class="btn btn-outline" style="font-size:11px;padding:10px 20px;" id="btn-yt">Voir toutes les vidéos ↗</a>
         </div>
+        <div class="yt-grid" id="yt-grid">
 
-        <div class="pdf-card soon">
-          <div class="pdf-icon">📄</div>
-          <div>
-            <div class="pdf-title">Guide : Construire ton identité</div>
-            <div class="pdf-desc">Comment définir tes valeurs, tes forces et ton chemin en 5 exercices pratiques.</div>
-            <div class="pdf-dl" style="opacity:.5;">Bientôt disponible</div>
-          </div>
+          <a href="https://www.youtube.com/@NextPathSystem" target="_blank" class="yt-card">
+            <div class="yt-thumb" style="background:linear-gradient(135deg,#0D1B3E 0%,#1a2d5a 100%);">
+              <div class="yt-play"></div>
+            </div>
+            <div class="yt-info">
+              <div class="yt-title">Ton diplôme d&rsquo;État peut te rendre utile si tu sais l&rsquo;utiliser</div>
+              <div class="yt-meta">The Waken Series · NextPath System</div>
+            </div>
+          </a>
+
+          <a href="https://www.youtube.com/@NextPathSystem" target="_blank" class="yt-card">
+            <div class="yt-thumb" style="background:linear-gradient(135deg,#0D1B3E 0%,#1a2d5a 100%);">
+              <div class="yt-play"></div>
+            </div>
+            <div class="yt-info">
+              <div class="yt-title">On nous a tout appris sauf à construire notre avenir</div>
+              <div class="yt-meta">The Waken Series · NextPath System</div>
+            </div>
+          </a>
+
+          <a href="https://www.youtube.com/@NextPathSystem" target="_blank" class="yt-card">
+            <div class="yt-thumb" style="background:linear-gradient(135deg,#0D1B3E 0%,#1a2d5a 100%);">
+              <div class="yt-play"></div>
+            </div>
+            <div class="yt-info">
+              <div class="yt-title">Comment construire son identité et augmenter sa valeur ?</div>
+              <div class="yt-meta">The Waken Series · NextPath System</div>
+            </div>
+          </a>
+
         </div>
-
-        <div class="pdf-card soon">
-          <div class="pdf-icon">📄</div>
-          <div>
-            <div class="pdf-title">Guide : Orientation après le diplôme d&rsquo;État</div>
-            <div class="pdf-desc">Les questions à se poser, les pistes à explorer, les erreurs à éviter.</div>
-            <div class="pdf-dl" style="opacity:.5;">Bientôt disponible</div>
-          </div>
-        </div>
-
       </div>
 
-      <div style="margin-top:40px;background:var(--light);border-radius:4px;padding:32px;border-left:3px solid var(--gold);">
-        <h4 style="font-family:'Playfair Display',serif;font-size:18px;color:var(--navy);margin-bottom:12px;">
+      <!-- SEPARATEUR -->
+      <div style="border-top:1px solid var(--border);margin-bottom:64px;"></div>
+
+      <!-- SECTION GUIDES PDF -->
+      <div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:12px;">
+          <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);" id="h3-pdf">Guides &amp; outils PDF</h3>
+          <span style="font-size:12px;color:var(--light-text);" id="tag-gratuit">Tous les guides sont gratuits</span>
+        </div>
+        <div class="pdf-grid" id="pdf-grid">
+
+          <div class="pdf-card soon">
+            <div class="pdf-icon">📄</div>
+            <div>
+              <div class="pdf-title">Guide : Comment identifier ton potentiel</div>
+              <div class="pdf-desc">3 étapes concrètes pour découvrir tes forces naturelles et les connecter à un chemin réel.</div>
+              <div class="pdf-dl" style="opacity:.5;" id="soon1">Bientôt disponible</div>
+            </div>
+          </div>
+
+          <div class="pdf-card soon">
+            <div class="pdf-icon">📄</div>
+            <div>
+              <div class="pdf-title">Guide : Construire ton identité</div>
+              <div class="pdf-desc">Comment définir tes valeurs, tes forces et ton chemin en 5 exercices pratiques.</div>
+              <div class="pdf-dl" style="opacity:.5;" id="soon2">Bientôt disponible</div>
+            </div>
+          </div>
+
+          <div class="pdf-card soon">
+            <div class="pdf-icon">📄</div>
+            <div>
+              <div class="pdf-title">Guide : Orientation après le diplôme d&rsquo;État</div>
+              <div class="pdf-desc">Les questions à se poser, les pistes à explorer, les erreurs à éviter.</div>
+              <div class="pdf-dl" style="opacity:.5;" id="soon3">Bientôt disponible</div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
-      <div style="margin-top:48px;background:var(--navy);border-radius:4px;padding:48px;text-align:center;">
+      <!-- CTA REJOINDRE -->
+      <div style="margin-top:56px;background:var(--navy);border-radius:4px;padding:48px;text-align:center;">
         <div style="font-size:32px;margin-bottom:14px;">📬</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:var(--gold);margin-bottom:10px;" id="h3-notif">Sois le premier à recevoir les guides</h3>
         <p style="font-size:14px;color:rgba(245,240,232,.7);max-width:480px;margin:0 auto 28px;line-height:1.7;" id="p-notif">Les ressources sont en cours de création. Rejoins la communauté pour les recevoir dès leur sortie.</p>
         <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-gold" id="btn-notif">Rejoindre la communauté</a>
       </div>
+
     </div>
   </div>
 </div>
@@ -571,7 +568,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
           <h2 class="stitle" id="h2-contact">Ensemble,<br>on <em>construit</em><br>une génération.</h2>
           <div class="divider"></div>
           <a href="https://instagram.com/nextpath.system" target="_blank" class="slink"><span class="splat">Instagram</span><span class="shandle">@nextpath.system</span></a>
-          <a href="https://www.youtube.com/@TheNextPathSystem" target="_blank" class="slink"><span class="splat">YouTube</span><span class="shandle">The NextPath System</span></a>
+          <a href="https://www.youtube.com/@NextPathSystem" target="_blank" class="slink"><span class="splat">YouTube</span><span class="shandle">The NextPath System</span></a>
           <a href="https://tiktok.com/@nextpath.system" target="_blank" class="slink"><span class="splat">TikTok</span><span class="shandle">@nextpath.system</span></a>
           <a href="https://wa.me/33766131603" target="_blank" class="slink"><span class="splat">WhatsApp</span><span class="shandle">+33 7 66 13 16 03</span></a>
           <a href="mailto:nextpathsystem@gmail.com" class="slink"><span class="splat">Email</span><span class="shandle">nextpathsystem@gmail.com</span></a>
@@ -594,8 +591,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <a href="#" onclick="go('home')">Accueil</a>
     <a href="#" onclick="go('mission')">Mission</a>
     <a href="#" onclick="go('programmes')">Programmes</a>
-    <a href="#" onclick="go('videos')">Vidéos</a>
-    <a href="#" onclick="go('ressources')">Ressources</a>
+    <a href="#" onclick="go('ressources')">Nos ressources</a>
     <a href="#" onclick="go('grace')">À propos</a>
     <a href="#" onclick="go('contact')">Contact</a>
   </div>
@@ -703,9 +699,9 @@ var T={
   'p-membre2':['Fais partie des premiers membres de la communauté NextPath System.','Be among the first members of the NextPath System community.'],
   'btn-membre':['Devenir membre — Gratuit','Become a member — Free'],
   'p-gratuit':['100% gratuit · Sans engagement','100% free · No commitment'],
-  'tag-videos':['Nos dernières vidéos','Our latest videos'],
+  
   'h2-videos':['Contenu pour <em>t’éveiller.</em>','Content to <em>awaken you.</em>'],
-  'p-videos':['Retrouve toutes nos vidéos sur YouTube. Des contenus concrets pour te connaître, te libérer et construire ton chemin.','Find all our videos on YouTube. Concrete content to know yourself, free yourself and build your path.'],
+  
   'btn-yt':['Voir toutes les vidéos sur YouTube ↗','See all videos on YouTube ↗'],
   'tag-res':['Ressources gratuites','Free resources'],
   'h2-res':['Guides &amp; <em>outils</em>','Guides &amp; <em>tools</em>'],
