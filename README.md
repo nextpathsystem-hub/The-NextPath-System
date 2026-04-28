@@ -207,7 +207,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
   <a href="#" onclick="go('avis');toggleMenu()">Avis</a>
   <a href="#" onclick="go('opportunites');toggleMenu()">Opportunit&#233;s</a>
   <a href="#" onclick="go('contact');toggleMenu()">Contact</a>
-  <a href="https://tally.so/r/ZjGJQB" target="_blank" style="color:var(--gold);font-weight:700;">Rejoindre The Grace Effect</a>
+  <a href="https://tally.so/r/81Jey5" target="_blank" style="color:var(--gold);font-weight:700;">Rejoindre</a>
   <div style="display:flex;gap:8px;padding:12px 0;"><button class="lang-btn active" onclick="setLang('fr')">FR</button><button class="lang-btn" onclick="setLang('en')">EN</button></div>
 </div>
 
@@ -242,11 +242,11 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
         <span class="stat-lbl" id="stat1">Jeunes visés d&rsquo;ici 2028</span>
       </div>
       <div class="stat-col">
-        <span class="stat-num">15&ndash;25</span>
+        <span class="stat-num">15&ndash;30</span>
         <span class="stat-lbl" id="stat2">tranche d&rsquo;âge prioritaire</span>
       </div>
       <div class="stat-col">
-        <span class="stat-num">4</span>
+        <span class="stat-num">1</span>
         <span class="stat-lbl" id="stat3">Programmes en cours de création</span>
       </div>
     </div>
