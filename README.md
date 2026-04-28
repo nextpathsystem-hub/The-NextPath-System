@@ -118,7 +118,7 @@ h2.stitle.light{color:var(--cream);}
 .picon{font-size:28px;margin-bottom:12px;display:block;}
 .pname{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;}
 .pdesc{font-size:12px;color:var(--light-text);line-height:1.7;}
-.pdf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;}
+.pdf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;} .pdf-grid a[style*="grid-column"]{grid-column:1/-1;}
 .pdf-card{border:1px solid var(--border);border-radius:4px;padding:28px 24px;display:flex;flex-direction:column;gap:12px;transition:all .25s;text-decoration:none;background:#fff;}
 .pdf-card.available:hover{border-color:var(--gold);box-shadow:0 6px 20px rgba(13,27,62,.08);transform:translateY(-2px);}
 .pdf-card.soon{opacity:.6;cursor:default;}
@@ -183,10 +183,12 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
   <ul class="nav-links">
     <li><a href="#" onclick="go('home')">Accueil</a></li>
     <li><a href="#" onclick="go('mission')">Notre mission</a></li>
-    <li><a href="#" onclick="go('programmes')">Nos programmes</a></li>
+    <li><a href="#" onclick="go('programmes')">Devenir membre</a></li>
     <li><a href="#" onclick="go('ressources')">Nos ressources</a></li>
     <li><a href="#" onclick="go('grace')">À propos</a></li>
-    <li><a href="#" onclick="go('contact')">Contact</a></li>
+    <li><a href="#" onclick="go('opportunites')">Opportunit&#233;s</a></li>
+    <li><a href="#" onclick="go('opportunites')">Opportunit&#233;s</a>
+    <a href="#" onclick="go('contact')">Contact</a></li>
     <li><a href="https://tally.so/r/ZjGJQB" target="_blank" class="nav-cta">Rejoindre</a></li>
     <li><div class="lang-switcher"><button class="lang-btn active" id="btn-fr" onclick="setLang('fr')">FR</button><button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button></div></li>
   </ul>
@@ -196,9 +198,10 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
 <div class="mobile-menu" id="mobile-menu">
   <a href="#" onclick="go('home');toggleMenu()">Accueil</a>
   <a href="#" onclick="go('mission');toggleMenu()">Notre mission</a>
-  <a href="#" onclick="go('programmes');toggleMenu()">Nos programmes</a>
+  <a href="#" onclick="go('programmes');toggleMenu()">Devenir membre</a>
   <a href="#" onclick="go('ressources');toggleMenu()">Nos ressources</a>
   <a href="#" onclick="go('grace');toggleMenu()">À propos</a>
+  <a href="#" onclick="go('opportunites');toggleMenu()">Opportunit&#233;s</a>
   <a href="#" onclick="go('contact');toggleMenu()">Contact</a>
   <a href="https://tally.so/r/ZjGJQB" target="_blank" style="color:var(--gold);font-weight:700;">Rejoindre The Grace Effect</a>
   <div style="display:flex;gap:8px;padding:12px 0;"><button class="lang-btn active" onclick="setLang('fr')">FR</button><button class="lang-btn" onclick="setLang('en')">EN</button></div>
@@ -213,7 +216,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       <p class="hero-sub" id="p-hero">Une plateforme dédiée à la jeunesse africaine — 15 à 25 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.</p>
       <div class="hero-actions">
         <a href="https://tally.so/r/ZjGJQB" target="_blank" class="btn btn-navy" id="btn-hero1">Rejoindre The Grace Effect</a>
-        <a href="#" onclick="go('programmes')" class="btn btn-outline" id="btn-hero2">Nos programmes</a>
+        <a href="#" onclick="go('programmes')" class="btn btn-outline" id="btn-hero2">Devenir membre</a>
       </div>
       <div class="hero-quote">
         <p id="quote-hero">"Un jeune qui se connaît ne se perd jamais."</p>
@@ -275,12 +278,12 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       </div>
       <div style="background:var(--navy);border-radius:4px;padding:48px;max-width:680px;margin:0 auto;text-align:center;">
         <div style="font-size:28px;margin-bottom:14px;">&#9997;&#65039;</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:var(--gold);margin-bottom:10px;" id="h3-avis">Laisse ton avis</h3>
+        <h3 style="font-family:Georgia,serif;font-size:24px;color:var(--gold);margin-bottom:10px;" id="h3-avis">Laisse ton avis</h3>
         <p style="font-size:14px;color:rgba(245,240,232,.7);margin-bottom:28px;line-height:1.7;" id="p-avis">Ton témoignage peut changer la trajectoire d&rsquo;un autre jeune.</p>
         <div style="display:flex;flex-direction:column;gap:12px;text-align:left;">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-            <div><label style="display:block;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Prénom *</label><input type="text" id="a-prenom" placeholder="Ex : Grace" style="width:100%;padding:11px 14px;border:1px solid rgba(201,168,76,.3);border-radius:2px;background:rgba(255,255,255,.05);color:var(--cream);font-family:'Montserrat',sans-serif;font-size:13px;outline:none;"></div>
-            <div><label style="display:block;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Ville &amp; Pays *</label><input type="text" id="a-ville" placeholder="Ex : Kinshasa, RDC" style="width:100%;padding:11px 14px;border:1px solid rgba(201,168,76,.3);border-radius:2px;background:rgba(255,255,255,.05);color:var(--cream);font-family:'Montserrat',sans-serif;font-size:13px;outline:none;"></div>
+            <div><label style="display:block;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Prénom *</label><input type="text" id="a-prenom" placeholder="Ex : Grace" style="width:100%;padding:11px 14px;border:1px solid rgba(201,168,76,.3);border-radius:2px;background:rgba(255,255,255,.05);color:var(--cream);font-family:Arial,sans-serif;font-size:13px;outline:none;"></div>
+            <div><label style="display:block;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Ville &amp; Pays *</label><input type="text" id="a-ville" placeholder="Ex : Kinshasa, RDC" style="width:100%;padding:11px 14px;border:1px solid rgba(201,168,76,.3);border-radius:2px;background:rgba(255,255,255,.05);color:var(--cream);font-family:Arial,sans-serif;font-size:13px;outline:none;"></div>
           </div>
           <div>
             <label style="display:block;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Note *</label>
@@ -292,8 +295,8 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
               <span onclick="setRating(5)" style="font-size:26px;cursor:pointer;color:rgba(201,168,76,.3);" data-star="5">&#9733;</span>
             </div>
           </div>
-          <div><label style="display:block;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Témoignage *</label><textarea id="a-texte" rows="4" placeholder="Partage ton expérience avec NextPath System..." style="width:100%;padding:11px 14px;border:1px solid rgba(201,168,76,.3);border-radius:2px;background:rgba(255,255,255,.05);color:var(--cream);font-family:'Montserrat',sans-serif;font-size:13px;outline:none;resize:vertical;"></textarea></div>
-          <div style="text-align:center;"><button onclick="soumettreAvis()" style="background:var(--gold);color:var(--navy);font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:14px 36px;border:none;border-radius:2px;cursor:pointer;" id="btn-avis">Envoyer mon témoignage</button></div>
+          <div><label style="display:block;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Témoignage *</label><textarea id="a-texte" rows="4" placeholder="Partage ton expérience avec NextPath System..." style="width:100%;padding:11px 14px;border:1px solid rgba(201,168,76,.3);border-radius:2px;background:rgba(255,255,255,.05);color:var(--cream);font-family:Arial,sans-serif;font-size:13px;outline:none;resize:vertical;"></textarea></div>
+          <div style="text-align:center;"><button onclick="soumettreAvis()" style="background:var(--gold);color:var(--navy);font-family:Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:14px 36px;border:none;border-radius:2px;cursor:pointer;" id="btn-avis">Envoyer mon témoignage</button></div>
           <div id="avis-ok" style="display:none;text-align:center;padding:14px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.3);border-radius:2px;"><p style="font-size:13px;color:var(--gold);font-weight:500;" id="p-avis-ok">🎉 Merci ! Grace lira ton témoignage personnellement.</p></div>
         </div>
       </div>
@@ -310,9 +313,9 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       <div class="divider"></div>
       <p class="sbody" style="max-width:700px;" id="p-mission">La jeunesse africaine a un potentiel immense. Mais personne ne lui a appris à le voir, à le nommer, à le construire. NextPath System comble ce vide — avec du contenu, des outils concrets et un accompagnement réel. En ligne. En présentiel. Pour la jeunesse en RDC et dans la diaspora.</p>
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px;">
-        <div style="padding:32px;background:var(--light);border-radius:4px;border-top:3px solid var(--gold);"><div style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--gold);margin-bottom:8px;" id="m1-title">Éveiller</div><p style="font-size:14px;color:var(--mid);line-height:1.8;" id="m1-text">Faire prendre conscience à chaque jeune de sa valeur et de son potentiel — avant même de parler de carrière ou d&rsquo;orientation.</p></div>
-        <div style="padding:32px;background:var(--navy);border-radius:4px;border-top:3px solid var(--gold);"><div style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--gold);margin-bottom:8px;" id="m2-title">Orienter</div><p style="font-size:14px;color:rgba(245,240,232,.75);line-height:1.8;" id="m2-text">Donner des outils concrets pour identifier ses forces, ses valeurs et les directions qui correspondent vraiment à qui on est.</p></div>
-        <div style="padding:32px;background:var(--light);border-radius:4px;border-top:3px solid var(--gold);"><div style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--gold);margin-bottom:8px;" id="m3-title">Transformer</div><p style="font-size:14px;color:var(--mid);line-height:1.8;" id="m3-text">Accompagner la mise en action — avec un plan clair, une communauté engagée, et un suivi qui crée des résultats mesurables.</p></div>
+        <div style="padding:32px;background:var(--light);border-radius:4px;border-top:3px solid var(--gold);"><div style="font-family:Georgia,serif;font-size:26px;font-weight:700;color:var(--gold);margin-bottom:8px;" id="m1-title">Éveiller</div><p style="font-size:14px;color:var(--mid);line-height:1.8;" id="m1-text">Faire prendre conscience à chaque jeune de sa valeur et de son potentiel — avant même de parler de carrière ou d&rsquo;orientation.</p></div>
+        <div style="padding:32px;background:var(--navy);border-radius:4px;border-top:3px solid var(--gold);"><div style="font-family:Georgia,serif;font-size:26px;font-weight:700;color:var(--gold);margin-bottom:8px;" id="m2-title">Orienter</div><p style="font-size:14px;color:rgba(245,240,232,.75);line-height:1.8;" id="m2-text">Donner des outils concrets pour identifier ses forces, ses valeurs et les directions qui correspondent vraiment à qui on est.</p></div>
+        <div style="padding:32px;background:var(--light);border-radius:4px;border-top:3px solid var(--gold);"><div style="font-family:Georgia,serif;font-size:26px;font-weight:700;color:var(--gold);margin-bottom:8px;" id="m3-title">Transformer</div><p style="font-size:14px;color:var(--mid);line-height:1.8;" id="m3-text">Accompagner la mise en action — avec un plan clair, une communauté engagée, et un suivi qui crée des résultats mesurables.</p></div>
       </div>
     </div>
   </div>
@@ -322,85 +325,75 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
 <div class="page" id="page-programmes">
   <div class="section" style="padding-top:80px;">
     <div class="container">
-      <div class="stag" id="tag-prog">Nos programmes</div>
-      <h2 class="stitle" id="h2-prog">Deux outils pour <em>te révéler.</em></h2>
+
+      <div class="stag" id="tag-prog">Rejoins le mouvement</div>
+      <h2 class="stitle" id="h2-prog">Devenir <em>membre</em> de la communauté</h2>
       <div class="divider"></div>
-      <div class="prog-grid">
-        <div class="prog-card">
-          <span class="prog-icon">🔥</span>
-          <div class="prog-badge" id="badge-ge">Programme · 4 semaines</div>
-          <div class="prog-name">The Grace Effect</div>
-          <p class="prog-desc" id="desc-ge">4 semaines pour te connaître, comprendre ce qui te bloque et construire ton chemin. En ligne, en groupe, avec Grace. Première cohorte totalement gratuite.</p>
-          <a href="https://tally.so/r/ZjGJQB" target="_blank" class="btn btn-navy" id="btn-ge">Réserver ma place gratuite</a>
+      <p class="sbody" style="margin-bottom:56px;" id="p-prog">NextPath System c’est plus qu’une page Instagram. C’est une communauté de jeunes africains de 15 à 25 ans qui avancent ensemble. Rejoins-nous — c’est gratuit.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:56px;">
+        <div style="padding:32px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);text-align:center;">
+          <div style="font-size:32px;margin-bottom:14px;">&#127897;&#65039;</div>
+          <div style="font-family:Georgia,serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;" id="av1-title">Lives & webinaires</div>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;" id="av1-text">Accès aux sessions exclusives et événements en ligne de la communauté NextPath.</p>
         </div>
-        <div class="prog-card">
-          <span class="prog-icon">🧠</span>
-          <div class="prog-badge" id="badge-test">Outil gratuit · 10 min</div>
-          <div class="prog-name">NextPath Test</div>
-          <p class="prog-desc" id="desc-test">20 questions pour révéler ton profil de personnalité, tes forces naturelles, tes blocages et les directions qui te correspondent. Gratuit, sans inscription.</p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvA440a9h65ZcFT4XXJUoPJBelQbqrmUgU27X1pDnX6I-XkQ/viewform?usp=header" target="_blank" class="btn btn-outline" id="btn-test">Passer le test</a>
+        <div style="padding:32px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);text-align:center;">
+          <div style="font-size:32px;margin-bottom:14px;">&#128172;</div>
+          <div style="font-family:Georgia,serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;" id="av2-title">Groupe WhatsApp</div>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;" id="av2-text">Intègre le groupe privé NextPath pour échanger avec Grace et les autres membres.</p>
+        </div>
+        <div style="padding:32px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);text-align:center;">
+          <div style="font-size:32px;margin-bottom:14px;">&#128218;</div>
+          <div style="font-family:Georgia,serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;" id="av3-title">Ressources NextPath</div>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;" id="av3-text">Accès en priorité aux guides, outils et contenus exclusifs de NextPath System.</p>
+        </div>
+        <div style="padding:32px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);text-align:center;">
+          <div style="font-size:32px;margin-bottom:14px;">&#127919;</div>
+          <div style="font-family:Georgia,serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;" id="av4-title">Opportunités</div>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;" id="av4-text">Accès aux offres de stages, missions et mentorats via NextPath Opportunities.</p>
+        </div>
+        <div style="padding:32px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);text-align:center;">
+          <div style="font-size:32px;margin-bottom:14px;">&#127775;</div>
+          <div style="font-family:Georgia,serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;" id="av5-title">Priorité aux programmes</div>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;" id="av5-text">Tu seras prioritaire pour rejoindre les prochains programmes d’accompagnement NextPath.</p>
+        </div>
+        <div style="padding:32px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);text-align:center;">
+          <div style="font-size:32px;margin-bottom:14px;">&#127758;</div>
+          <div style="font-family:Georgia,serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;" id="av6-title">Communauté RDC & diaspora</div>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;" id="av6-text">Rejoins des jeunes africains engagés qui partagent les mêmes ambitions que toi.</p>
         </div>
       </div>
 
-      <div style="margin-top:64px;">
-        <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);margin-bottom:28px;" id="h3-ge">The Grace Effect — Détail du programme</h3>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;">
-          <div>
-            <div class="module-list">
-              <div class="module-item"><span class="mweek" id="s1">Semaine 1</span><div><h4 id="m-s1">Qui es-tu vraiment ?</h4><p id="mp-s1">Profil NextPath, forces naturelles, valeurs fondamentales.</p></div></div>
-              <div class="module-item"><span class="mweek" id="s2">Semaine 2</span><div><h4 id="m-s2">Qu&rsquo;est-ce qui te bloque ?</h4><p id="mp-s2">Identification des blocages et outils pour s&rsquo;en libérer.</p></div></div>
-              <div class="module-item"><span class="mweek" id="s3">Semaine 3</span><div><h4 id="m-s3">Comment construire ton chemin ?</h4><p id="mp-s3">Méthode NextPath pour connecter tes forces à un chemin concret.</p></div></div>
-              <div class="module-item"><span class="mweek" id="s4">Semaine 4</span><div><h4 id="m-s4">Ton plan pour avancer</h4><p id="mp-s4">Premières actions concrètes ancrées dans qui tu es.</p></div></div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div class="irow"><span id="if1">Format</span><span id="iv1">100% en ligne · Sessions de groupe</span></div>
-              <div class="irow"><span id="if2">Durée</span><span id="iv2">4 semaines · 90 min / session</span></div>
-              <div class="irow"><span id="if3">Places</span><span>15 max</span></div>
-              <div class="irow"><span id="if4">Âge</span><span>15 à 25 ans</span></div>
-              <div class="irow"><span>Plateforme</span><span>Zoom + WhatsApp</span></div>
-            </div>
-            <div class="prog-cta">
-              <div class="gbadge">🎉 100% Gratuit</div>
-              <h3 id="h3-cta">Rejoins The Grace Effect</h3>
-              <p id="p-cta">15 places disponibles. Ne laisse pas ta place à quelqu&rsquo;un d&rsquo;autre.</p>
-              <a href="https://tally.so/r/ZjGJQB" target="_blank" class="btn btn-gold" id="btn-cta">Réserver ma place</a>
-            </div>
-          </div>
-        </div>
+      <div style="background:var(--navy);border-radius:4px;padding:64px;text-align:center;margin-bottom:56px;">
+        <div style="font-size:40px;margin-bottom:16px;">&#127757;</div>
+        <h3 style="font-family:Georgia,serif;font-size:30px;color:var(--gold);margin-bottom:12px;" id="h3-membre-cta">Rejoins la communauté NextPath</h3>
+        <p style="font-size:15px;color:rgba(245,240,232,0.7);max-width:520px;margin:0 auto 32px;line-height:1.8;" id="p-membre-cta">Tu t’inscris en 2 minutes. Grace te contacte sur WhatsApp pour t’accueillir personnellement.</p>
+        <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-gold" style="font-size:13px;padding:16px 48px;" id="btn-membre-cta">Devenir membre — Gratuit</a>
+        <p style="font-size:11px;color:rgba(245,240,232,0.4);margin-top:16px;" id="p-gratuit-cta">100% gratuit · Sans engagement · Accessible depuis la RDC et la diaspora</p>
       </div>
 
-      <div style="margin-top:64px;">
-        <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);margin-bottom:28px;" id="h3-test-detail">NextPath Test — Les 4 profils</h3>
-        <div class="profiles-grid">
-          <div class="profile-card"><span class="picon">🧠</span><div class="pname" id="pr1-name">L&rsquo;Éclaireur</div><p class="pdesc" id="pr1-desc">Sciences, recherche, enseignement, droit.</p></div>
-          <div class="profile-card"><span class="picon">🌐</span><div class="pname" id="pr2-name">Le Connecteur</div><p class="pdesc" id="pr2-desc">Médias, diplomatie, entrepreneuriat social.</p></div>
-          <div class="profile-card"><span class="picon">🏗️</span><div class="pname" id="pr3-name">Le Bâtisseur</div><p class="pdesc" id="pr3-desc">Entrepreneuriat, management, commerce.</p></div>
-          <div class="profile-card"><span class="picon">🌱</span><div class="pname" id="pr4-name">Le Semeur</div><p class="pdesc" id="pr4-desc">Éducation, santé, social, arts.</p></div>
-        </div>
-        <div style="text-align:center;margin-top:32px;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdvA440a9h65ZcFT4XXJUoPJBelQbqrmUgU27X1pDnX6I-XkQ/viewform?usp=header" target="_blank" class="btn btn-gold" id="btn-test2">Passer le NextPath Test — Gratuit</a></div>
-      </div>
-
-      <div style="margin-top:64px;background:var(--light);border-radius:4px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
+      <div style="background:var(--light-bg);border-radius:4px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
         <div>
-          <div class="stag" id="tag-membre">Communauté</div>
-          <h3 class="stitle" style="font-size:32px;" id="h3-membre">Devenir <em>membre</em></h3>
+          <div class="stag" id="tag-test">Outil gratuit</div>
+          <h3 class="stitle" style="font-size:30px;" id="h3-test">Le <em>NextPath Test</em></h3>
           <div class="divider"></div>
-          <p style="font-size:15px;color:var(--mid);line-height:1.85;margin-bottom:24px;" id="p-membre">Rejoins la communauté NextPath System. Accède aux ressources, aux événements en ligne et aux échanges. C&rsquo;est gratuit.</p>
-          <div class="bitem"><div class="bdot">✦</div><span id="b1">Accès aux lives et webinaires exclusifs</span></div>
-          <div class="bitem"><div class="bdot">✦</div><span id="b2">Groupe WhatsApp de la communauté</span></div>
-          <div class="bitem"><div class="bdot">✦</div><span id="b3">Ressources et outils NextPath gratuits</span></div>
-          <div class="bitem"><div class="bdot">✦</div><span id="b4">Priorité pour les prochaines cohortes</span></div>
+          <p style="font-size:15px;color:var(--mid);line-height:1.85;margin-bottom:24px;" id="p-test">20 questions. 10 minutes. Un portrait complet de qui tu es — ta personnalité, tes forces naturelles et les directions qui te correspondent vraiment.</p>
+          <div class="bitem"><div class="bdot">&#x2726;</div><span id="tb1">Profil de personnalité parmi 4 types NextPath</span></div>
+          <div class="bitem"><div class="bdot">&#x2726;</div><span id="tb2">Tes forces naturelles identifiées</span></div>
+          <div class="bitem"><div class="bdot">&#x2726;</div><span id="tb3">Les directions qui te correspondent</span></div>
+          <div class="bitem"><div class="bdot">&#x2726;</div><span id="tb4">Gratuit · Sans inscription</span></div>
         </div>
         <div style="background:#fff;border-radius:4px;padding:40px;text-align:center;border:1px solid var(--border);">
-          <div style="font-size:40px;margin-bottom:16px;">🌍</div>
-          <h4 style="font-family:'Playfair Display',serif;font-size:20px;color:var(--navy);margin-bottom:10px;" id="h4-membre">Rejoins le mouvement</h4>
-          <p style="font-size:14px;color:var(--mid);margin-bottom:24px;line-height:1.7;" id="p-membre2">Fais partie des premiers membres de la communauté NextPath System.</p>
-          <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-navy" style="width:100%;" id="btn-membre">Devenir membre — Gratuit</a>
-          <p style="font-size:11px;color:var(--light-text);margin-top:12px;" id="p-gratuit">100% gratuit · Sans engagement</p>
+          <div class="profiles-grid" style="margin:0 0 28px;">
+            <div class="profile-card"><span class="picon">&#129504;</span><div class="pname" style="font-size:13px;">L’Éclaireur</div></div>
+            <div class="profile-card"><span class="picon">&#127760;</span><div class="pname" style="font-size:13px;">Le Connecteur</div></div>
+            <div class="profile-card"><span class="picon">&#127959;&#65039;</span><div class="pname" style="font-size:13px;">Le Bâtisseur</div></div>
+            <div class="profile-card"><span class="picon">&#127807;</span><div class="pname" style="font-size:13px;">Le Semeur</div></div>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvA440a9h65ZcFT4XXJUoPJBelQbqrmUgU27X1pDnX6I-XkQ/viewform?usp=header" target="_blank" class="btn btn-navy" style="width:100%;justify-content:center;" id="btn-test-cta">Passer le NextPath Test — Gratuit</a>
         </div>
       </div>
+
     </div>
   </div>
 </div>
@@ -419,7 +412,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       <!-- SECTION VIDÉOS -->
       <div style="margin-bottom:64px;">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:12px;">
-          <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);" id="h3-vid">Dernières vidéos</h3>
+          <h3 style="font-family:Georgia,serif;font-size:26px;font-weight:700;color:var(--navy);" id="h3-vid">Dernières vidéos</h3>
           <a href="https://www.youtube.com/@NextPathSystem" target="_blank" class="btn btn-outline" style="font-size:11px;padding:10px 20px;" id="btn-yt">Voir toutes les vidéos ↗</a>
         </div>
         <div class="yt-grid" id="yt-grid">
@@ -463,37 +456,59 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       <!-- SECTION GUIDES PDF -->
       <div>
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:12px;">
-          <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);" id="h3-pdf">Guides &amp; outils PDF</h3>
-          <span style="font-size:12px;color:var(--light-text);" id="tag-gratuit">Tous les guides sont gratuits</span>
+          <h3 style="font-family:Georgia,serif;font-size:26px;font-weight:700;color:var(--navy);" id="h3-pdf">Guides &amp; outils PDF</h3>
+          <span style="font-size:12px;color:var(--gold);font-weight:600;" id="tag-gratuit">10 USD le pack complet</span>
         </div>
         <div class="pdf-grid" id="pdf-grid">
 
-          <div class="pdf-card soon">
-            <div class="pdf-icon">📄</div>
-            <div>
-              <div class="pdf-title">Guide : Comment identifier ton potentiel</div>
-              <div class="pdf-desc">3 étapes concrètes pour découvrir tes forces naturelles et les connecter à un chemin réel.</div>
-              <div class="pdf-dl" style="opacity:.5;" id="soon1">Bientôt disponible</div>
+          <!-- PACK COMPLET -->
+          <a href="https://nextpath6.gumroad.com/l/Cours1" target="_blank" class="pdf-card available" style="grid-column:1/-1;flex-direction:row;align-items:center;gap:28px;background:#0D1B3E;border-color:#C9A84C;padding:32px 36px;text-decoration:none;">
+            <div style="flex-shrink:0;">
+              <div style="width:56px;height:56px;border-radius:10px;background:rgba(201,168,76,0.15);border:1.5px solid #C9A84C;display:flex;align-items:center;justify-content:center;font-size:24px;">📚</div>
             </div>
-          </div>
+            <div style="flex:1;">
+              <div style="font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#C9A84C;margin-bottom:6px;">Pack complet — 4 modules</div>
+              <div style="font-family:Georgia,serif;font-size:20px;font-weight:700;color:#F5F0E8;margin-bottom:8px;">Les guides NextPath System</div>
+              <div style="font-size:13px;color:rgba(245,240,232,0.65);line-height:1.6;margin-bottom:16px;">Les 4 guides PDF — Bienvenue, Connais-toi, Libere-toi, Construis-toi — pour te connaitre, identifier tes blocages et construire ton chemin concret.</div>
+              <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+                <span style="font-family:Georgia,serif;font-size:28px;font-weight:700;color:#C9A84C;">10 USD</span>
+                <span style="display:inline-flex;align-items:center;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:#C9A84C;color:#0D1B3E;padding:10px 24px;border-radius:2px;">Acheter les guides &#8594;</span>
+              </div>
+            </div>
+          </a>
 
-          <div class="pdf-card soon">
+          <!-- MODULE 1 -->
+          <a href="https://nextpath6.gumroad.com/l/Cours1" target="_blank" class="pdf-card available" style="text-decoration:none;">
             <div class="pdf-icon">📄</div>
             <div>
-              <div class="pdf-title">Guide : Construire ton identité</div>
-              <div class="pdf-desc">Comment définir tes valeurs, tes forces et ton chemin en 5 exercices pratiques.</div>
-              <div class="pdf-dl" style="opacity:.5;" id="soon2">Bientôt disponible</div>
+              <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Module 1</div>
+              <div class="pdf-title">Connais-toi</div>
+              <div class="pdf-desc">Profil de personnalite, forces naturelles, valeurs fondamentales. Exercices ecrits et portrait NextPath complet.</div>
+              <div class="pdf-dl">Inclus dans le pack</div>
             </div>
-          </div>
+          </a>
 
-          <div class="pdf-card soon">
+          <!-- MODULE 2 -->
+          <a href="https://nextpath6.gumroad.com/l/Cours1" target="_blank" class="pdf-card available" style="text-decoration:none;">
             <div class="pdf-icon">📄</div>
             <div>
-              <div class="pdf-title">Guide : Orientation après le diplôme d&rsquo;État</div>
-              <div class="pdf-desc">Les questions à se poser, les pistes à explorer, les erreurs à éviter.</div>
-              <div class="pdf-dl" style="opacity:.5;" id="soon3">Bientôt disponible</div>
+              <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Module 2</div>
+              <div class="pdf-title">Libere-toi</div>
+              <div class="pdf-desc">Les 5 blocages les plus courants, lettre a ton blocage, plan de liberation concret.</div>
+              <div class="pdf-dl">Inclus dans le pack</div>
             </div>
-          </div>
+          </a>
+
+          <!-- MODULE 3 -->
+          <a href="https://nextpath6.gumroad.com/l/Cours1" target="_blank" class="pdf-card available" style="text-decoration:none;">
+            <div class="pdf-icon">📄</div>
+            <div>
+              <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Module 3</div>
+              <div class="pdf-title">Construis-toi</div>
+              <div class="pdf-desc">Methode des 3 cercles, tes 3 chemins possibles, orientation post-diplome, plan d&#39;action 90 jours.</div>
+              <div class="pdf-dl">Inclus dans le pack</div>
+            </div>
+          </a>
 
         </div>
       </div>
@@ -501,9 +516,9 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       <!-- CTA REJOINDRE -->
       <div style="margin-top:56px;background:var(--navy);border-radius:4px;padding:48px;text-align:center;">
         <div style="font-size:32px;margin-bottom:14px;">📬</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:var(--gold);margin-bottom:10px;" id="h3-notif">Sois le premier à recevoir les guides</h3>
-        <p style="font-size:14px;color:rgba(245,240,232,.7);max-width:480px;margin:0 auto 28px;line-height:1.7;" id="p-notif">Les ressources sont en cours de création. Rejoins la communauté pour les recevoir dès leur sortie.</p>
-        <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-gold" id="btn-notif">Rejoindre la communauté</a>
+        <h3 style="font-family:Georgia,serif;font-size:24px;color:var(--gold);margin-bottom:10px;" id="h3-notif">Prêt(e) à commencer ton parcours ?</h3>
+        <p style="font-size:14px;color:rgba(245,240,232,.7);max-width:480px;margin:0 auto 28px;line-height:1.7;" id="p-notif">Les 4 guides NextPath System sont disponibles maintenant. Télécharge-les et commence ton parcours aujourd'hui.</p>
+        <a href="https://nextpath6.gumroad.com/l/Cours1" target="_blank" class="btn btn-gold" id="btn-notif">Obtenir les guides — 10 USD</a>
       </div>
 
     </div>
@@ -515,7 +530,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
   <div style="background:var(--navy);padding:80px 80px 0;display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:end;min-height:380px;overflow:hidden;">
     <div style="padding-bottom:60px;">
       <div style="font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px;"><span style="display:block;width:24px;height:1.5px;background:var(--gold);"></span>À propos</div>
-      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,56px);font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:18px;">Grace<br><em style="color:var(--gold);">Kabondo</em></h1>
+      <h1 style="font-family:Georgia,serif;font-size:clamp(36px,5vw,56px);font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:18px;">Grace<br><em style="color:var(--gold);">Kabondo</em></h1>
       <p style="font-size:15px;color:rgba(245,240,232,.65);line-height:1.7;max-width:440px;margin-bottom:28px;">Fondatrice · NextPath System · Lubumbashi, RDC · France</p>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
         <span style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border:1px solid rgba(201,168,76,.4);border-radius:2px;color:var(--gold);">Master Sciences du Médicament</span>
@@ -548,7 +563,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
             <div style="display:flex;gap:14px;padding:14px 18px;"><span style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);min-width:80px;margin-top:2px;" id="gl5">Contact</span><span style="font-size:14px;color:var(--dark);">nextpathsystem@gmail.com</span></div>
           </div>
           <div style="margin-top:24px;background:var(--navy);border-radius:4px;padding:40px;text-align:center;">
-            <p style="font-family:'Playfair Display',serif;font-size:18px;font-style:italic;color:var(--cream);line-height:1.65;margin-bottom:16px;" id="g-cite">"Un jeune qui se connaît ne se perd jamais."</p>
+            <p style="font-family:Georgia,serif;font-size:18px;font-style:italic;color:var(--cream);line-height:1.65;margin-bottom:16px;" id="g-cite">"Un jeune qui se connaît ne se perd jamais."</p>
             <cite style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);">— Grace Kabondo</cite>
           </div>
         </div>
@@ -573,13 +588,135 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
           <a href="mailto:nextpathsystem@gmail.com" class="slink"><span class="splat">Email</span><span class="shandle">nextpathsystem@gmail.com</span></a>
         </div>
         <div style="background:var(--light);border-radius:4px;padding:40px;">
-          <h3 style="font-family:'Playfair Display',serif;font-size:22px;color:var(--navy);margin-bottom:8px;" id="h3-contact">Rejoins The Grace Effect</h3>
+          <h3 style="font-family:Georgia,serif;font-size:22px;color:var(--navy);margin-bottom:8px;" id="h3-contact">Rejoins The Grace Effect</h3>
           <p style="font-size:14px;color:var(--mid);margin-bottom:24px;line-height:1.7;" id="p-contact">15 places. Totalement gratuit. Grace te contacte sous 48h.</p>
           <a href="https://tally.so/r/ZjGJQB" target="_blank" class="btn btn-navy" style="width:100%;margin-bottom:14px;" id="btn-contact1">Rejoindre The Grace Effect</a>
           <div style="text-align:center;margin:12px 0;font-size:12px;color:var(--light-text);" id="ou-text">ou</div>
-          <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-outline" style="width:100%;" id="btn-contact2">Devenir membre de la communauté</a>
+          <a href="https://nextpath6.gumroad.com/l/Cours1" target="_blank" class="btn btn-outline" style="width:100%;" id="btn-contact2">Devenir membre de la communauté</a>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══ PAGE OPPORTUNITÉS ══ -->
+<div class="page" id="page-opportunites">
+  <div class="section" style="padding-top:80px;">
+    <div class="container">
+
+      <!-- HEADER -->
+      <div class="stag" id="tag-opp">NextPath Opportunities</div>
+      <h2 class="stitle" id="h2-opp">Le pont entre toi et<br>ceux qui ont des <em>opportunit&#233;s.</em></h2>
+      <div class="divider"></div>
+      <p class="sbody" style="margin-bottom:56px;" id="p-opp">Des stages, missions, projets et mentorats propos&#233;s par des professionnels partenaires. Les jeunes membres NextPath postulent directement. Tu es le filtre de qualit&#233;.</p>
+
+      <!-- COMMENT CA MARCHE -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:64px;">
+        <div style="background:var(--navy);border-radius:4px;padding:36px;">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;">Tu es professionnel(le) ?</div>
+          <h3 style="font-family:Georgia,serif;font-size:20px;font-weight:700;color:var(--cream);margin-bottom:16px;">Propose une opportunit&#233;</h3>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:28px;">
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:rgba(245,240,232,0.7);">
+              <span style="color:var(--gold);font-weight:700;flex-shrink:0;">1.</span><span>Tu remplis le formulaire avec ta proposition</span>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:rgba(245,240,232,0.7);">
+              <span style="color:var(--gold);font-weight:700;flex-shrink:0;">2.</span><span>Grace valide et publie ton offre</span>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:rgba(245,240,232,0.7);">
+              <span style="color:var(--gold);font-weight:700;flex-shrink:0;">3.</span><span>Tu re&#231;ois les candidatures des membres qualifi&#233;s</span>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:rgba(245,240,232,0.7);">
+              <span style="color:var(--gold);font-weight:700;flex-shrink:0;">4.</span><span>Tu choisis et contactes directement le jeune</span>
+            </div>
+          </div>
+          <a href="https://tally.so/r/ZjGJQB" target="_blank" class="btn btn-gold" style="width:100%;justify-content:center;" id="btn-proposer">Proposer une opportunit&#233;</a>
+        </div>
+        <div style="background:var(--light-bg);border-radius:4px;padding:36px;border:1px solid var(--border);">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;">Tu es membre NextPath ?</div>
+          <h3 style="font-family:Georgia,serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:16px;">Postule &#224; une opportunit&#233;</h3>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:28px;">
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--mid);">
+              <span style="color:var(--gold);font-weight:700;flex-shrink:0;">1.</span><span>Tu compl&#232;tes au moins un module NextPath</span>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--mid);">
+              <span style="color:var(--gold);font-weight:700;flex-shrink:0;">2.</span><span>Tu parcours les opportunit&#233;s disponibles</span>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--mid);">
+              <span style="color:var(--gold);font-weight:700;flex-shrink:0;">3.</span><span>Tu postules avec ton profil NextPath</span>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--mid);">
+              <span style="color:var(--gold);font-weight:700;flex-shrink:0;">4.</span><span>Grace fait le lien avec le partenaire</span>
+            </div>
+          </div>
+          <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-navy" style="width:100%;justify-content:center;" id="btn-postuler">Postuler &#224; une opportunit&#233;</a>
+        </div>
+      </div>
+
+      <!-- TYPES D'OPPORTUNITÉS -->
+      <h3 style="font-family:Georgia,serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px;" id="h3-types">Types d&rsquo;opportunit&#233;s disponibles</h3>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:64px;">
+        <div style="padding:24px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);">
+          <div style="font-size:24px;margin-bottom:10px;">&#127979;</div>
+          <div style="font-family:Georgia,serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;" id="t1">Stage</div>
+          <div style="font-size:12px;color:var(--mid);line-height:1.6;" id="td1">Dans une entreprise ou association partenaire. 1 &#224; 6 mois.</div>
+        </div>
+        <div style="padding:24px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);">
+          <div style="font-size:24px;margin-bottom:10px;">&#9889;</div>
+          <div style="font-family:Georgia,serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;" id="t2">Mission courte</div>
+          <div style="font-size:12px;color:var(--mid);line-height:1.6;" id="td2">Cr&#233;er un logo, r&#233;diger un article, analyser des donn&#233;es. 1 &#224; 4 semaines.</div>
+        </div>
+        <div style="padding:24px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);">
+          <div style="font-size:24px;margin-bottom:10px;">&#127919;</div>
+          <div style="font-family:Georgia,serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;" id="t3">Mentorat</div>
+          <div style="font-size:12px;color:var(--mid);line-height:1.6;" id="td3">Accompagnement personnalis&#233; par un professionnel sur 3 mois.</div>
+        </div>
+        <div style="padding:24px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);">
+          <div style="font-size:24px;margin-bottom:10px;">&#127760;</div>
+          <div style="font-family:Georgia,serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;" id="t4">B&#233;n&#233;volat</div>
+          <div style="font-size:12px;color:var(--mid);line-height:1.6;" id="td4">Soutien scolaire, animation d&rsquo;atelier, community management.</div>
+        </div>
+        <div style="padding:24px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);">
+          <div style="font-size:24px;margin-bottom:10px;">&#127942;</div>
+          <div style="font-family:Georgia,serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;" id="t5">Concours</div>
+          <div style="font-size:12px;color:var(--mid);line-height:1.6;" id="td5">Pitch d&rsquo;id&#233;e, challenge cr&#233;atif, hackathon. 1 &#224; 2 semaines.</div>
+        </div>
+        <div style="padding:24px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);">
+          <div style="font-size:24px;margin-bottom:10px;">&#129309;</div>
+          <div style="font-family:Georgia,serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;" id="t6">Projet collaboratif</div>
+          <div style="font-size:12px;color:var(--mid);line-height:1.6;" id="td6">Co-cr&#233;er quelque chose avec une entreprise ou association.</div>
+        </div>
+      </div>
+
+      <!-- OPPORTUNITÉS ACTUELLES -->
+      <div style="background:var(--navy);border-radius:4px;padding:56px;text-align:center;margin-bottom:64px;">
+        <div style="font-size:40px;margin-bottom:16px;">&#128269;</div>
+        <h3 style="font-family:Georgia,serif;font-size:26px;color:var(--gold);margin-bottom:12px;" id="h3-coming">Premi&#232;res opportunit&#233;s bient&#244;t disponibles</h3>
+        <p style="font-size:14px;color:rgba(245,240,232,0.7);max-width:520px;margin:0 auto 28px;line-height:1.8;" id="p-coming">NextPath Opportunities est en cours de lancement. Les premi&#232;res offres arriveront tr&#232;s bient&#244;t. Rejoins la communaut&#233; pour &#234;tre notifi&#233;(e) en premier.</p>
+        <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-gold" id="btn-notif-opp">Rejoindre la communaut&#233;</a>
+      </div>
+
+      <!-- APPEL PARTENAIRES -->
+      <div style="background:var(--light-bg);border-radius:4px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
+        <div>
+          <div class="stag" id="tag-partners">Devenir partenaire</div>
+          <h3 class="stitle" style="font-size:30px;" id="h3-partners">Tu as une opportunit&#233;<br>&#224; offrir &#224; la <em>jeunesse ?</em></h3>
+          <div class="divider"></div>
+          <p style="font-size:15px;color:var(--mid);line-height:1.85;margin-bottom:24px;" id="p-partners">Il y a des centaines de jeunes en RDC et dans la diaspora qui ont le feu en eux. Des comp&#233;tences, de la cr&#233;ativit&#233;, de la d&#233;termination. Mais qui n&rsquo;ont jamais eu l&rsquo;opportunit&#233; de le prouver. Sois le pont.</p>
+          <div class="bitem"><div class="bdot">&#x2726;</div><span id="bp1">Acc&#232;s aux profils qualifi&#233;s des membres NextPath</span></div>
+          <div class="bitem"><div class="bdot">&#x2726;</div><span id="bp2">Badge NextPath Partner sur tes r&#233;seaux</span></div>
+          <div class="bitem"><div class="bdot">&#x2726;</div><span id="bp3">Visibilit&#233; sur le site et les contenus NextPath</span></div>
+          <div class="bitem"><div class="bdot">&#x2726;</div><span id="bp4">Contribution directe &#224; l&rsquo;&#233;mergence de la jeunesse africaine</span></div>
+        </div>
+        <div style="background:#fff;border-radius:4px;padding:40px;text-align:center;border:1px solid var(--border);">
+          <div style="font-size:40px;margin-bottom:16px;">&#129309;</div>
+          <h4 style="font-family:Georgia,serif;font-size:20px;color:var(--navy);margin-bottom:10px;" id="h4-partner">Propose une opportunit&#233;</h4>
+          <p style="font-size:14px;color:var(--mid);margin-bottom:24px;line-height:1.7;" id="p-partner2">Gratuit. Simple. Grace examine chaque proposition sous 48h.</p>
+          <a href="https://tally.so/r/ZjGJQB" target="_blank" class="btn btn-navy" style="width:100%;justify-content:center;" id="btn-partner-cta">Je propose une opportunit&#233;</a>
+          <p style="font-size:11px;color:var(--light-text);margin-top:12px;" id="p-charte">En proposant vous acceptez la Charte NextPath Partners</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -592,6 +729,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <a href="#" onclick="go('programmes')">Programmes</a>
     <a href="#" onclick="go('ressources')">Nos ressources</a>
     <a href="#" onclick="go('grace')">À propos</a>
+    <a href="#" onclick="go('opportunites')">Opportunit&#233;s</a>
     <a href="#" onclick="go('contact')">Contact</a>
   </div>
   <div class="fcopy">© 2026 Grace Kabondo · NextPath System</div>
@@ -626,7 +764,7 @@ var T={
   'h1-hero':['Tu as plus de valeur<br>que tu ne <em>le crois.</em>','You are worth more<br>than you <em>believe.</em>'],
   'p-hero':['Une plateforme dédiée à la jeunesse africaine — 15 à 25 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.','A platform dedicated to African youth — 15 to 25 years old — to know themselves, explore their potential and build a path that truly fits them.'],
   'btn-hero1':['Rejoindre The Grace Effect','Join The Grace Effect'],
-  'btn-hero2':['Nos programmes','Our programs'],
+  'btn-hero2':['Devenir membre','Become a member'],
   'quote-hero':['"Un jeune qui se connaît ne se perd jamais."','"A young person who knows themselves never gets lost."'],
   'h2-hero-right':['Devenir la référence<br>de la jeunesse africaine','Becoming the reference<br>for African youth'],
   'stat1':['Jeunes visés d’ici 2028','Youth targeted by 2028'],
@@ -657,7 +795,33 @@ var T={
   'm2-text':['Donner des outils concrets pour identifier ses forces, ses valeurs et les directions qui correspondent vraiment à qui on est.','Providing concrete tools to identify strengths and directions that truly match who one is.'],
   'm3-title':['Transformer','Transform'],
   'm3-text':['Accompagner la mise en action — avec un plan clair, une communauté engagée, et un suivi qui crée des résultats mesurables.','Supporting action — with a clear plan, engaged community and follow-up that creates real results.'],
-  'tag-prog':['Nos programmes','Our programs'],
+  'tag-prog':['Rejoins le mouvement','Join the movement'],
+  'h2-prog':['Devenir <em>membre</em> de la communauté','Become a <em>member</em> of the community'],
+  'p-prog':['NextPath System c\u2019est plus qu\u2019une page Instagram. C\u2019est une communauté de jeunes africains de 15 à 25 ans qui avancent ensemble. Rejoins-nous — c\u2019est gratuit.','NextPath System is more than an Instagram page. It\u2019s a community of African youth aged 15 to 25 moving forward together. Join us — it\u2019s free.'],
+  'av1-title':['Lives & webinaires','Lives & webinars'],
+  'av1-text':['Accès aux sessions exclusives et événements en ligne de la communauté NextPath.','Access to exclusive sessions and online events of the NextPath community.'],
+  'av2-title':['Groupe WhatsApp','WhatsApp Group'],
+  'av2-text':['Intègre le groupe privé NextPath pour échanger avec Grace et les autres membres.','Join the private NextPath group to connect with Grace and other members.'],
+  'av3-title':['Ressources NextPath','NextPath Resources'],
+  'av3-text':['Accès en priorité aux guides, outils et contenus exclusifs de NextPath System.','Priority access to guides, tools and exclusive NextPath System content.'],
+  'av4-title':['Opportunités','Opportunities'],
+  'av4-text':['Accès aux offres de stages, missions et mentorats via NextPath Opportunities.','Access to internships, missions and mentoring offers via NextPath Opportunities.'],
+  'av5-title':['Priorité aux cohortes','Priority for cohorts'],
+  'av5-text':['Tu seras prioritaire pour rejoindre les prochains programmes d\u2019accompagnement NextPath.','You will have priority to join upcoming NextPath coaching programs.'],
+  'av6-title':['Communauté RDC & diaspora','DRC & diaspora community'],
+  'av6-text':['Rejoins des jeunes africains engagés qui partagent les mêmes ambitions que toi.','Join committed African youth who share the same ambitions as you.'],
+  'h3-membre-cta':['Rejoins la communauté NextPath','Join the NextPath community'],
+  'p-membre-cta':['Tu t\u2019inscris en 2 minutes. Grace te contacte sur WhatsApp pour t\u2019accueillir personnellement.','You register in 2 minutes. Grace contacts you on WhatsApp to welcome you personally.'],
+  'btn-membre-cta':['Devenir membre — Gratuit','Become a member — Free'],
+  'p-gratuit-cta':['100% gratuit · Sans engagement · Accessible depuis la RDC et la diaspora','100% free · No commitment · Accessible from DRC and diaspora'],
+  'tag-test':['Outil gratuit','Free tool'],
+  'h3-test':['Le <em>NextPath Test</em>','The <em>NextPath Test</em>'],
+  'p-test':['20 questions. 10 minutes. Un portrait complet de qui tu es.','20 questions. 10 minutes. A complete portrait of who you are.'],
+  'tb1':['Profil de personnalité parmi 4 types NextPath','Personality profile among 4 NextPath types'],
+  'tb2':['Tes forces naturelles identifiées','Your natural strengths identified'],
+  'tb3':['Les directions qui te correspondent','The directions that suit you'],
+  'tb4':['Gratuit · Sans inscription','Free · No registration'],
+  'btn-test-cta':['Passer le NextPath Test — Gratuit','Take the NextPath Test — Free'],
   'h2-prog':['Deux outils pour <em>te révéler.</em>','Two tools to <em>reveal you.</em>'],
   'badge-ge':['Programme · 4 semaines','Program · 4 weeks'],
   'desc-ge':['4 semaines pour te connaître, comprendre ce qui te bloque et construire ton chemin. En ligne, en groupe, avec Grace. Première cohorte totalement gratuite.','4 weeks to know yourself, understand what holds you back and build your path. Online, in a group, with Grace. First cohort completely free.'],
@@ -703,7 +867,7 @@ var T={
   
   'btn-yt':['Voir toutes les vidéos sur YouTube ↗','See all videos on YouTube ↗'],
   'tag-res':['Ressources gratuites','Free resources'],
-  'h2-res':['Guides &amp; <em>outils</em>','Guides &amp; <em>tools</em>'],
+  'h2-res':['Guides & <em>outils</em>','Guides & <em>tools</em>'],
   'p-res':['Des ressources concrètes pour avancer — guides PDF, outils d’orientation, exercices pratiques. Télécharge gratuitement.','Concrete resources to move forward — PDF guides, orientation tools, practical exercises. Download for free.'],
   'h3-notif':['Sois le premier à recevoir les guides','Be the first to receive the guides'],
   'p-notif':['Les ressources sont en cours de création. Rejoins la communauté pour les recevoir dès leur sortie.','Resources are being created. Join the community to receive them as soon as they’re released.'],
@@ -726,7 +890,39 @@ var T={
   'p-contact':['15 places. Totalement gratuit. Grace te contacte sous 48h.','15 spots. Completely free. Grace will contact you within 48h.'],
   'btn-contact1':['Rejoindre The Grace Effect','Join The Grace Effect'],
   'ou-text':['ou','or'],
-  'btn-contact2':['Devenir membre de la communauté','Become a community member']
+  'btn-contact2':['Devenir membre de la communauté','Become a community member'],
+  'tag-opp':['NextPath Opportunities','NextPath Opportunities'],
+  'h2-opp':['Le pont entre toi et ceux qui ont des <em>opportunités.</em>','The bridge between you and those who have <em>opportunities.</em>'],
+  'p-opp':['Des stages, missions, projets et mentorats proposés par des professionnels partenaires.','Internships, missions, projects and mentoring offered by partner professionals.'],
+  'btn-proposer':['Proposer une opportunité','Propose an opportunity'],
+  'btn-postuler':['Postuler à une opportunité','Apply for an opportunity'],
+  'h3-types':['Types d\u2019opportunités disponibles','Available opportunity types'],
+  'h3-coming':['Premières opportunités bientôt disponibles','First opportunities coming soon'],
+  'p-coming':['NextPath Opportunities est en cours de lancement. Rejoins la communauté pour être notifié(e) en premier.','NextPath Opportunities is launching soon. Join the community to be notified first.'],
+  'btn-notif-opp':['Rejoindre la communauté','Join the community'],
+  'tag-partners':['Devenir partenaire','Become a partner'],
+  'h3-partners':['Tu as une opportunité à offrir à la <em>jeunesse ?</em>','Do you have an opportunity to offer <em>youth?</em>'],
+  'p-partners':['Il y a des centaines de jeunes en RDC et dans la diaspora qui ont le feu en eux. Sois le pont.','There are hundreds of young people in DRC and the diaspora with fire in them. Be the bridge.'],
+  'h4-partner':['Propose une opportunité','Propose an opportunity'],
+  'p-partner2':['Gratuit. Simple. Grace examine chaque proposition sous 48h.','Free. Simple. Grace reviews each proposal within 48h.'],
+  'btn-partner-cta':['Je propose une opportunité','I propose an opportunity'],
+  'p-charte':['En proposant vous acceptez la Charte NextPath Partners','By proposing you accept the NextPath Partners Charter'],
+  'pack-label':['Pack complet — 4 modules','Complete pack — 4 modules'],
+  'pack-title':['Les guides NextPath System','NextPath System guides'],
+  'pack-desc':['Les 4 guides PDF complets — Bienvenue, Connais-toi, Libère-toi, Construis-toi — pour te connaître, identifier tes blocages et construire ton chemin concret.','The 4 complete PDF guides — Welcome, Know Yourself, Free Yourself, Build Yourself — to know yourself, identify your blocks and build your concrete path.'],
+  'btn-acheter':['Acheter les guides →','Buy the guides →'],
+  'm1-tag':['Module 1','Module 1'],'m1-pdf-title':['Connais-toi','Know Yourself'],
+  'm1-pdf-desc':['Profil de personnalité, forces naturelles, valeurs fondamentales. 3 exercices écrits + portrait NextPath complet.','Personality profile, natural strengths, core values. 3 written exercises + complete NextPath portrait.'],
+  'm1-dl':['Inclus dans le pack','Included in the pack'],
+  'm2-tag':['Module 2','Module 2'],'m2-pdf-title':['Libère-toi','Free Yourself'],
+  'm2-pdf-desc':['Les 5 blocages les plus courants, lettre à ton blocage, plan de libération concret.','The 5 most common blocks, letter to your block, concrete liberation plan.'],
+  'm2-dl':['Inclus dans le pack','Included in the pack'],
+  'm3-tag':['Module 3','Module 3'],'m3-pdf-title':['Construis-toi','Build Yourself'],
+  'm3-pdf-desc':['Méthode des 3 cercles, tes 3 chemins possibles, orientation post-diplôme, plan d\u2019action 90 jours.','3-circle method, your 3 possible paths, post-diploma orientation, 90-day action plan.'],
+  'm3-dl':['Inclus dans le pack','Included in the pack'],
+  'h3-notif':['Prêt(e) à commencer ton parcours ?','Ready to start your journey?'],
+  'p-notif':['Les 4 guides NextPath System sont disponibles maintenant. Télécharge-les et commence ton parcours aujourd\'hui.','The 4 NextPath System guides are available now. Download them and start your journey today.'],
+  'tag-gratuit':['10 USD le pack complet','10 USD complete pack']
 };
 
 function setLang(l){
