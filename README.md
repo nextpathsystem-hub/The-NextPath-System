@@ -609,7 +609,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       <div class="stag" id="tag-opp">NextPath Opportunities</div>
       <h2 class="stitle" id="h2-opp">Le pont entre toi et<br>ceux qui ont des <em>opportunit&#233;s.</em></h2>
       <div class="divider"></div>
-      <p class="sbody" style="margin-bottom:56px;" id="p-opp">Des stages, missions, projets et mentorats propos&#233;s par des professionnels partenaires. Les jeunes membres NextPath postulent directement. Tu es le filtre de qualit&#233;.</p>
+      <p class="sbody" style="margin-bottom:56px;"&#233;.</p>
 
       <!-- COMMENT CA MARCHE -->
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:64px;">
