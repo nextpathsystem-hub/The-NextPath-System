@@ -295,7 +295,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       <div class="stag" id="tag-prog">Rejoins le mouvement</div>
       <h2 class="stitle" id="h2-prog">Devenir <em>membre</em> de la communauté</h2>
       <div class="divider"></div>
-      <p class="sbody" style="margin-bottom:56px;" id="p-prog">NextPath System c’est plus qu’une page Instagram. C’est une communauté de jeunes africains de 15 à 25 ans qui avancent ensemble. Rejoins-nous — c’est gratuit.</p>
+      <p class="sbody" style="margin-bottom:56px;" id="p-prog">NextPath System c’est plus qu’une page Instagram. C’est une communauté de jeunes africains de 15 à "à ans qui avancent ensemble. Rejoins-nous — c’est gratuit.</p>
 
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:56px;">
         <div style="padding:32px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);text-align:center;">
@@ -471,7 +471,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
             <div>
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Module 3</div>
               <div class="pdf-title">Construis-toi</div>
-              <div class="pdf-desc">Methode des 3 cercles, tes 3 chemins possibles, orientation post-diplome, plan d&#39;action 90 jours.</div>
+              <div class="pdf-desc">Methode des 3 cercles, tes 3 chemins possibles, orientation post-diplôme, plan d&#39;action 90 jours.</div>
               <div class="pdf-dl">Inclus dans le pack</div>
             </div>
           </a>
@@ -558,7 +558,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
           <p style="font-size:14px;color:var(--mid);margin-bottom:24px;line-height:1.7;" id="p-contact">Nous avons hâte de travailler avec toi.</p>
           <a href="https://tally.so/r/ZjGJQB" target="_blank" class="btn btn-navy" style="width:100%;margin-bottom:14px;" id="btn-contact1">Devenir partenaire</a>
           <div style="text-align:center;margin:12px 0;font-size:12px;color:var(--light-text);" id="ou-text">ou</div>
-          <a href="(https://tally.so/r/81Jey5)" target="_blank" class="btn btn-outline" style="width:100%;" id="btn-contact2">Devenir membre de la communauté</a>
+          <a href="[https://tally.so/r/81Jey5]" target="_blank" class="btn btn-outline" style="width:100%;" id="btn-contact2">Devenir membre de la communauté</a>
         </div>
       </div>
     </div>
