@@ -334,7 +334,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
         <div style="font-size:40px;margin-bottom:16px;">&#127757;</div>
         <h3 style="font-family:Georgia,serif;font-size:30px;color:var(--gold);margin-bottom:12px;" id="h3-membre-cta">Rejoins la communauté NextPath</h3>
         <p style="font-size:15px;color:rgba(245,240,232,0.7);max-width:520px;margin:0 auto 32px;line-height:1.8;" id="p-membre-cta">Tu t’inscris en 2 minutes. Grace te contacte sur WhatsApp pour t’accueillir personnellement.</p>
-        <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-gold" style="font-size:13px;padding:16px 48px;" id="btn-membre-cta">Devenir membre — Gratuit</a>
+        <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-gold" style="font-size:13px;padding:16px 48px;" id="btn-membre-cta">Devenir membre</a>
         <p style="font-size:11px;color:rgba(245,240,232,0.4);margin-top:16px;" id="p-gratuit-cta">100% gratuit · Sans engagement · Accessible depuis la RDC et la diaspora</p>
       </div>
 
@@ -343,7 +343,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
           <div class="stag" id="tag-test">Outil gratuit</div>
           <h3 class="stitle" style="font-size:30px;" id="h3-test">Le <em>NextPath Test</em></h3>
           <div class="divider"></div>
-          <p style="font-size:15px;color:var(--mid);line-height:1.85;margin-bottom:24px;" id="p-test">20 questions. 10 minutes. Un portrait complet de qui tu es — ta personnalité, tes forces naturelles et les directions qui te correspondent vraiment.</p>
+          <p style="font-size:15px;color:var(--mid);line-height:1.85;margin-bottom:24px;" id="p-test">13 questions. 5 minutes. Un portrait complet de qui tu es — ta personnalité, tes forces naturelles et les directions qui te correspondent vraiment.</p>
           <div class="bitem"><div class="bdot">&#x2726;</div><span id="tb1">Profil de personnalité parmi 4 types NextPath</span></div>
           <div class="bitem"><div class="bdot">&#x2726;</div><span id="tb2">Tes forces naturelles identifiées</span></div>
           <div class="bitem"><div class="bdot">&#x2726;</div><span id="tb3">Les directions qui te correspondent</span></div>
@@ -449,7 +449,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
             <div>
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Module 1</div>
               <div class="pdf-title">Connais-toi</div>
-              <div class="pdf-desc">Profil de personnalite, forces naturelles, valeurs fondamentales. Exercices ecrits et portrait NextPath complet.</div>
+              <div class="pdf-desc">Profil de personnalité, forces naturelles, valeurs fondamentales. Exercices écrits et portrait NextPath complet.</div>
               <div class="pdf-dl">Inclus dans le pack</div>
             </div>
           </a>
@@ -460,7 +460,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
             <div>
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Module 2</div>
               <div class="pdf-title">Libere-toi</div>
-              <div class="pdf-desc">Les 5 blocages les plus courants, lettre a ton blocage, plan de liberation concret.</div>
+              <div class="pdf-desc">Les 5 blocages les plus courants, lettre à ton blocage, plan de libération concret.</div>
               <div class="pdf-dl">Inclus dans le pack</div>
             </div>
           </a>
