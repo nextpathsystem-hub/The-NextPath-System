@@ -211,11 +211,10 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
 <div class="page active" id="page-home">
   <div class="hero">
     <div class="hero-left">
-      <div class="hero-tag">NextPath System · Jeunesse Africaine</div>
+      <div class="hero-tag">NextPath System · Pour la Jeunesse Africaine</div>
       <h1 id="h1-hero">Tu as plus de valeur<br>que tu ne <em>le crois.</em></h1>
       <p class="hero-sub" id="p-hero">Une plateforme dédiée à la jeunesse africaine — 15 à 30 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.</p>
       <div class="hero-actions">
-        <a href="https://tally.so/r/ZjGJQB" target="_blank" class="btn btn-navy" id="btn-hero1">Rejoindre The Grace Effect</a>
         <a href="#" onclick="go('programmes')" class="btn btn-outline" id="btn-hero2">Devenir membre</a>
       </div>
       <div class="hero-quote">
