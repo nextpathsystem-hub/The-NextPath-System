@@ -238,7 +238,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
   <div class="stats-strip">
     <div class="stats-inner">
       <div class="stat-col">
-        <span class="stat-num">500+</span>
+        <span class="stat-num">300+</span>
         <span class="stat-lbl" id="stat1">Jeunes visés d&rsquo;ici 2028</span>
       </div>
       <div class="stat-col">
@@ -246,7 +246,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
         <span class="stat-lbl" id="stat2">tranche d&rsquo;âge prioritaire</span>
       </div>
       <div class="stat-col">
-        <span class="stat-num">1</span>
+        <span class="stat-num">2</span>
         <span class="stat-lbl" id="stat3">Programmes en cours de création</span>
       </div>
     </div>
