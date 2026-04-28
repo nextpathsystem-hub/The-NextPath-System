@@ -558,7 +558,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
           <p style="font-size:14px;color:var(--mid);margin-bottom:24px;line-height:1.7;" id="p-contact">Nous avons hâte de travailler avec toi.</p>
           <a href="https://tally.so/r/ZjGJQB" target="_blank" class="btn btn-navy" style="width:100%;margin-bottom:14px;" id="btn-contact1">Devenir partenaire</a>
           <div style="text-align:center;margin:12px 0;font-size:12px;color:var(--light-text);" id="ou-text">ou</div>
-          <a href="[https://tally.so/r/81Jey5]" target="_blank" class="btn btn-outline" style="width:100%;" id="btn-contact2">Devenir membre de la communauté</a>
+          <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-outline" style="width:100%;" id="btn-contact2">Devenir membre de la communauté</a>
         </div>
       </div>
     </div>
