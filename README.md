@@ -213,7 +213,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <div class="hero-left">
       <div class="hero-tag">NextPath System · Jeunesse Africaine</div>
       <h1 id="h1-hero">Tu as plus de valeur<br>que tu ne <em>le crois.</em></h1>
-      <p class="hero-sub" id="p-hero">Une plateforme dédiée à la jeunesse africaine — 15 à 25 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.</p>
+      <p class="hero-sub" id="p-hero">Une plateforme dédiée à la jeunesse africaine — 15 à 30 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.</p>
       <div class="hero-actions">
         <a href="https://tally.so/r/ZjGJQB" target="_blank" class="btn btn-navy" id="btn-hero1">Rejoindre The Grace Effect</a>
         <a href="#" onclick="go('programmes')" class="btn btn-outline" id="btn-hero2">Devenir membre</a>
@@ -329,7 +329,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       <div class="stag" id="tag-prog">Rejoins le mouvement</div>
       <h2 class="stitle" id="h2-prog">Devenir <em>membre</em> de la communauté</h2>
       <div class="divider"></div>
-      <p class="sbody" style="margin-bottom:56px;" id="p-prog">NextPath System c’est plus qu’une page Instagram. C’est une communauté de jeunes africains de 15 à 25 ans qui avancent ensemble. Rejoins-nous — c’est gratuit.</p>
+      <p class="sbody" style="margin-bottom:56px;" id="p-prog">NextPath System c’est plus qu’une page Instagram. C’est une communauté de jeunes africains de 15 à 30 ans qui avancent ensemble. Rejoins-nous — c’est gratuit.</p>
 
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:56px;">
         <div style="padding:32px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);text-align:center;">
@@ -531,7 +531,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <div style="padding-bottom:60px;">
       <div style="font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px;"><span style="display:block;width:24px;height:1.5px;background:var(--gold);"></span>À propos</div>
       <h1 style="font-family:Georgia,serif;font-size:clamp(36px,5vw,56px);font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:18px;">Grace<br><em style="color:var(--gold);">Kabondo</em></h1>
-      <p style="font-size:15px;color:rgba(245,240,232,.65);line-height:1.7;max-width:440px;margin-bottom:28px;">Fondatrice · NextPath System · Lubumbashi, RDC · France</p>
+      <p style="font-size:15px;color:rgba(245,240,232,.65);line-height:1.7;max-width:440px;margin-bottom:28px;">Fondatrice · NextPath System </p>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
         <span style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border:1px solid rgba(201,168,76,.4);border-radius:2px;color:var(--gold);">Master Sciences du Médicament</span>
         <span style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border:1px solid rgba(201,168,76,.4);border-radius:2px;color:var(--gold);">Nantes Université</span>
@@ -609,7 +609,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       <div class="stag" id="tag-opp">NextPath Opportunities</div>
       <h2 class="stitle" id="h2-opp">Le pont entre toi et<br>ceux qui ont des <em>opportunit&#233;s.</em></h2>
       <div class="divider"></div>
-      <p class="sbody" style="margin-bottom:56px;"&#233;.</p>
+      <p class="sbody" style="margin-bottom:56px;" id="p-opp">Des stages, missions, projets et mentorats propos&#233;s par des professionnels partenaires.</p>
 
       <!-- COMMENT CA MARCHE -->
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:64px;">
@@ -762,7 +762,7 @@ function soumettreAvis(){
 var lang='fr';
 var T={
   'h1-hero':['Tu as plus de valeur<br>que tu ne <em>le crois.</em>','You are worth more<br>than you <em>believe.</em>'],
-  'p-hero':['Une plateforme dédiée à la jeunesse africaine pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.','A platform dedicated to African youth to know themselves, explore their potential and build a path that truly fits them.'],
+  'p-hero':['Une plateforme dédiée à la jeunesse africaine — 15 à 30 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.','A platform dedicated to African youth — 15 to 30 years old — to know themselves, explore their potential and build a path that truly fits them.'],
   'btn-hero1':['Rejoindre The Grace Effect','Join The Grace Effect'],
   'btn-hero2':['Devenir membre','Become a member'],
   'quote-hero':['"Un jeune qui se connaît ne se perd jamais."','"A young person who knows themselves never gets lost."'],
@@ -826,8 +826,8 @@ var T={
   'badge-ge':['Programme · 4 semaines','Program · 4 weeks'],
   'desc-ge':['4 semaines pour te connaître, comprendre ce qui te bloque et construire ton chemin. En ligne, en groupe, avec Grace. Première cohorte totalement gratuite.','4 weeks to know yourself, understand what holds you back and build your path. Online, in a group, with Grace. First cohort completely free.'],
   'btn-ge':['Réserver ma place gratuite','Reserve my free spot'],
-  'badge-test':['Outil gratuit · 5 min','Free tool · 5 min'],
-  'desc-test':['13 questions pour révéler ton profil de personnalité, tes forces naturelles, tes blocages et les directions qui te correspondent. Gratuit, sans inscription.','13 questions to reveal your personality profile, natural strengths, blocks and directions that suit you. Free, no registration.'],
+  'badge-test':['Outil gratuit · 10 min','Free tool · 10 min'],
+  'desc-test':['20 questions pour révéler ton profil de personnalité, tes forces naturelles, tes blocages et les directions qui te correspondent. Gratuit, sans inscription.','20 questions to reveal your personality profile, natural strengths, blocks and directions that suit you. Free, no registration.'],
   'btn-test':['Passer le test','Take the test'],
   'h3-ge':['The Grace Effect — Détail du programme','The Grace Effect — Program details'],
   's1':['Semaine 1','Week 1'],'s2':['Semaine 2','Week 2'],'s3':['Semaine 3','Week 3'],'s4':['Semaine 4','Week 4'],
