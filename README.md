@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -188,9 +189,10 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <li><a href="#" onclick="go('grace')">À propos</a></li>
     <li><a href="#" onclick="go('avis')">Avis</a></li>
     <li><a href="#" onclick="go('avis')">Avis</a>
-    <li><a href="#" onclick="go('opportunites')">Opportunit&#233;s</a>
+    <a href="#" onclick="go('opportunites')">Opportunit&#233;s</a></li>
     <li><a href="#" onclick="go('avis')">Avis</a>
-    <li><a href="#" onclick="go('contact')">Contact</a></li>
+    <a href="#" onclick="go('opportunites')">Opportunit&#233;s</a>
+    <a href="#" onclick="go('contact')">Contact</a></li>
     <li><a href="https://tally.so/r/ZjGJQB" target="_blank" class="nav-cta">Rejoindre</a></li>
     <li><div class="lang-switcher"><button class="lang-btn active" id="btn-fr" onclick="setLang('fr')">FR</button><button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button></div></li>
   </ul>
@@ -216,7 +218,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <div class="hero-left">
       <div class="hero-tag">NextPath System · Pour la Jeunesse Africaine</div>
       <h1 id="h1-hero">Tu as plus de valeur<br>que tu ne <em>le crois.</em></h1>
-      <p class="hero-sub" id="p-hero">Une plateforme dédiée à la jeunesse africaine — 15 à 30 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.</p>
+      <p class="hero-sub" id="p-hero">Une plateforme dédiée à la jeunesse africaine — 15 à 25 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.</p>
       <div class="hero-actions">
         <a href="#" onclick="go('programmes')" class="btn btn-outline" id="btn-hero2">Devenir membre</a>
       </div>
@@ -792,6 +794,7 @@ var lang='fr';
 var T={
   'h1-hero':['Tu as plus de valeur<br>que tu ne <em>le crois.</em>','You are worth more<br>than you <em>believe.</em>'],
   'p-hero':['Une plateforme dédiée à la jeunesse africaine — 15 à 30 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.','A platform dedicated to African youth — 15 to 30 years old — to know themselves, explore their potential and build a path that truly fits them.'],
+  'btn-hero1':['Rejoindre The Grace Effect','Join The Grace Effect'],
   'btn-hero2':['Devenir membre','Become a member'],
   'quote-hero':['"Un jeune qui se connaît ne se perd jamais."','"A young person who knows themselves never gets lost."'],
   'h2-hero-right':['Devenir la référence<br>de la jeunesse africaine','Becoming the reference<br>for African youth'],
