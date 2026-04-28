@@ -762,7 +762,7 @@ function soumettreAvis(){
 var lang='fr';
 var T={
   'h1-hero':['Tu as plus de valeur<br>que tu ne <em>le crois.</em>','You are worth more<br>than you <em>believe.</em>'],
-  'p-hero':['Une plateforme dédiée à la jeunesse africaine — 15 à 25 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.','A platform dedicated to African youth — 15 to 25 years old — to know themselves, explore their potential and build a path that truly fits them.'],
+  'p-hero':['Une plateforme dédiée à la jeunesse africaine pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.','A platform dedicated to African youth to know themselves, explore their potential and build a path that truly fits them.'],
   'btn-hero1':['Rejoindre The Grace Effect','Join The Grace Effect'],
   'btn-hero2':['Devenir membre','Become a member'],
   'quote-hero':['"Un jeune qui se connaît ne se perd jamais."','"A young person who knows themselves never gets lost."'],
@@ -826,8 +826,8 @@ var T={
   'badge-ge':['Programme · 4 semaines','Program · 4 weeks'],
   'desc-ge':['4 semaines pour te connaître, comprendre ce qui te bloque et construire ton chemin. En ligne, en groupe, avec Grace. Première cohorte totalement gratuite.','4 weeks to know yourself, understand what holds you back and build your path. Online, in a group, with Grace. First cohort completely free.'],
   'btn-ge':['Réserver ma place gratuite','Reserve my free spot'],
-  'badge-test':['Outil gratuit · 10 min','Free tool · 10 min'],
-  'desc-test':['20 questions pour révéler ton profil de personnalité, tes forces naturelles, tes blocages et les directions qui te correspondent. Gratuit, sans inscription.','20 questions to reveal your personality profile, natural strengths, blocks and directions that suit you. Free, no registration.'],
+  'badge-test':['Outil gratuit · 5 min','Free tool · 5 min'],
+  'desc-test':['13 questions pour révéler ton profil de personnalité, tes forces naturelles, tes blocages et les directions qui te correspondent. Gratuit, sans inscription.','13 questions to reveal your personality profile, natural strengths, blocks and directions that suit you. Free, no registration.'],
   'btn-test':['Passer le test','Take the test'],
   'h3-ge':['The Grace Effect — Détail du programme','The Grace Effect — Program details'],
   's1':['Semaine 1','Week 1'],'s2':['Semaine 2','Week 2'],'s3':['Semaine 3','Week 3'],'s4':['Semaine 4','Week 4'],
