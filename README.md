@@ -186,8 +186,11 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <li><a href="#" onclick="go('programmes')">Devenir membre</a></li>
     <li><a href="#" onclick="go('ressources')">Nos ressources</a></li>
     <li><a href="#" onclick="go('grace')">À propos</a></li>
-    <li><a href="#" onclick="go('opportunites')">Opportunit&#233;s</a></li>
-    <li><a href="#" onclick="go('opportunites')">Opportunit&#233;s</a>
+    <li><a href="#" onclick="go('avis')">Avis</a></li>
+    <li><a href="#" onclick="go('avis')">Avis</a>
+    <a href="#" onclick="go('opportunites')">Opportunit&#233;s</a></li>
+    <li><a href="#" onclick="go('avis')">Avis</a>
+    <a href="#" onclick="go('opportunites')">Opportunit&#233;s</a>
     <a href="#" onclick="go('contact')">Contact</a></li>
     <li><a href="https://tally.so/r/ZjGJQB" target="_blank" class="nav-cta">Rejoindre</a></li>
     <li><div class="lang-switcher"><button class="lang-btn active" id="btn-fr" onclick="setLang('fr')">FR</button><button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button></div></li>
@@ -201,6 +204,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
   <a href="#" onclick="go('programmes');toggleMenu()">Devenir membre</a>
   <a href="#" onclick="go('ressources');toggleMenu()">Nos ressources</a>
   <a href="#" onclick="go('grace');toggleMenu()">À propos</a>
+  <a href="#" onclick="go('avis');toggleMenu()">Avis</a>
   <a href="#" onclick="go('opportunites');toggleMenu()">Opportunit&#233;s</a>
   <a href="#" onclick="go('contact');toggleMenu()">Contact</a>
   <a href="https://tally.so/r/ZjGJQB" target="_blank" style="color:var(--gold);font-weight:700;">Rejoindre The Grace Effect</a>
@@ -211,7 +215,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
 <div class="page active" id="page-home">
   <div class="hero">
     <div class="hero-left">
-      <div class="hero-tag">NextPath System · Pour la Jeunesse Africaine</div>
+      <div class="hero-tag">NextPath System · Jeunesse Africaine</div>
       <h1 id="h1-hero">Tu as plus de valeur<br>que tu ne <em>le crois.</em></h1>
       <p class="hero-sub" id="p-hero">Une plateforme dédiée à la jeunesse africaine — 15 à 30 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.</p>
       <div class="hero-actions">
@@ -264,43 +268,6 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     </div>
   </div>
 
-  <div class="section section-alt">
-    <div class="container">
-      <div style="text-align:center;margin-bottom:48px;">
-        <div class="stag stag-center" id="tag-avis">Témoignages</div>
-        <h2 class="stitle" style="text-align:center;" id="h2-avis">Ce qu&rsquo;ils disent de <em>NextPath</em></h2>
-      </div>
-      <div class="avis-grid" id="avis-grid">
-        <div class="avis-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="avis-text">"NextPath System m&rsquo;a aidé à comprendre qui je suis vraiment. Pour la première fois, je sais vers quoi je veux aller."</p><div class="avis-author"><div class="avis-avatar">K</div><div><div class="avis-name">Kevine M.</div><div class="avis-loc">Kinshasa, RDC</div></div></div></div>
-        <div class="avis-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="avis-text">"Le contenu de Grace parle vraiment à notre réalité. C&rsquo;est rare et précieux pour nous les jeunes congolais."</p><div class="avis-author"><div class="avis-avatar">J</div><div><div class="avis-name">Junior T.</div><div class="avis-loc">Lubumbashi, RDC</div></div></div></div>
-        <div class="avis-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="avis-text">"J&rsquo;attendais ce type de contenu depuis longtemps. Grace explique des choses que j&rsquo;aurais voulu entendre à 17 ans."</p><div class="avis-author"><div class="avis-avatar">A</div><div><div class="avis-name">Astrid N.</div><div class="avis-loc">Bruxelles, Diaspora</div></div></div></div>
-      </div>
-      <div style="background:var(--navy);border-radius:4px;padding:48px;max-width:680px;margin:0 auto;text-align:center;">
-        <div style="font-size:28px;margin-bottom:14px;">&#9997;&#65039;</div>
-        <h3 style="font-family:Georgia,serif;font-size:24px;color:var(--gold);margin-bottom:10px;" id="h3-avis">Laisse ton avis</h3>
-        <p style="font-size:14px;color:rgba(245,240,232,.7);margin-bottom:28px;line-height:1.7;" id="p-avis">Ton témoignage peut changer la trajectoire d&rsquo;un autre jeune.</p>
-        <div style="display:flex;flex-direction:column;gap:12px;text-align:left;">
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-            <div><label style="display:block;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Prénom *</label><input type="text" id="a-prenom" placeholder="Ex : Grace" style="width:100%;padding:11px 14px;border:1px solid rgba(201,168,76,.3);border-radius:2px;background:rgba(255,255,255,.05);color:var(--cream);font-family:Arial,sans-serif;font-size:13px;outline:none;"></div>
-            <div><label style="display:block;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Ville &amp; Pays *</label><input type="text" id="a-ville" placeholder="Ex : Kinshasa, RDC" style="width:100%;padding:11px 14px;border:1px solid rgba(201,168,76,.3);border-radius:2px;background:rgba(255,255,255,.05);color:var(--cream);font-family:Arial,sans-serif;font-size:13px;outline:none;"></div>
-          </div>
-          <div>
-            <label style="display:block;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Note *</label>
-            <div id="star-rating" style="display:flex;gap:6px;">
-              <span onclick="setRating(1)" style="font-size:26px;cursor:pointer;color:rgba(201,168,76,.3);" data-star="1">&#9733;</span>
-              <span onclick="setRating(2)" style="font-size:26px;cursor:pointer;color:rgba(201,168,76,.3);" data-star="2">&#9733;</span>
-              <span onclick="setRating(3)" style="font-size:26px;cursor:pointer;color:rgba(201,168,76,.3);" data-star="3">&#9733;</span>
-              <span onclick="setRating(4)" style="font-size:26px;cursor:pointer;color:rgba(201,168,76,.3);" data-star="4">&#9733;</span>
-              <span onclick="setRating(5)" style="font-size:26px;cursor:pointer;color:rgba(201,168,76,.3);" data-star="5">&#9733;</span>
-            </div>
-          </div>
-          <div><label style="display:block;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Témoignage *</label><textarea id="a-texte" rows="4" placeholder="Partage ton expérience avec NextPath System..." style="width:100%;padding:11px 14px;border:1px solid rgba(201,168,76,.3);border-radius:2px;background:rgba(255,255,255,.05);color:var(--cream);font-family:Arial,sans-serif;font-size:13px;outline:none;resize:vertical;"></textarea></div>
-          <div style="text-align:center;"><button onclick="soumettreAvis()" style="background:var(--gold);color:var(--navy);font-family:Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:14px 36px;border:none;border-radius:2px;cursor:pointer;" id="btn-avis">Envoyer mon témoignage</button></div>
-          <div id="avis-ok" style="display:none;text-align:center;padding:14px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.3);border-radius:2px;"><p style="font-size:13px;color:var(--gold);font-weight:500;" id="p-avis-ok">🎉 Merci ! Grace lira ton témoignage personnellement.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 
 <!-- ══ MISSION ══ -->
@@ -328,7 +295,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       <div class="stag" id="tag-prog">Rejoins le mouvement</div>
       <h2 class="stitle" id="h2-prog">Devenir <em>membre</em> de la communauté</h2>
       <div class="divider"></div>
-      <p class="sbody" style="margin-bottom:56px;" id="p-prog">NextPath System c’est plus qu’une page Instagram. C’est une communauté de jeunes africains de 15 à 30 ans qui avancent ensemble. Rejoins-nous — c’est gratuit.</p>
+      <p class="sbody" style="margin-bottom:56px;" id="p-prog">NextPath System c’est plus qu’une page Instagram. C’est une communauté de jeunes africains de 15 à 25 ans qui avancent ensemble. Rejoins-nous — c’est gratuit.</p>
 
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:56px;">
         <div style="padding:32px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);text-align:center;">
@@ -530,7 +497,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <div style="padding-bottom:60px;">
       <div style="font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px;"><span style="display:block;width:24px;height:1.5px;background:var(--gold);"></span>À propos</div>
       <h1 style="font-family:Georgia,serif;font-size:clamp(36px,5vw,56px);font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:18px;">Grace<br><em style="color:var(--gold);">Kabondo</em></h1>
-      <p style="font-size:15px;color:rgba(245,240,232,.65);line-height:1.7;max-width:440px;margin-bottom:28px;">Fondatrice · NextPath System </p>
+      <p style="font-size:15px;color:rgba(245,240,232,.65);line-height:1.7;max-width:440px;margin-bottom:28px;">Fondatrice · NextPath System · Lubumbashi, RDC · France</p>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
         <span style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border:1px solid rgba(201,168,76,.4);border-radius:2px;color:var(--gold);">Master Sciences du Médicament</span>
         <span style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border:1px solid rgba(201,168,76,.4);border-radius:2px;color:var(--gold);">Nantes Université</span>
@@ -598,6 +565,48 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
   </div>
 </div>
 
+
+<!-- ══ PAGE AVIS ══ -->
+<div class="page" id="page-avis">
+  <div class="section" style="padding-top:80px;">
+    <div class="container" style="max-width:720px;">
+
+      <div class="stag">Témoignages</div>
+      <h2 class="stitle">Ce qu’ils disent de <em>NextPath</em></h2>
+      <div class="divider"></div>
+      <p class="sbody" style="margin-bottom:40px;">Des retours réels de la communauté. Chaque témoignage compte.</p>
+
+      <!-- FLUX AVIS -->
+      <div id="avis-feed" style="margin-bottom:48px;"></div>
+
+      <!-- FORMULAIRE COMPACT -->
+      <div style="background:var(--light-bg);border-radius:4px;padding:28px;border:1px solid var(--border);">
+        <h3 style="font-family:Georgia,serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:4px;">Laisse ton avis</h3>
+        <p style="font-size:13px;color:var(--mid);margin-bottom:18px;">Ton témoignage peut changer la trajectoire d’un autre jeune.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;">
+          <div><label style="display:block;font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--mid);margin-bottom:4px;">Prénom *</label><input type="text" id="a-prenom" placeholder="Ex : Grace" style="width:100%;padding:8px 11px;border:1px solid var(--border);border-radius:2px;font-family:inherit;font-size:13px;outline:none;"></div>
+          <div><label style="display:block;font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--mid);margin-bottom:4px;">Ville & Pays *</label><input type="text" id="a-ville" placeholder="Ex : Kinshasa, RDC" style="width:100%;padding:8px 11px;border:1px solid var(--border);border-radius:2px;font-family:inherit;font-size:13px;outline:none;"></div>
+        </div>
+        <div style="margin-bottom:10px;">
+          <label style="display:block;font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--mid);margin-bottom:4px;">Note *</label>
+          <div id="star-rating" style="display:flex;gap:3px;">
+            <span onclick="setRating(1)" data-star="1" style="font-size:20px;cursor:pointer;color:#ddd;">&#9733;</span>
+            <span onclick="setRating(2)" data-star="2" style="font-size:20px;cursor:pointer;color:#ddd;">&#9733;</span>
+            <span onclick="setRating(3)" data-star="3" style="font-size:20px;cursor:pointer;color:#ddd;">&#9733;</span>
+            <span onclick="setRating(4)" data-star="4" style="font-size:20px;cursor:pointer;color:#ddd;">&#9733;</span>
+            <span onclick="setRating(5)" data-star="5" style="font-size:20px;cursor:pointer;color:#ddd;">&#9733;</span>
+          </div>
+        </div>
+        <div style="margin-bottom:14px;"><label style="display:block;font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--mid);margin-bottom:4px;">Témoignage *</label><textarea id="a-texte" rows="3" placeholder="Partage ton expérience avec NextPath System..." style="width:100%;padding:8px 11px;border:1px solid var(--border);border-radius:2px;font-family:inherit;font-size:13px;outline:none;resize:vertical;"></textarea></div>
+        <div style="display:flex;align-items:center;gap:14px;">
+          <button onclick="soumettreAvis()" class="btn btn-navy" style="padding:9px 24px;font-size:11px;">Envoyer</button>
+          <span id="avis-ok" style="display:none;font-size:13px;color:var(--gold);font-weight:500;">&#10004; Merci ! Grace lira ton avis personnellement.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <!-- ══ PAGE OPPORTUNITÉS ══ -->
 <div class="page" id="page-opportunites">
@@ -728,6 +737,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <a href="#" onclick="go('programmes')">Programmes</a>
     <a href="#" onclick="go('ressources')">Nos ressources</a>
     <a href="#" onclick="go('grace')">À propos</a>
+    <a href="#" onclick="go('avis')">Avis</a>
     <a href="#" onclick="go('opportunites')">Opportunit&#233;s</a>
     <a href="#" onclick="go('contact')">Contact</a>
   </div>
@@ -741,20 +751,41 @@ function toggleMenu(){document.getElementById('mobile-menu').classList.toggle('o
 
 // ── AVIS ──
 var rating=0;
-function setRating(n){rating=n;document.querySelectorAll('#star-rating span').forEach(function(s){s.style.color=parseInt(s.dataset.star)<=n?'var(--gold)':'rgba(201,168,76,.3)';});}
+function setRating(n){
+  rating=n;
+  document.querySelectorAll('#star-rating span').forEach(function(s){
+    s.style.color=parseInt(s.dataset.star)<=n?'var(--gold)':'#ddd';
+  });
+}
 function soumettreAvis(){
   var p=document.getElementById('a-prenom').value.trim();
   var v=document.getElementById('a-ville').value.trim();
   var t=document.getElementById('a-texte').value.trim();
   if(!p||!v||!t||rating===0){alert('Merci de remplir tous les champs et de donner une note.');return;}
   var ini=p.charAt(0).toUpperCase();
-  var stars='';for(var i=0;i<rating;i++)stars+='&#9733;';
-  var c=document.createElement('div');c.className='avis-card';
-  c.innerHTML='<div class="stars">'+stars+'</div><p class="avis-text">"'+t+'"</p><div class="avis-author"><div class="avis-avatar">'+ini+'</div><div><div class="avis-name">'+p+'</div><div class="avis-loc">'+v+'</div></div></div>';
-  document.getElementById('avis-grid').appendChild(c);
-  document.getElementById('avis-ok').style.display='block';
-  document.getElementById('a-prenom').value='';document.getElementById('a-ville').value='';document.getElementById('a-texte').value='';
-  rating=0;document.querySelectorAll('#star-rating span').forEach(function(s){s.style.color='rgba(201,168,76,.3)';});
+  var stars='';for(var i=0;i<rating;i++)stars+='★';
+  var now=new Date();
+  var date=now.toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit',year:'numeric'});
+  var item=document.createElement('div');
+  item.style.cssText='display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--border);';
+  item.innerHTML='<div style="width:34px;height:34px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-weight:700;color:var(--gold);font-size:12px;flex-shrink:0;margin-top:2px;">'+ini+'</div>'
+    +'<div style="flex:1;min-width:0;">'
+    +'<div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:3px;">'
+    +'<span style="font-size:13px;font-weight:600;color:var(--navy);">'+p+'</span>'
+    +'<span style="font-size:10px;color:var(--light-text);letter-spacing:.05em;text-transform:uppercase;">'+v+'</span>'
+    +'<span style="font-size:12px;color:var(--gold);">'+stars+'</span>'
+    +'<span style="font-size:11px;color:var(--light-text);margin-left:auto;">'+date+'</span>'
+    +'</div>'
+    +'<p style="font-size:13px;color:var(--mid);line-height:1.65;margin:0;">“'+t+'”</p>'
+    +'</div>';
+  var feed=document.getElementById('avis-feed');
+  if(feed){feed.insertBefore(item,feed.firstChild);}
+  document.getElementById('avis-ok').style.display='inline';
+  document.getElementById('a-prenom').value='';
+  document.getElementById('a-ville').value='';
+  document.getElementById('a-texte').value='';
+  rating=0;
+  document.querySelectorAll('#star-rating span').forEach(function(s){s.style.color='#ddd';});
 }
 
 // ── LANGUE ──
@@ -762,7 +793,6 @@ var lang='fr';
 var T={
   'h1-hero':['Tu as plus de valeur<br>que tu ne <em>le crois.</em>','You are worth more<br>than you <em>believe.</em>'],
   'p-hero':['Une plateforme dédiée à la jeunesse africaine — 15 à 30 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.','A platform dedicated to African youth — 15 to 30 years old — to know themselves, explore their potential and build a path that truly fits them.'],
-  'btn-hero1':['Rejoindre The Grace Effect','Join The Grace Effect'],
   'btn-hero2':['Devenir membre','Become a member'],
   'quote-hero':['"Un jeune qui se connaît ne se perd jamais."','"A young person who knows themselves never gets lost."'],
   'h2-hero-right':['Devenir la référence<br>de la jeunesse africaine','Becoming the reference<br>for African youth'],
