@@ -554,11 +554,11 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
           <a href="mailto:nextpathsystem@gmail.com" class="slink"><span class="splat">Email</span><span class="shandle">nextpathsystem@gmail.com</span></a>
         </div>
         <div style="background:var(--light);border-radius:4px;padding:40px;">
-          <h3 style="font-family:Georgia,serif;font-size:22px;color:var(--navy);margin-bottom:8px;" id="h3-contact">Rejoins The Grace Effect</h3>
-          <p style="font-size:14px;color:var(--mid);margin-bottom:24px;line-height:1.7;" id="p-contact">15 places. Totalement gratuit. Grace te contacte sous 48h.</p>
-          <a href="https://tally.so/r/ZjGJQB" target="_blank" class="btn btn-navy" style="width:100%;margin-bottom:14px;" id="btn-contact1">Rejoindre The Grace Effect</a>
+          <h3 style="font-family:Georgia,serif;font-size:22px;color:var(--navy);margin-bottom:8px;" id="h3-contact">Rejoins-nous maintenant</h3>
+          <p style="font-size:14px;color:var(--mid);margin-bottom:24px;line-height:1.7;" id="p-contact">Nous avons hâte de travailler avec toi.</p>
+          <a href="https://tally.so/r/ZjGJQB" target="_blank" class="btn btn-navy" style="width:100%;margin-bottom:14px;" id="btn-contact1">Devenir partenaire</a>
           <div style="text-align:center;margin:12px 0;font-size:12px;color:var(--light-text);" id="ou-text">ou</div>
-          <a href="https://nextpath6.gumroad.com/l/Cours1" target="_blank" class="btn btn-outline" style="width:100%;" id="btn-contact2">Devenir membre de la communauté</a>
+          <a href="(https://tally.so/r/81Jey5)" target="_blank" class="btn btn-outline" style="width:100%;" id="btn-contact2">Devenir membre de la communauté</a>
         </div>
       </div>
     </div>
