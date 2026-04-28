@@ -189,8 +189,9 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <li><a href="#" onclick="go('avis')">Avis</a></li>
     <li><a href="#" onclick="go('avis')">Avis</a>
     <a href="#" onclick="go('opportunites')">Opportunit&#233;s</a></li>
+    <a href="#" onclick="go('avis')">Avis</a>
     <li><a href="#" onclick="go('opportunites')">Opportunit&#233;s</a>
-    <li><a href="#" onclick="go('contact')">Contact</a></li>
+    <a href="#" onclick="go('contact')">Contact</a></li>
     <li><a href="https://tally.so/r/ZjGJQB" target="_blank" class="nav-cta">Rejoindre</a></li>
     <li><div class="lang-switcher"><button class="lang-btn active" id="btn-fr" onclick="setLang('fr')">FR</button><button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button></div></li>
   </ul>
