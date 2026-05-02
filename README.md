@@ -613,7 +613,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       <h2 class="stitle" id="h2-opp">Des opportunit&eacute;s <em>s&eacute;lectionn&eacute;es</em><br>pour toi.</h2>
       <div class="divider"></div>
       <p class="sbody" style="margin-bottom:16px;" id="p-opp">Grace s&eacute;lectionne et publie r&eacute;guli&egrave;rement des opportunit&eacute;s concr&egrave;tes pour les jeunes africains &mdash; bourses, formations, programmes, concours, stages. Pour chaque opportunit&eacute;, tu trouveras aussi les comp&eacute;tences &agrave; d&eacute;velopper et les ressources pour y arriver.</p>
-      <p style="font-size:13px;color:var(--light-text);margin-bottom:48px;">Mise &agrave; jour r&eacute;guli&egrave;re &middot; V&eacute;rifi&eacute;es par Grace &middot; Accessibles depuis la RDC et la diaspora</p>
+      <p style="font-size:13px;color:var(--light-text);margin-bottom:48px;">Mise &agrave; jour r&eacute;guli&egrave;re &middot; V&eacute;rifi&eacute;es &middot; Accessibles de partout</p>
 
       <!-- TYPES D'OPPORTUNITÉS -->
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:56px;">
@@ -630,7 +630,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
         <div style="padding:20px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);">
           <div style="font-size:22px;margin-bottom:8px;">&#127942;</div>
           <div style="font-family:Georgia,serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px;">Concours &amp; challenges</div>
-          <div style="font-size:12px;color:var(--mid);line-height:1.6;">Comp&eacute;titions, hackathons, prix pour les jeunes africains.</div>
+          <div style="font-size:12px;color:var(--mid);line-height:1.6;">Comp&eacute;titions, prix pour les jeunes africains.</div>
         </div>
         <div style="padding:20px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);">
           <div style="font-size:22px;margin-bottom:8px;">&#127759;</div>
@@ -682,7 +682,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
         <div style="font-size:36px;margin-bottom:16px;">&#128276;</div>
         <h3 style="font-family:Georgia,serif;font-size:26px;color:var(--gold);margin-bottom:12px;">Sois notifi&eacute;(e) en premier</h3>
         <p style="font-size:14px;color:rgba(245,240,232,0.7);max-width:520px;margin:0 auto 28px;line-height:1.8;">Chaque nouvelle opportunit&eacute; est partag&eacute;e en priorit&eacute; dans la communaut&eacute; WhatsApp NextPath. Rejoins-nous pour ne rien manquer.</p>
-        <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-gold">Rejoindre la communaut&eacute; &mdash; Gratuit</a>
+        <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-gold">Rejoindre la communaut&eacute</a>
       </div>
 
     </div>
@@ -701,7 +701,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <a href="#" onclick="go('opportunites')">Opportunit&#233;s</a>
     <a href="#" onclick="go('contact')">Contact</a>
   </div>
-  <div class="fcopy">© 2026 Grace Kabondo · NextPath System</div>
+  <div class="fcopy">© 2026 · NextPath System</div>
 </footer>
 
 <script>
@@ -752,7 +752,7 @@ function soumettreAvis(){
 var lang='fr';
 var T={
   'h1-hero':['Tu as plus de valeur<br>que tu ne <em>le crois.</em>','You are worth more<br>than you <em>believe.</em>'],
-  'p-hero':['Une plateforme dédiée à la jeunesse africaine — 15 à 25 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.','A platform dedicated to African youth — 15 to 25 years old — to know themselves, explore their potential and build a path that truly fits them.'],
+  'p-hero':['Une plateforme dédiée à la jeunesse africaine — 15 à 30 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.','A platform dedicated to African youth — 15 to 25 years old — to know themselves, explore their potential and build a path that truly fits them.'],
   'btn-hero1':['Rejoindre The Grace Effect','Join The Grace Effect'],
   'btn-hero2':['Devenir membre','Become a member'],
   'quote-hero':['"Un jeune qui se connaît ne se perd jamais."','"A young person who knows themselves never gets lost."'],
@@ -787,7 +787,7 @@ var T={
   'm3-text':['Accompagner la mise en action — avec un plan clair, une communauté engagée, et un suivi qui crée des résultats mesurables.','Supporting action — with a clear plan, engaged community and follow-up that creates real results.'],
   'tag-prog':['Rejoins le mouvement','Join the movement'],
   'h2-prog':['Devenir <em>membre</em> de la communauté','Become a <em>member</em> of the community'],
-  'p-prog':['NextPath System c\u2019est plus qu\u2019une page Instagram. C\u2019est une communauté de jeunes africains de 15 à 25 ans qui avancent ensemble. Rejoins-nous — c\u2019est gratuit.','NextPath System is more than an Instagram page. It\u2019s a community of African youth aged 15 to 25 moving forward together. Join us — it\u2019s free.'],
+  'p-prog':['NextPath System c\u2019est plus qu\u2019une page Instagram. C\u2019est une communauté de jeunes africains de 15 à 30 ans qui avancent ensemble. Rejoins-nous — c\u2019est gratuit.','NextPath System is more than an Instagram page. It\u2019s a community of African youth aged 15 to 30 moving forward together. Join us — it\u2019s free.'],
   'av1-title':['Lives & webinaires','Lives & webinars'],
   'av1-text':['Accès aux sessions exclusives et événements en ligne de la communauté NextPath.','Access to exclusive sessions and online events of the NextPath community.'],
   'av2-title':['Groupe WhatsApp','WhatsApp Group'],
@@ -806,7 +806,7 @@ var T={
   'p-gratuit-cta':['100% gratuit · Sans engagement · Accessible depuis la RDC et la diaspora','100% free · No commitment · Accessible from DRC and diaspora'],
   'tag-test':['Outil gratuit','Free tool'],
   'h3-test':['Le <em>NextPath Test</em>','The <em>NextPath Test</em>'],
-  'p-test':['20 questions. 10 minutes. Un portrait complet de qui tu es.','20 questions. 10 minutes. A complete portrait of who you are.'],
+  'p-test':['13 questions. 10 minutes. Un portrait complet de qui tu es.','13 questions. 10 minutes. A complete portrait of who you are.'],
   'tb1':['Profil de personnalité parmi 4 types NextPath','Personality profile among 4 NextPath types'],
   'tb2':['Tes forces naturelles identifiées','Your natural strengths identified'],
   'tb3':['Les directions qui te correspondent','The directions that suit you'],
@@ -817,7 +817,7 @@ var T={
   'desc-ge':['4 semaines pour te connaître, comprendre ce qui te bloque et construire ton chemin. En ligne, en groupe, avec Grace. Première cohorte totalement gratuite.','4 weeks to know yourself, understand what holds you back and build your path. Online, in a group, with Grace. First cohort completely free.'],
   'btn-ge':['Réserver ma place gratuite','Reserve my free spot'],
   'badge-test':['Outil gratuit · 10 min','Free tool · 10 min'],
-  'desc-test':['20 questions pour révéler ton profil de personnalité, tes forces naturelles, tes blocages et les directions qui te correspondent. Gratuit, sans inscription.','20 questions to reveal your personality profile, natural strengths, blocks and directions that suit you. Free, no registration.'],
+  'desc-test':['20 questions pour révéler ton profil de personnalité, tes forces naturelles, tes blocages et les directions qui te correspondent. Gratuit, sans inscription.','13 questions to reveal your personality profile, natural strengths, blocks and directions that suit you. Free, no registration.'],
   'btn-test':['Passer le test','Take the test'],
   'h3-ge':['The Grace Effect — Détail du programme','The Grace Effect — Program details'],
   's1':['Semaine 1','Week 1'],'s2':['Semaine 2','Week 2'],'s3':['Semaine 3','Week 3'],'s4':['Semaine 4','Week 4'],
