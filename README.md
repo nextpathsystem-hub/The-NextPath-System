@@ -394,7 +394,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
             </div>
           </a>
 
-          <a href="https://www.youtube.com/@NextPathSystem" target="_blank" class="yt-card">
+          <a href="https://youtu.be/R23gEqvoOrA?si=tGOBmrKsRGo8FhvE" target="_blank" class="yt-card">
             <div class="yt-thumb" style="background:linear-gradient(135deg,#0D1B3E 0%,#1a2d5a 100%);">
               <div class="yt-play"></div>
             </div>
@@ -404,7 +404,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
             </div>
           </a>
 
-          <a href="https://www.youtube.com/@NextPathSystem" target="_blank" class="yt-card">
+          <a href="https://youtu.be/iGqLEbWif4Q?si=gj7go_OVMlIMUzrh" target="_blank" class="yt-card">
             <div class="yt-thumb" style="background:linear-gradient(135deg,#0D1B3E 0%,#1a2d5a 100%);">
               <div class="yt-play"></div>
             </div>
