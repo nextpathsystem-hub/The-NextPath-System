@@ -247,7 +247,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       </div>
       <div class="stat-col">
         <span class="stat-num">2</span>
-        <span class="stat-lbl" id="stat3">programmes en cours de creéation</span>
+        <span class="stat-lbl" id="stat3">programmes en cours de création</span>
       </div>
     </div>
   </div>
@@ -760,7 +760,6 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
 
     </div>
   </div>
-</div>
 
 <footer>
   <div class="flogo">NextPath System</div>
