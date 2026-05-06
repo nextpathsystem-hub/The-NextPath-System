@@ -316,7 +316,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
           Il a fallu que mon syst&egrave;me de pens&eacute;e change compl&egrave;tement pour que je commence &agrave; croire que je pouvais <strong style="color:var(--dark);">&ecirc;tre celle qu&rsquo;il fallait.</strong>
         </p>
         <p style="font-size:15px;color:var(--mid);line-height:1.9;margin-bottom:32px;">
-          Et apr&egrave;s avoir travers&eacute; ce blocage, j&rsquo;ai voulu en sortir les autres. Parce qu&rsquo;au fond &mdash;
+          Et apr&egrave;s avoir travers&eacute; ce blocage, j&rsquo;ai voulu en sortir les autres.
         </p>
 
         <div style="background:var(--light);border-left:4px solid var(--gold);padding:24px 28px;border-radius:4px;margin:0 0 40px;">
