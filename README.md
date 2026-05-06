@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -258,8 +259,8 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
         <span class="stat-lbl" id="stat2">tranche d&rsquo;âge prioritaire</span>
       </div>
       <div class="stat-col">
-        <span class="stat-num">2</span>
-        <span class="stat-lbl" id="stat3">Programmes en cours de création</span>
+        <span class="stat-num">4</span>
+        <span class="stat-lbl" id="stat3">2 programmes en cours</span>
       </div>
     </div>
   </div>
@@ -286,15 +287,94 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
 <div class="page" id="page-mission">
   <div class="section" style="padding-top:80px;">
     <div class="container">
+
       <div class="stag" id="tag-mission">Notre mission</div>
-      <h2 class="stitle" id="h2-mission">Éveiller. Orienter. <em>Transformer.</em></h2>
+      <h2 class="stitle" id="h2-mission">NextPath System est n&eacute; d&rsquo;une <em>observation.</em></h2>
       <div class="divider"></div>
-      <p class="sbody" style="max-width:700px;" id="p-mission">La jeunesse africaine a un potentiel immense. Mais personne ne lui a appris à le voir, à le nommer, à le construire. NextPath System comble ce vide — avec du contenu, des outils concrets et un accompagnement réel. En ligne. En présentiel. Pour la jeunesse en RDC et dans la diaspora.</p>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px;">
-        <div style="padding:32px;background:var(--light);border-radius:4px;border-top:3px solid var(--gold);"><div style="font-family:Georgia,serif;font-size:26px;font-weight:700;color:var(--gold);margin-bottom:8px;" id="m1-title">Éveiller</div><p style="font-size:14px;color:var(--mid);line-height:1.8;" id="m1-text">Faire prendre conscience à chaque jeune de sa valeur et de son potentiel — avant même de parler de carrière ou d&rsquo;orientation.</p></div>
-        <div style="padding:32px;background:var(--navy);border-radius:4px;border-top:3px solid var(--gold);"><div style="font-family:Georgia,serif;font-size:26px;font-weight:700;color:var(--gold);margin-bottom:8px;" id="m2-title">Orienter</div><p style="font-size:14px;color:rgba(245,240,232,.75);line-height:1.8;" id="m2-text">Donner des outils concrets pour identifier ses forces, ses valeurs et les directions qui correspondent vraiment à qui on est.</p></div>
-        <div style="padding:32px;background:var(--light);border-radius:4px;border-top:3px solid var(--gold);"><div style="font-family:Georgia,serif;font-size:26px;font-weight:700;color:var(--gold);margin-bottom:8px;" id="m3-title">Transformer</div><p style="font-size:14px;color:var(--mid);line-height:1.8;" id="m3-text">Accompagner la mise en action — avec un plan clair, une communauté engagée, et un suivi qui crée des résultats mesurables.</p></div>
+
+      <div style="max-width:760px;margin:0 auto;">
+
+        <p style="font-size:17px;color:var(--dark);line-height:1.9;margin-bottom:24px;">
+          J&rsquo;ai longtemps regard&eacute; la jeunesse &mdash; ma g&eacute;n&eacute;ration &mdash; se perdre dans ce que j&rsquo;appelle la <strong>m&eacute;diocrit&eacute;</strong>.
+        </p>
+        <p style="font-size:15px;color:var(--mid);line-height:1.9;margin-bottom:20px;">
+          Le terme est cru. Mais laisse-moi t&rsquo;expliquer.
+        </p>
+        <p style="font-size:15px;color:var(--mid);line-height:1.9;margin-bottom:20px;">
+          On observe une jeunesse qui crie partout son droit d&rsquo;exister, son droit d&rsquo;&ecirc;tre entendue, son droit qu&rsquo;on lui donne une chance. Mais en observant de plus pr&egrave;s, je me suis pos&eacute; une question fondamentale&nbsp;:
+        </p>
+
+        <div style="background:var(--navy);border-left:4px solid var(--gold);padding:28px 32px;border-radius:4px;margin:32px 0;">
+          <p style="font-family:Georgia,serif;font-size:20px;color:var(--gold);font-style:italic;line-height:1.7;margin:0;" id="p-mission">
+            &laquo;&nbsp;Qu&rsquo;est-ce qu&rsquo;elle a r&eacute;ellement &agrave; offrir&nbsp;?&nbsp;&raquo;
+          </p>
+        </div>
+
+        <p style="font-size:15px;color:var(--mid);line-height:1.9;margin-bottom:20px;">
+          J&rsquo;ai interrog&eacute; des dizaines de jeunes &mdash; parfois informellement, avec des questions simples comme <em>&laquo;&nbsp;Comment tu te vois dans quelques ann&eacute;es&nbsp;?&nbsp;&raquo;</em>, <em>&laquo;&nbsp;Tu crois qu&rsquo;en tant qu&rsquo;Africain tu peux cr&eacute;er et innover&nbsp;?&nbsp;&raquo;</em>
+        </p>
+        <p style="font-size:15px;color:var(--mid);line-height:1.9;margin-bottom:20px;">
+          Les r&eacute;ponses m&rsquo;ont beaucoup appris. Et pour beaucoup, &ecirc;tre Africain &eacute;tait per&ccedil;u comme un frein &agrave; l&rsquo;impact mondial.
+        </p>
+        <p style="font-size:15px;color:var(--mid);line-height:1.9;margin-bottom:32px;">
+          Sans chercher &agrave; critiquer, j&rsquo;en suis arriv&eacute;e &agrave; une conclusion claire&nbsp;: <strong style="color:var(--dark);">le probl&egrave;me de la jeunesse africaine n&rsquo;est pas seulement le manque de ressources. C&rsquo;est le manque de connaissance de ce qu&rsquo;elle poss&egrave;de d&eacute;j&agrave; &agrave; l&rsquo;int&eacute;rieur d&rsquo;elle-m&ecirc;me.</strong>
+        </p>
+
+        <div style="border-top:1px solid var(--border);margin:32px 0;"></div>
+
+        <p style="font-size:15px;color:var(--mid);line-height:1.9;margin-bottom:20px;">
+          Moi-m&ecirc;me, je suis pass&eacute;e par des moments de doute profond. Des moments o&ugrave; je me sentais d&eacute;favoris&eacute;e. Pas assez l&eacute;gitime. Pas &agrave; la hauteur des d&eacute;fis qui se pr&eacute;sentaient &agrave; moi.
+        </p>
+        <p style="font-size:15px;color:var(--mid);line-height:1.9;margin-bottom:20px;">
+          Il a fallu que mon syst&egrave;me de pens&eacute;e change compl&egrave;tement pour que je commence &agrave; croire que je pouvais <strong style="color:var(--dark);">&ecirc;tre celle qu&rsquo;il fallait.</strong>
+        </p>
+        <p style="font-size:15px;color:var(--mid);line-height:1.9;margin-bottom:32px;">
+          Et apr&egrave;s avoir travers&eacute; ce blocage, j&rsquo;ai voulu en sortir les autres. Parce qu&rsquo;au fond &mdash;
+        </p>
+
+        <div style="background:var(--light);border-left:4px solid var(--gold);padding:24px 28px;border-radius:4px;margin:0 0 40px;">
+          <p style="font-family:Georgia,serif;font-size:18px;color:var(--navy);font-style:italic;line-height:1.7;margin:0;">
+            &laquo;&nbsp;L&rsquo;aide de l&rsquo;Homme, c&rsquo;est l&rsquo;Homme.&nbsp;&raquo;
+          </p>
+        </div>
+
+        <p style="font-size:15px;color:var(--mid);line-height:1.9;margin-bottom:40px;">
+          C&rsquo;est de l&agrave; qu&rsquo;est n&eacute; <strong style="color:var(--dark);">Le Syst&egrave;me NextPath</strong> &mdash; un syst&egrave;me de pens&eacute;e con&ccedil;u pour te repositionner et te rappeler que tu vaux infiniment plus que ce que tu crois.
+        </p>
+
       </div>
+
+      <div style="max-width:760px;margin:0 auto 56px;">
+        <p style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);text-align:center;margin-bottom:28px;">En acceptant de traverser ces 3 &eacute;tapes</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+          <div style="padding:32px 24px;background:var(--navy);border-radius:4px;border-top:3px solid var(--gold);text-align:center;">
+            <div style="font-size:28px;font-weight:700;color:var(--gold);font-family:Georgia,serif;margin-bottom:8px;">01</div>
+            <div style="font-size:16px;font-weight:700;color:white;margin-bottom:10px;" id="m1-title">Connais-toi</div>
+            <p style="font-size:13px;color:rgba(245,240,232,.7);line-height:1.7;margin:0;" id="m1-text">D&eacute;couvre ta personnalit&eacute;, tes forces naturelles et tes valeurs profondes.</p>
+          </div>
+          <div style="padding:32px 24px;background:var(--gold);border-radius:4px;border-top:3px solid var(--navy);text-align:center;">
+            <div style="font-size:28px;font-weight:700;color:var(--navy);font-family:Georgia,serif;margin-bottom:8px;">02</div>
+            <div style="font-size:16px;font-weight:700;color:var(--navy);margin-bottom:10px;" id="m2-title">Lib&egrave;re-toi</div>
+            <p style="font-size:13px;color:var(--navy);line-height:1.7;margin:0;opacity:.8;" id="m2-text">Identifie ce qui te bloque &mdash; croyances limitantes, peur du regard, pression ext&eacute;rieure.</p>
+          </div>
+          <div style="padding:32px 24px;background:var(--navy);border-radius:4px;border-top:3px solid var(--gold);text-align:center;">
+            <div style="font-size:28px;font-weight:700;color:var(--gold);font-family:Georgia,serif;margin-bottom:8px;">03</div>
+            <div style="font-size:16px;font-weight:700;color:white;margin-bottom:10px;" id="m3-title">Construis-toi</div>
+            <p style="font-size:13px;color:rgba(245,240,232,.7);line-height:1.7;margin:0;" id="m3-text">Passe &agrave; l&rsquo;action avec des outils concrets et une communaut&eacute; qui avance avec toi.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;max-width:600px;margin:0 auto;">
+        <p style="font-size:17px;font-family:Georgia,serif;color:var(--navy);line-height:1.8;margin-bottom:8px;">
+          Tu d&eacute;bloques le potentiel qui est d&eacute;j&agrave; en toi &mdash; celui qui te permettra de devenir celui ou celle qu&rsquo;il faut.
+        </p>
+        <p style="font-size:15px;color:var(--mid);margin-bottom:32px;">
+          Cette jeunesse &mdash; nous avons d&eacute;cid&eacute; de la construire ensemble. Et nous y arriverons.
+        </p>
+        <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-gold">Rejoindre le syst&egrave;me</a>
+      </div>
+
     </div>
   </div>
 </div>
@@ -307,7 +387,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       <div class="stag" id="tag-prog">Rejoins le mouvement</div>
       <h2 class="stitle" id="h2-prog">Devenir <em>membre</em> de la communauté</h2>
       <div class="divider"></div>
-      <p class="sbody" style="margin-bottom:56px;" id="p-prog">NextPath System c’est plus qu’une page Instagram. C’est une communauté de jeunes africains de 15 à 30 ans qui avancent ensemble. Rejoins-nous.</p>
+      <p class="sbody" style="margin-bottom:56px;" id="p-prog">NextPath System c’est plus qu’une page Instagram. C’est une communauté de jeunes africains de 15 à 30 ans qui avancent ensemble. Rejoins-nous — c’est gratuit.</p>
 
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:56px;">
         <div style="padding:32px;border:1px solid var(--border);border-radius:4px;border-top:3px solid var(--gold);text-align:center;">
@@ -347,7 +427,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
         <h3 style="font-family:Georgia,serif;font-size:30px;color:var(--gold);margin-bottom:12px;" id="h3-membre-cta">Rejoins la communauté NextPath</h3>
         <p style="font-size:15px;color:rgba(245,240,232,0.7);max-width:520px;margin:0 auto 32px;line-height:1.8;" id="p-membre-cta">Tu t’inscris en 2 minutes. Tu seras contact&eacute;(e) sur WhatsApp pour &ecirc;tre accueilli(e) personnellement.</p>
         <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-gold" style="font-size:13px;padding:16px 48px;" id="btn-membre-cta">Devenir membre — Gratuit</a>
-        <p style="font-size:11px;color:rgba(245,240,232,0.4);margin-top:16px;" id="p-gratuit-cta">100% gratuit · Sans engagement · Accessible partout dans le monde</p>
+        <p style="font-size:11px;color:rgba(245,240,232,0.4);margin-top:16px;" id="p-gratuit-cta">100% gratuit · Sans engagement · Accessible depuis la RDC et la diaspora</p>
       </div>
 
       <div style="background:var(--light-bg);border-radius:4px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
@@ -488,7 +568,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
         <div style="font-size:32px;margin-bottom:14px;">📬</div>
         <h3 style="font-family:Georgia,serif;font-size:24px;color:var(--gold);margin-bottom:10px;" id="h3-notif">Prêt(e) à commencer ton parcours ?</h3>
         <p style="font-size:14px;color:rgba(245,240,232,.7);max-width:480px;margin:0 auto 28px;line-height:1.7;" id="p-notif">Les 4 guides NextPath System sont disponibles maintenant. Télécharge-les et commence ton parcours aujourd'hui.</p>
-        <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-gold" id="btn-notif">Obtenir les guides</a>
+        <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-gold" id="btn-notif">Obtenir les guides — 10 USD</a>
       </div>
 
     </div>
@@ -501,7 +581,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <div style="padding-bottom:60px;">
       <div style="font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px;"><span style="display:block;width:24px;height:1.5px;background:var(--gold);"></span>À propos</div>
       <h1 style="font-family:Georgia,serif;font-size:clamp(36px,5vw,56px);font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:18px;">Grace<br><em style="color:var(--gold);">Kabondo</em></h1>
-      <p style="font-size:15px;color:rgba(245,240,232,.65);line-height:1.7;max-width:440px;margin-bottom:28px;">Fondatrice · NextPath System</p>
+      <p style="font-size:15px;color:rgba(245,240,232,.65);line-height:1.7;max-width:440px;margin-bottom:28px;">Fondatrice · NextPath System </p>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
         <span style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border:1px solid rgba(201,168,76,.4);border-radius:2px;color:var(--gold);">Master Sciences du Médicament</span>
         <span style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border:1px solid rgba(201,168,76,.4);border-radius:2px;color:var(--gold);">Nantes Université</span>
@@ -707,7 +787,10 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <a href="#" onclick="go('grace')">&Agrave; propos</a>
     <a href="#" onclick="go('contact')">Contact</a>
   </div>
-  <div class="fcopy">&copy; 2026 NextPath System</div>
+  <div class="fcopy" style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+    <span>&copy; 2026 NextPath System</span>
+    <span onclick="openAdmin()" title="" style="width:8px;height:8px;border-radius:50%;background:rgba(201,168,76,0.25);cursor:pointer;display:inline-block;transition:background .3s;" onmouseover="this.style.background='rgba(201,168,76,0.7)'" onmouseout="this.style.background='rgba(201,168,76,0.25)'"></span>
+  </div>
 </footer>
 
 <script>
@@ -758,14 +841,14 @@ function soumettreAvis(){
 var lang='fr';
 var T={
   'h1-hero':['Tu as plus de valeur<br>que tu ne <em>le crois.</em>','You are worth more<br>than you <em>believe.</em>'],
-  'p-hero':['Une plateforme dédiée à la jeunesse africaine — 15 à 30 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.','A platform dedicated to African youth — 15 to 30 years old — to know themselves, explore their potential and build a path that truly fits them.'],
+  'p-hero':['Une plateforme dédiée à la jeunesse africaine — 15 à 30 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.','A platform dedicated to African youth — 15 to 25 years old — to know themselves, explore their potential and build a path that truly fits them.'],
   'btn-hero1':['Rejoindre The Grace Effect','Join The Grace Effect'],
   'btn-hero2':['Devenir membre','Become a member'],
   'quote-hero':['"Un jeune qui se connaît ne se perd jamais."','"A young person who knows themselves never gets lost."'],
   'h2-hero-right':['Devenir la référence<br>de la jeunesse africaine','Becoming the reference<br>for African youth'],
   'stat1':['Jeunes visés d’ici 2028','Youth targeted by 2028'],
   'stat2':['tranche d’âge prioritaire','priority age range'],
-  'stat3':['Programmes en cours de création','Programs being created'],
+  'stat3':['2 programmes en cours','2 programs underway'],
   'tag-cycle':['Notre approche','Our approach'],
   'h2-cycle':['Le Cycle NextPath','The NextPath Cycle'],
   'p-cycle':['Trois étapes concrètes pour transformer la découverte de soi en chemin d’action.','Three concrete steps to transform self-discovery into a path of action.'],
@@ -793,7 +876,7 @@ var T={
   'm3-text':['Accompagner la mise en action — avec un plan clair, une communauté engagée, et un suivi qui crée des résultats mesurables.','Supporting action — with a clear plan, engaged community and follow-up that creates real results.'],
   'tag-prog':['Rejoins le mouvement','Join the movement'],
   'h2-prog':['Devenir <em>membre</em> de la communauté','Become a <em>member</em> of the community'],
-  'p-prog':['NextPath System c\u2019est plus qu\u2019une page Instagram. C\u2019est une communauté de jeunes africains de 15 à 30 ans qui avancent ensemble. Rejoins-nous — c\u2019est gratuit.','NextPath System is more than an Instagram page. It\u2019s a community of African youth aged 15 to 30 moving forward together. Join us — it\u2019s free.'],
+  'p-prog':['NextPath System c\u2019est plus qu\u2019une page Instagram. C\u2019est une communauté de jeunes africains de 15 à 30 ans qui avancent ensemble. Rejoins-nous — c\u2019est gratuit.','NextPath System is more than an Instagram page. It\u2019s a community of African youth aged 15 to 25 moving forward together. Join us — it\u2019s free.'],
   'av1-title':['Lives & webinaires','Lives & webinars'],
   'av1-text':['Accès aux sessions exclusives et événements en ligne de la communauté NextPath.','Access to exclusive sessions and online events of the NextPath community.'],
   'av2-title':['Groupe WhatsApp','WhatsApp Group'],
@@ -934,13 +1017,6 @@ function setLang(l){
 
 // ── ADMIN ──
 var adminOpen = false;
-var adminKeys = [];
-var adminCode = [78,80,65,68,77,73,78]; // "NPADMIN"
-document.addEventListener('keydown', function(e){
-  adminKeys.push(e.keyCode);
-  if(adminKeys.length > 7) adminKeys.shift();
-  if(adminKeys.join(',') === adminCode.join(',')) openAdmin();
-});
 function openAdmin(){
   document.getElementById('admin-overlay').style.display='block';
   adminOpen = true;
