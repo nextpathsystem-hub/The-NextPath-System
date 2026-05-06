@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -172,19 +173,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
   .btn{width:100%;justify-content:center;}
 }
 
-/* ADMIN PANEL */
-#admin-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999;overflow-y:auto;}
-#admin-panel{background:#fff;max-width:760px;margin:40px auto;border-radius:8px;padding:40px;}
-#admin-panel h2{font-family:Georgia,serif;font-size:24px;color:#0D1B3E;margin-bottom:8px;}
-#admin-panel p{font-size:13px;color:#666;margin-bottom:24px;}
-.admin-section{background:#f8f8f8;border-radius:6px;padding:20px;margin-bottom:20px;border-left:4px solid #C9A84C;}
-.admin-section h3{font-size:14px;font-weight:700;color:#0D1B3E;margin-bottom:12px;text-transform:uppercase;letter-spacing:.05em;}
-.admin-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
-.admin-row label{font-size:12px;font-weight:600;color:#555;min-width:120px;}
-.admin-row input{flex:1;padding:8px 12px;border:1px solid #ddd;border-radius:4px;font-size:13px;font-family:inherit;}
-.admin-btn{background:#0D1B3E;color:#fff;border:none;padding:10px 24px;border-radius:4px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;margin-top:8px;}
-.admin-btn:hover{background:#C9A84C;color:#0D1B3E;}
-.admin-close{background:#eee;color:#333;border:none;padding:8px 18px;border-radius:4px;font-size:12px;cursor:pointer;float:right;margin-bottom:16px;}
+
 </style>
 </head>
 <body>
@@ -259,7 +248,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
       </div>
       <div class="stat-col">
         <span class="stat-num">2</span>
-        <span class="stat-lbl" id="stat3">programmes en cours de création</span>
+        <span class="stat-lbl" id="stat3">programmes en cours de creéation</span>
       </div>
     </div>
   </div>
@@ -475,47 +464,47 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
         <p style="font-size:13px;color:var(--light-text);margin-bottom:28px;">S&eacute;rie 1 &mdash; &Eacute;veil &amp; D&eacute;couverte de soi</p>
         <div class="pdf-grid" id="pdf-grid">
 
-          <a href="https://drive.google.com/uc?export=download&id=VOTRE_ID_MODULE0" target="_blank" class="pdf-card available" style="text-decoration:none;">
+          <div class="pdf-card available" style="cursor:default;opacity:.9;text-decoration:none;">
             <div class="pdf-icon">&#128218;</div>
             <div>
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Guide de d&eacute;marrage</div>
               <div class="pdf-title">Bienvenue dans NextPath</div>
               <div class="pdf-desc">Comprends le parcours, pose les bases et &eacute;cris ta lettre de d&eacute;part.</div>
-              <div class="pdf-dl">&#11015;&#65039; T&eacute;l&eacute;charger</div>
+              <div style="font-size:11px;color:var(--light-text);margin-top:8px;font-style:italic;">&#9200; Bient&ocirc;t disponible</div>
             </div>
-          </a>
+          </div>
 
-          <a href="https://drive.google.com/uc?export=download&id=VOTRE_ID_MODULE1" target="_blank" class="pdf-card available" style="text-decoration:none;">
+          <div class="pdf-card available" style="cursor:default;opacity:.9;text-decoration:none;">
             <div class="pdf-icon">&#129504;</div>
             <div>
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Module 1</div>
               <div class="pdf-title">Connais-toi</div>
               <div class="pdf-desc">Profil de personnalit&eacute;, forces naturelles, valeurs fondamentales. Exercices &eacute;crits complets.</div>
-              <div class="pdf-dl">&#11015;&#65039; T&eacute;l&eacute;charger</div>
+              <div style="font-size:11px;color:var(--light-text);margin-top:8px;font-style:italic;">&#9200; Bient&ocirc;t disponible</div>
             </div>
-          </a>
+          </div>
 
-          <a href="https://drive.google.com/uc?export=download&id=VOTRE_ID_MODULE2" target="_blank" class="pdf-card available" style="text-decoration:none;">
+          <div class="pdf-card available" style="cursor:default;opacity:.9;text-decoration:none;">
             <div class="pdf-icon">&#128275;</div>
             <div>
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Module 2</div>
               <div class="pdf-title">Lib&egrave;re-toi</div>
               <div class="pdf-desc">Les 5 blocages les plus courants, lettre &agrave; ton blocage, plan de lib&eacute;ration concret.</div>
-              <div class="pdf-dl">&#11015;&#65039; T&eacute;l&eacute;charger</div>
+              <div style="font-size:11px;color:var(--light-text);margin-top:8px;font-style:italic;">&#9200; Bient&ocirc;t disponible</div>
             </div>
-          </a>
+          </div>
 
-          <a href="https://drive.google.com/uc?export=download&id=VOTRE_ID_MODULE3" target="_blank" class="pdf-card available" style="text-decoration:none;">
+          <div class="pdf-card available" style="cursor:default;opacity:.9;text-decoration:none;">
             <div class="pdf-icon">&#127959;&#65039;</div>
             <div>
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Module 3</div>
               <div class="pdf-title">Construis-toi</div>
               <div class="pdf-desc">M&eacute;thode des 3 cercles, tes 3 chemins possibles, orientation post-dipl&ocirc;me, plan 90 jours.</div>
-              <div class="pdf-dl">&#11015;&#65039; T&eacute;l&eacute;charger</div>
+              <div style="font-size:11px;color:var(--light-text);margin-top:8px;font-style:italic;">&#9200; Bient&ocirc;t disponible</div>
             </div>
-          </a>
+          </div>
 
-        </div>
+        </div></div>
       </div>
 
       <!-- SEPARATEUR -->
@@ -567,7 +556,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
         <div style="font-size:32px;margin-bottom:14px;">📬</div>
         <h3 style="font-family:Georgia,serif;font-size:24px;color:var(--gold);margin-bottom:10px;" id="h3-notif">Prêt(e) à commencer ton parcours ?</h3>
         <p style="font-size:14px;color:rgba(245,240,232,.7);max-width:480px;margin:0 auto 28px;line-height:1.7;" id="p-notif">Les 4 guides NextPath System sont disponibles maintenant. Télécharge-les et commence ton parcours aujourd'hui.</p>
-        <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-gold" id="btn-notif">Obtenir les guides — 10 USD</a>
+        <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-gold" id="btn-notif">Obtenir les guides </a>
       </div>
 
     </div>
@@ -786,10 +775,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <a href="#" onclick="go('grace')">&Agrave; propos</a>
     <a href="#" onclick="go('contact')">Contact</a>
   </div>
-  <div class="fcopy" style="display:flex;align-items:center;justify-content:space-between;width:100%;">
-    <span>&copy; 2026 NextPath System</span>
-    <span onclick="openAdmin()" title="" style="width:8px;height:8px;border-radius:50%;background:rgba(201,168,76,0.25);cursor:pointer;display:inline-block;transition:background .3s;" onmouseover="this.style.background='rgba(201,168,76,0.7)'" onmouseout="this.style.background='rgba(201,168,76,0.25)'"></span>
-  </div>
+  <div class="fcopy">&copy; 2026 NextPath System</div>
 </footer>
 
 <script>
@@ -1014,125 +1000,8 @@ function setLang(l){
   }
 }
 
-// ── ADMIN ──
-var adminOpen = false;
-function openAdmin(){
-  document.getElementById('admin-overlay').style.display='block';
-  adminOpen = true;
-}
-function closeAdmin(){
-  document.getElementById('admin-overlay').style.display='none';
-  adminOpen = false;
-}
-
-function appliquerPDF(){
-  var ids = ['lien-m0','lien-m1','lien-m2','lien-m3'];
-  var cards = document.querySelectorAll('#pdf-grid a.pdf-card');
-  ids.forEach(function(id,i){
-    var val = document.getElementById(id).value.trim();
-    if(val && cards[i]) cards[i].href = val;
-  });
-  document.getElementById('msg-pdf').style.display='block';
-  setTimeout(function(){document.getElementById('msg-pdf').style.display='none';},3000);
-}
-
-function appliquerVideos(){
-  var yt = document.querySelectorAll('#yt-grid .yt-card');
-  var data = [
-    {titre: document.getElementById('yt1-titre').value, lien: document.getElementById('yt1-lien').value},
-    {titre: document.getElementById('yt2-titre').value, lien: document.getElementById('yt2-lien').value},
-    {titre: document.getElementById('yt3-titre').value, lien: document.getElementById('yt3-lien').value},
-  ];
-  data.forEach(function(d,i){
-    if(d.lien && yt[i]){
-      yt[i].href = d.lien;
-      if(d.titre) yt[i].querySelector('.yt-title').textContent = d.titre;
-    }
-  });
-  document.getElementById('msg-yt').style.display='block';
-  setTimeout(function(){document.getElementById('msg-yt').style.display='none';},3000);
-}
-
-function ajouterOpp(){
-  var type = document.getElementById('opp-type').value.trim();
-  var titre = document.getElementById('opp-titre').value.trim();
-  var desc = document.getElementById('opp-desc').value.trim();
-  var skills = document.getElementById('opp-skills').value.trim();
-  var lien = document.getElementById('opp-lien').value.trim();
-  var date = document.getElementById('opp-date').value.trim();
-  if(!titre || !lien) return alert('Titre et lien sont obligatoires.');
-  var container = document.querySelector('#page-opportunites .section .container');
-  var listEl = container.querySelector('.opp-list');
-  if(!listEl){
-    listEl = document.createElement('div');
-    listEl.className = 'opp-list';
-    listEl.style.cssText = 'display:flex;flex-direction:column;gap:20px;margin-bottom:56px;';
-    var h3 = container.querySelector('h3');
-    h3.after(listEl);
-  }
-  var card = document.createElement('div');
-  card.style.cssText = 'border:1px solid var(--border);border-radius:4px;padding:28px;border-left:4px solid var(--gold);background:#fff;';
-  card.innerHTML = '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:12px;">'
-    + '<div><span style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);">' + (type||'Opportunité') + '</span>'
-    + (date ? '<span style="font-size:10px;color:var(--light-text);margin-left:10px;">Limite : ' + date + '</span>' : '') + '</div>'
-    + '<a href="' + lien + '" target="_blank" style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--gold);color:var(--navy);padding:8px 18px;border-radius:2px;text-decoration:none;">Voir l’opportunité &rarr;</a>'
-    + '</div>'
-    + '<h4 style="font-family:Georgia,serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:8px;">' + titre + '</h4>'
-    + (desc ? '<p style="font-size:13px;color:var(--mid);line-height:1.7;margin-bottom:14px;">' + desc + '</p>' : '')
-    + (skills ? '<div style="background:var(--light);border-radius:4px;padding:12px 16px;"><div style="font-size:11px;font-weight:700;color:var(--navy);margin-bottom:4px;">&#127891; Compétences recommandées</div><div style="font-size:12px;color:var(--mid);">' + skills + '</div></div>' : '');
-  listEl.prepend(card);
-  // Vider les champs
-  ['opp-type','opp-titre','opp-desc','opp-skills','opp-lien','opp-date'].forEach(function(id){document.getElementById(id).value='';});
-  document.getElementById('msg-opp').style.display='block';
-  setTimeout(function(){document.getElementById('msg-opp').style.display='none';},3000);
-  closeAdmin();
-}
 
 </script>
 
-<!-- ADMIN PANEL — INVISIBLE AU PUBLIC -->
-<div id="admin-overlay">
-  <div id="admin-panel">
-    <button class="admin-close" onclick="closeAdmin()">&#10005; Fermer</button>
-    <h2>&#9881;&#65039; Panneau NextPath System</h2>
-    <p>Mets &agrave; jour tes ressources sans toucher au code. Colle tes liens Google Drive et tes liens YouTube, puis clique sur Appliquer.</p>
-
-    <div class="admin-section">
-      <h3>&#128218; Guides PDF &mdash; S&eacute;rie 1 : &Eacute;veil &amp; D&eacute;couverte de soi</h3>
-      <div class="admin-row"><label>Module 0 &mdash; Bienvenue</label><input type="text" id="lien-m0" placeholder="Lien Google Drive (export download)"></div>
-      <div class="admin-row"><label>Module 1 &mdash; Connais-toi</label><input type="text" id="lien-m1" placeholder="Lien Google Drive (export download)"></div>
-      <div class="admin-row"><label>Module 2 &mdash; Lib&egrave;re-toi</label><input type="text" id="lien-m2" placeholder="Lien Google Drive (export download)"></div>
-      <div class="admin-row"><label>Module 3 &mdash; Construis-toi</label><input type="text" id="lien-m3" placeholder="Lien Google Drive (export download)"></div>
-      <p style="font-size:11px;color:#999;margin-top:8px;">Format du lien : https://drive.google.com/uc?export=download&amp;id=TON_ID</p>
-      <button class="admin-btn" onclick="appliquerPDF()">Appliquer les liens PDF</button>
-      <div id="msg-pdf" style="font-size:12px;color:green;margin-top:8px;display:none;">&#10004; Liens PDF mis &agrave; jour !</div>
-    </div>
-
-    <div class="admin-section">
-      <h3>&#127909; Vid&eacute;os YouTube</h3>
-      <div class="admin-row"><label>Vid&eacute;o 1 &mdash; Titre</label><input type="text" id="yt1-titre" placeholder="Titre de la vid&eacute;o"></div>
-      <div class="admin-row"><label>Vid&eacute;o 1 &mdash; Lien</label><input type="text" id="yt1-lien" placeholder="https://youtube.com/watch?v=..."></div>
-      <div class="admin-row"><label>Vid&eacute;o 2 &mdash; Titre</label><input type="text" id="yt2-titre" placeholder="Titre de la vid&eacute;o"></div>
-      <div class="admin-row"><label>Vid&eacute;o 2 &mdash; Lien</label><input type="text" id="yt2-lien" placeholder="https://youtube.com/watch?v=..."></div>
-      <div class="admin-row"><label>Vid&eacute;o 3 &mdash; Titre</label><input type="text" id="yt3-titre" placeholder="Titre de la vid&eacute;o"></div>
-      <div class="admin-row"><label>Vid&eacute;o 3 &mdash; Lien</label><input type="text" id="yt3-lien" placeholder="https://youtube.com/watch?v=..."></div>
-      <button class="admin-btn" onclick="appliquerVideos()">Appliquer les vid&eacute;os</button>
-      <div id="msg-yt" style="font-size:12px;color:green;margin-top:8px;display:none;">&#10004; Vid&eacute;os mises &agrave; jour !</div>
-    </div>
-
-    <div class="admin-section">
-      <h3>&#128203; Ajouter une opportunit&eacute;</h3>
-      <div class="admin-row"><label>Type</label><input type="text" id="opp-type" placeholder="Ex : Bourse, Stage, Formation..."></div>
-      <div class="admin-row"><label>Titre</label><input type="text" id="opp-titre" placeholder="Titre de l'opportunit&eacute;"></div>
-      <div class="admin-row"><label>Description</label><input type="text" id="opp-desc" placeholder="Description courte"></div>
-      <div class="admin-row"><label>Comp&eacute;tences</label><input type="text" id="opp-skills" placeholder="Ex : Communication &middot; Anglais &middot; Excel"></div>
-      <div class="admin-row"><label>Lien</label><input type="text" id="opp-lien" placeholder="https://..."></div>
-      <div class="admin-row"><label>Date limite</label><input type="text" id="opp-date" placeholder="Ex : 30 juin 2026"></div>
-      <button class="admin-btn" onclick="ajouterOpp()">Ajouter cette opportunit&eacute;</button>
-      <div id="msg-opp" style="font-size:12px;color:green;margin-top:8px;display:none;">&#10004; Opportunit&eacute; ajout&eacute;e !</div>
-    </div>
-
-  </div>
-</div>
 </body>
 </html>
