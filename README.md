@@ -227,7 +227,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
 <div class="page active" id="page-home">
   <div class="hero">
     <div class="hero-left">
-      <div class="hero-tag">NextPath System · Jeunesse Africaine</div>
+      <div class="hero-tag">NextPath System · POUR LA Jeunesse Africaine</div>
       <h1 id="h1-hero">Tu as plus de valeur<br>que tu ne <em>le crois.</em></h1>
       <p class="hero-sub" id="p-hero">Une plateforme dédiée à la jeunesse africaine — 15 à 30 ans — pour se connaître, explorer son potentiel et construire un chemin qui lui ressemble vraiment.</p>
       <div class="hero-actions">
@@ -259,8 +259,8 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
         <span class="stat-lbl" id="stat2">tranche d&rsquo;âge prioritaire</span>
       </div>
       <div class="stat-col">
-        <span class="stat-num">4</span>
-        <span class="stat-lbl" id="stat3">2 programmes en cours</span>
+        <span class="stat-num">2</span>
+        <span class="stat-lbl" id="stat3"> programmes en cours de cr&eacuteation;</span>
       </div>
     </div>
   </div>
