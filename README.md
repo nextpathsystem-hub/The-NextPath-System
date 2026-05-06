@@ -760,6 +760,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
 
     </div>
   </div>
+</div>
 
 <footer>
   <div class="flogo">NextPath System</div>
