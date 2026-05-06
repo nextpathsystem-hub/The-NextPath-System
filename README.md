@@ -251,7 +251,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
     <div class="stats-inner">
       <div class="stat-col">
         <span class="stat-num">300+</span>
-        <span class="stat-lbl" id="stat1">Jeunes dans la communaut&eacute;</span>
+        <span class="stat-lbl" id="stat1">Jeunes dans la communaut&eacute; d'ici 2028</span>
       </div>
       <div class="stat-col">
         <span class="stat-num">15&ndash;30</span>
