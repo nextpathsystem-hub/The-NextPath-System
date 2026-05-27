@@ -463,43 +463,43 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
         <p style="font-size:13px;color:var(--light-text);margin-bottom:28px;">S&eacute;rie 1 &mdash; &Eacute;veil &amp; D&eacute;couverte de soi</p>
         <div class="pdf-grid" id="pdf-grid">
 
-          <div class="pdf-card available" style="cursor:default;opacity:.9;text-decoration:none;">
+          <a href="COLLE-ICI-TON-LIEN-GOOGLE-DRIVE" target="_blank" class="pdf-card available">
             <div class="pdf-icon">&#128218;</div>
             <div>
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Guide de d&eacute;marrage</div>
               <div class="pdf-title">Bienvenue dans NextPath</div>
               <div class="pdf-desc">Comprends le parcours, pose les bases et &eacute;cris ta lettre de d&eacute;part.</div>
-              <div style="font-size:11px;color:var(--light-text);margin-top:8px;font-style:italic;">&#9200; Bient&ocirc;t disponible</div>
+              <div class="pdf-dl">⬇️ Télécharger</a>
             </div>
           </div>
 
-          <div class="pdf-card available" style="cursor:default;opacity:.9;text-decoration:none;">
+          <a href="COLLE-ICI-TON-LIEN-GOOGLE-DRIVE" target="_blank" class="pdf-card available">
             <div class="pdf-icon">&#129504;</div>
             <div>
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Module 1</div>
               <div class="pdf-title">Connais-toi</div>
               <div class="pdf-desc">Profil de personnalit&eacute;, forces naturelles, valeurs fondamentales. Exercices &eacute;crits complets.</div>
-              <div style="font-size:11px;color:var(--light-text);margin-top:8px;font-style:italic;">&#9200; Bient&ocirc;t disponible</div>
+              <div class="pdf-dl">⬇️ Télécharger</a>
             </div>
           </div>
 
-          <div class="pdf-card available" style="cursor:default;opacity:.9;text-decoration:none;">
+          <a href="COLLE-ICI-TON-LIEN-GOOGLE-DRIVE" target="_blank" class="pdf-card available">
             <div class="pdf-icon">&#128275;</div>
             <div>
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Module 2</div>
               <div class="pdf-title">Lib&egrave;re-toi</div>
               <div class="pdf-desc">Les 5 blocages les plus courants, lettre &agrave; ton blocage, plan de lib&eacute;ration concret.</div>
-              <div style="font-size:11px;color:var(--light-text);margin-top:8px;font-style:italic;">&#9200; Bient&ocirc;t disponible</div>
+<div class="pdf-dl">⬇️ Télécharger</a>
             </div>
           </div>
 
-          <div class="pdf-card available" style="cursor:default;opacity:.9;text-decoration:none;">
+          <a href="COLLE-ICI-TON-LIEN-GOOGLE-DRIVE" target="_blank" class="pdf-card available">
             <div class="pdf-icon">&#127959;&#65039;</div>
             <div>
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Module 3</div>
               <div class="pdf-title">Construis-toi</div>
               <div class="pdf-desc">M&eacute;thode des 3 cercles, tes 3 chemins possibles, orientation post-dipl&ocirc;me, plan 90 jours.</div>
-              <div style="font-size:11px;color:var(--light-text);margin-top:8px;font-style:italic;">&#9200; Bient&ocirc;t disponible</div>
+              <div class="pdf-dl">⬇️ Télécharger</a>
             </div>
           </div>
 
