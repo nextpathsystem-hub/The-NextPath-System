@@ -463,7 +463,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
         <p style="font-size:13px;color:var(--light-text);margin-bottom:28px;">S&eacute;rie 1 &mdash; &Eacute;veil &amp; D&eacute;couverte de soi</p>
         <div class="pdf-grid" id="pdf-grid">
 
-          <a href="COLLE-ICI-TON-LIEN-GOOGLE-DRIVE" target="_blank" class="pdf-card available">
+          <a href="https://drive.google.com/file/d/14iZ9DMlzC2ts84Zw624tUPInLKIxCUGY/view?usp=sharing" target="_blank" class="pdf-card available">
             <div class="pdf-icon">&#128218;</div>
             <div>
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Guide de d&eacute;marrage</div>
@@ -471,7 +471,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
               <div class="pdf-desc">Comprends le parcours, pose les bases et &eacute;cris ta lettre de d&eacute;part.</div>
               <div class="pdf-dl">⬇️ Télécharger</div>
             </div>
-          </div>
+      
 
           <a href="COLLE-ICI-TON-LIEN-GOOGLE-DRIVE" target="_blank" class="pdf-card available">
             <div class="pdf-icon">&#129504;</div>
