@@ -999,8 +999,30 @@ function setLang(l){
   }
 }
 
-
+var adminKeys = [];
+var adminCode = [78,80,65,68,77,73,78];
+document.addEventListener('keydown', function(e){
+  adminKeys.push(e.keyCode);
+  if(adminKeys.length > 7) adminKeys.shift();
+  if(adminKeys.join(',') === adminCode.join(',')) {
+    document.getElementById('admin-overlay').style.display='block';
+  }
+});
+function closeAdmin(){
+  document.getElementById('admin-overlay').style.display='none';
+}
 </script>
-
+<div id="admin-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999;overflow-y:auto;">
+  <div style="background:#fff;max-width:700px;margin:40px auto;border-radius:8px;padding:40px;">
+    <button onclick="closeAdmin()" style="float:right;background:#eee;border:none;padding:8px 16px;border-radius:4px;cursor:pointer;">✕ Fermer</button>
+    <h2 style="font-family:Georgia,serif;color:#0D1B3E;margin-bottom:20px;">Panneau NextPath</h2>
+    <div style="margin-bottom:20px;">
+      <h3 style="color:#0D1B3E;">Ajouter un fichier PDF</h3>
+      <input type="text" id="pdf-lien" placeholder="Lien Google Drive" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;margin-bottom:8px;">
+      <input type="text" id="pdf-nom" placeholder="Nom du fichier" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;margin-bottom:8px;">
+      <button onclick="alert('Lien copié — colle-le manuellement dans ton HTML')" style="background:#0D1B3E;color:#fff;border:none;padding:10px 20px;border-radius:4px;cursor:pointer;">Copier le lien</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
