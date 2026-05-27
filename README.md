@@ -481,7 +481,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
               <div class="pdf-desc">Profil de personnalit&eacute;, forces naturelles, valeurs fondamentales. Exercices &eacute;crits complets.</div>
               <div class="pdf-dl">⬇️ Télécharger</div>
             </div>
-          </div>
+          
 
           <a href="COLLE-ICI-TON-LIEN-GOOGLE-DRIVE" target="_blank" class="pdf-card available">
             <div class="pdf-icon">&#128275;</div>
@@ -491,7 +491,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
               <div class="pdf-desc">Les 5 blocages les plus courants, lettre &agrave; ton blocage, plan de lib&eacute;ration concret.</div>
               <div class="pdf-dl">⬇️ Télécharger</div>
             </div>
-          </div>
+          
 
           <a href="COLLE-ICI-TON-LIEN-GOOGLE-DRIVE" target="_blank" class="pdf-card available">
             <div class="pdf-icon">&#127959;&#65039;</div>
@@ -499,11 +499,9 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Module 3</div>
               <div class="pdf-title">Construis-toi</div>
               <div class="pdf-desc">M&eacute;thode des 3 cercles, tes 3 chemins possibles, orientation post-dipl&ocirc;me, plan 90 jours.</div>
-              <div class="pdf-dl">⬇️ Télécharger</a>
+              <div class="pdf-dl">⬇️ Télécharger</div>
             </div>
-          </div>
-
-        </div></div>
+          
       </div>
 
       <!-- SEPARATEUR -->
