@@ -469,7 +469,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Guide de d&eacute;marrage</div>
               <div class="pdf-title">Bienvenue dans NextPath</div>
               <div class="pdf-desc">Comprends le parcours, pose les bases et &eacute;cris ta lettre de d&eacute;part.</div>
-              <div class="pdf-dl">⬇️ Télécharger</a>
+              <div class="pdf-dl">⬇️ Télécharger</div>
             </div>
           </div>
 
@@ -479,7 +479,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Module 1</div>
               <div class="pdf-title">Connais-toi</div>
               <div class="pdf-desc">Profil de personnalit&eacute;, forces naturelles, valeurs fondamentales. Exercices &eacute;crits complets.</div>
-              <div class="pdf-dl">⬇️ Télécharger</a>
+              <div class="pdf-dl">⬇️ Télécharger</div>
             </div>
           </div>
 
@@ -489,7 +489,7 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
               <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;">Module 2</div>
               <div class="pdf-title">Lib&egrave;re-toi</div>
               <div class="pdf-desc">Les 5 blocages les plus courants, lettre &agrave; ton blocage, plan de lib&eacute;ration concret.</div>
-<div class="pdf-dl">⬇️ Télécharger</a>
+              <div class="pdf-dl">⬇️ Télécharger</div>
             </div>
           </div>
 
