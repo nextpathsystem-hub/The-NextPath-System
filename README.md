@@ -1018,7 +1018,7 @@ function closeAdmin(){
     <h2 style="font-family:Georgia,serif;color:#0D1B3E;margin-bottom:20px;">Panneau NextPath</h2>
     <div style="margin-bottom:20px;">
       <h3 style="color:#0D1B3E;">Ajouter un fichier PDF</h3>
-      <input type="text" id="pdf-lien" placeholder="Lien Google Drive" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;margin-bottom:8px;">
+      <input type="text" id="pdf-lien" placeholder="https://drive.google.com/file/d/14iZ9DMlzC2ts84Zw624tUPInLKIxCUGY/view?usp=sharing" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;margin-bottom:8px;">
       <input type="text" id="pdf-nom" placeholder="Nom du fichier" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;margin-bottom:8px;">
       <button onclick="alert('Lien copié — colle-le manuellement dans ton HTML')" style="background:#0D1B3E;color:#fff;border:none;padding:10px 20px;border-radius:4px;cursor:pointer;">Copier le lien</button>
     </div>
