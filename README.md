@@ -554,9 +554,8 @@ footer{background:var(--navy);padding:40px 80px;display:flex;justify-content:spa
         <h3 style="font-family:Georgia,serif;font-size:24px;color:var(--gold);margin-bottom:10px;" id="h3-notif">Prêt(e) à commencer ton parcours ?</h3>
         <p style="font-size:14px;color:rgba(245,240,232,.7);max-width:480px;margin:0 auto 28px;line-height:1.7;" id="p-notif">Les 4 guides NextPath System sont disponibles maintenant. Télécharge-les et commence ton parcours aujourd'hui.</p>
         <a href="https://tally.so/r/81Jey5" target="_blank" class="btn btn-gold" id="btn-notif">Obtenir les guides </a>
-      </div>
+    
 
-    </div>
   </div>
 </div>
 
