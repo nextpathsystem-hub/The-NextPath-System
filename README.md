@@ -195,6 +195,14 @@ footer{background:var(--vert);padding:48px;text-align:center;}
 .voir-plus{display:inline-flex;align-items:center;gap:8px;margin-top:40px;background:transparent;border:1px solid var(--vert);color:var(--vert);padding:10px 24px;border-radius:100px;font-family:'Inter',sans-serif;font-size:13px;font-weight:500;cursor:pointer;transition:all .2s;}
 .voir-plus:hover{background:var(--vert);color:var(--blanc);}
 
+/* MULTI TAGS */
+.ed-tags-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:20px;}
+.ed-tag-check{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--encre);padding:8px 12px;border:1px solid var(--border);border-radius:8px;cursor:pointer;transition:all .2s;background:var(--blanc);}
+.ed-tag-check:hover{border-color:var(--vert-mid);background:var(--vert-pale);}
+.ed-tag-check input[type="checkbox"]{accent-color:var(--vert);width:14px;height:14px;cursor:pointer;}
+.ed-tag-check input[type="checkbox"]:checked + *{color:var(--vert);font-weight:600;}
+.ed-tag-check:has(input:checked){border-color:var(--vert);background:var(--vert-pale);}
+
 /* SCROLL TOP */
 .scroll-top{position:fixed;bottom:24px;right:24px;width:40px;height:40px;border-radius:50%;background:var(--vert);border:none;color:var(--blanc);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(27,77,62,.3);transition:background .2s;z-index:100;}
 .scroll-top:hover{background:var(--vert-clair);}
@@ -338,17 +346,19 @@ footer{background:var(--vert);padding:48px;text-align:center;}
       <label class="ed-label">Titre de l'article *</label>
       <input type="text" class="ed-input" id="ed-titre" placeholder="Ex : La discipline — ce que personne ne t'a dit">
 
-      <label class="ed-label">Catégorie *</label>
-      <select class="ed-select" id="ed-tag">
-        <option value="Éducation">Éducation</option>
-        <option value="Science">Science</option>
-        <option value="Orientation">Orientation</option>
-        <option value="Développement personnel">Développement personnel</option>
-        <option value="Foi">Foi</option>
-        <option value="NextPath">NextPath</option>
-        <option value="Jeunesse">Jeunesse</option>
-        <option value="Afrique">Afrique</option>
-      </select>
+      <label class="ed-label">Catégories * (choisis une ou plusieurs)</label>
+      <div class="ed-tags-grid" id="ed-tags-grid">
+        <label class="ed-tag-check"><input type="checkbox" value="Éducation"> Éducation</label>
+        <label class="ed-tag-check"><input type="checkbox" value="Science"> Science</label>
+        <label class="ed-tag-check"><input type="checkbox" value="Orientation"> Orientation</label>
+        <label class="ed-tag-check"><input type="checkbox" value="Développement personnel"> Développement personnel</label>
+        <label class="ed-tag-check"><input type="checkbox" value="Foi"> Foi</label>
+        <label class="ed-tag-check"><input type="checkbox" value="NextPath"> NextPath</label>
+        <label class="ed-tag-check"><input type="checkbox" value="Jeunesse"> Jeunesse</label>
+        <label class="ed-tag-check"><input type="checkbox" value="Afrique"> Afrique</label>
+        <label class="ed-tag-check"><input type="checkbox" value="Carrière"> Carrière</label>
+        <label class="ed-tag-check"><input type="checkbox" value="Santé"> Santé</label>
+      </div>
 
       <label class="ed-label">URL d'image de couverture (optionnel)</label>
       <input type="text" class="ed-input" id="ed-img" placeholder="https://... (lien d'une image en ligne)">
@@ -379,23 +389,41 @@ footer{background:var(--vert);padding:48px;text-align:center;}
 
 <script>
 // ══ PERSISTANCE ══
-function sauvegarder() {
+// ══ PERSISTANCE — window.storage ══
+async function sauvegarder() {
   try {
-    localStorage.setItem('np_articles', JSON.stringify(articles));
-    localStorage.setItem('np_comments', JSON.stringify(comments));
-    localStorage.setItem('np_liked', JSON.stringify(liked));
-  } catch(e) { console.log('Storage error:', e); }
+    await window.storage.set('np_articles', JSON.stringify(articles));
+    await window.storage.set('np_comments', JSON.stringify(comments));
+    await window.storage.set('np_liked', JSON.stringify(liked));
+  } catch(e) {
+    // Fallback localStorage
+    try {
+      localStorage.setItem('np_articles', JSON.stringify(articles));
+      localStorage.setItem('np_comments', JSON.stringify(comments));
+      localStorage.setItem('np_liked', JSON.stringify(liked));
+    } catch(e2) { console.log('Storage error:', e2); }
+  }
 }
 
-function charger() {
+async function charger() {
   try {
-    var a = localStorage.getItem('np_articles');
-    var c = localStorage.getItem('np_comments');
-    var l = localStorage.getItem('np_liked');
-    if (a) articles = JSON.parse(a);
-    if (c) comments = JSON.parse(c);
-    if (l) liked = JSON.parse(l);
-  } catch(e) { console.log('Load error:', e); }
+    var a = await window.storage.get('np_articles');
+    var c = await window.storage.get('np_comments');
+    var l = await window.storage.get('np_liked');
+    if (a && a.value) articles = JSON.parse(a.value);
+    if (c && c.value) comments = JSON.parse(c.value);
+    if (l && l.value) liked = JSON.parse(l.value);
+  } catch(e) {
+    // Fallback localStorage
+    try {
+      var a2 = localStorage.getItem('np_articles');
+      var c2 = localStorage.getItem('np_comments');
+      var l2 = localStorage.getItem('np_liked');
+      if (a2) articles = JSON.parse(a2);
+      if (c2) comments = JSON.parse(c2);
+      if (l2) liked = JSON.parse(l2);
+    } catch(e2) { console.log('Load error:', e2); }
+  }
 }
 
 var articles = [];
@@ -540,12 +568,12 @@ function openArticle(id) {
   go('article');
 }
 
-function toggleLike(id) {
+async function toggleLike(id) {
   var a = articles.find(function(x){return x.id===id;});
   if (!a) return;
   liked[id] = !liked[id];
   a.likes += liked[id] ? 1 : -1;
-  sauvegarder();
+  await sauvegarder();
   var btn = document.getElementById('lbtn-'+id);
   var cnt = document.getElementById('lcnt-'+id);
   if (btn) { btn.className='like-big'+(liked[id]?' liked':''); btn.textContent=liked[id]?'♥ Tu as aimé':'♡ J\'aime cet article'; }
@@ -572,14 +600,14 @@ function renderComments(id) {
     +'<div id="clist-'+id+'">'+list+'</div>';
 }
 
-function ajouterComment(id) {
+async function ajouterComment(id) {
   var p = document.getElementById('cm-prenom').value.trim();
   var t = document.getElementById('cm-texte').value.trim();
   if (!p||!t) { alert('Merci de remplir tous les champs.'); return; }
   if (!comments[id]) comments[id]=[];
   var date = new Date().toLocaleDateString('fr-FR',{day:'2-digit',month:'long',year:'numeric'});
   comments[id].unshift({prenom:p,texte:t,date:date});
-  sauvegarder();
+  await sauvegarder();
   document.getElementById('cm-prenom').value='';
   document.getElementById('cm-texte').value='';
   var ok = document.getElementById('cm-ok');
@@ -615,19 +643,44 @@ function insImg() {
   document.getElementById('ed-content').focus();
   document.execCommand('insertHTML',false,'<img src="'+url+'" style="max-width:100%;border-radius:8px;margin:16px 0;">');
 }
-function publier() {
+async function publier() {
   var titre=document.getElementById('ed-titre').value.trim();
-  var tag=document.getElementById('ed-tag').value;
   var img=document.getElementById('ed-img').value.trim();
   var corps=document.getElementById('ed-content').innerHTML.trim();
-  if(!titre||!corps) { alert('Le titre et le contenu sont obligatoires.'); return; }
+
+  // Récupérer les tags cochés
+  var checkboxes = document.querySelectorAll('#ed-tags-grid input[type="checkbox"]:checked');
+  var tags = Array.from(checkboxes).map(function(cb){ return cb.value; });
+  if (!titre || !corps || corps === '') { alert('Le titre et le contenu sont obligatoires.'); return; }
+  if (tags.length === 0) { alert('Choisis au moins une catégorie.'); return; }
+
   var texte=document.getElementById('ed-content').innerText||'';
   var mots=texte.split(/\s+/).length;
   var mins=Math.max(1,Math.round(mots/200));
   var extrait=texte.substring(0,160).trim()+(texte.length>160?'...':'');
   var date=new Date().toLocaleDateString('fr-FR',{day:'2-digit',month:'long',year:'numeric'});
-  articles.unshift({id:Date.now(),titre:titre,tag:tag,tags:[tag],img:img||'',extrait:extrait,corps:corps,date:date,lecture:mins+' min',likes:0});
-  sauvegarder();
+
+  articles.unshift({
+    id: Date.now(),
+    titre: titre,
+    tag: tags[0],
+    tags: tags,
+    img: img||'',
+    extrait: extrait,
+    corps: corps,
+    date: date,
+    lecture: mins+' min',
+    likes: 0
+  });
+
+  await sauvegarder();
+
+  // Reset form
+  document.getElementById('ed-titre').value='';
+  document.getElementById('ed-img').value='';
+  document.getElementById('ed-content').innerHTML='';
+  document.querySelectorAll('#ed-tags-grid input[type="checkbox"]').forEach(function(cb){ cb.checked=false; });
+
   var msg=document.getElementById('ed-msg');
   msg.style.display='inline';
   setTimeout(function(){ closeEditor(); go('home'); },1200);
@@ -690,30 +743,7 @@ document.addEventListener('keydown',function(e){
 
 
 
-// ══ ARTICLE PAR DÉFAUT ══
-var articleDefaut = {
-  id: 1001,
-  titre: "Identifier son potentiel dès le plus jeune âge : une clé pour mieux vivre",
-  tag: "Développement personnel",
-  tags: ["Développement personnel", "Jeunesse"],
-  img: "",
-  extrait: "Trop de jeunes avancent dans la vie sans jamais avoir appris à se connaître. Pourtant, en chacun réside un potentiel unique capable d'éclairer un monde trop souvent conformiste.",
-  date: "1 juillet 2026",
-  lecture: "4 min",
-  likes: 0,
-  corps: "<p>Trop de jeunes avancent dans la vie sans jamais avoir appris à se connaître. Ils s'adaptent, se taisent, se comparent… et finissent par douter de leur valeur. Pourtant, en chacun réside un potentiel unique, une touche personnelle capable d'éclairer un monde trop souvent conformiste. Apprendre à reconnaître ce que nous portons en nous dès le plus jeune âge, c'est se donner une chance de vivre avec sens, indépendance et confiance.</p><h3 style='font-family:Playfair Display,serif;font-size:22px;color:var(--vert);margin:32px 0 16px;font-weight:600;'>1. Pourquoi avons-nous peur de nous révéler ?</h3><p>La peur d'échouer, de ne pas être compris, ou de ne pas être à la hauteur, pousse bien des jeunes à se cacher. Se découvrir suppose d'assumer une part de responsabilité : celle de devenir acteur de sa vie. Et cela peut effrayer. Il est plus simple, en apparence, de se fondre dans la masse, d'ignorer ses particularités, que de faire face à ses dons inexploités.</p><p>Mais cette peur est une prison. Elle enferme notre originalité, étouffe notre créativité, et repousse notre épanouissement.</p><blockquote>Plus nous cachons ce que nous sommes, plus nous donnons l'image de quelqu'un qui n'a rien à offrir.</blockquote><h3 style='font-family:Playfair Display,serif;font-size:22px;color:var(--vert);margin:32px 0 16px;font-weight:600;'>2. Se connaître, c'est se libérer</h3><p>Chaque personne porte une particularité : un parfum, un ton, une énergie unique. L'ignorer revient à se couper de ce qui fait notre force. Oser explorer ses dons, même imparfaits, c'est ouvrir une voie vers la croissance personnelle et vers l'impact positif dans notre entourage.</p><p>Se connaître tôt, c'est éviter les pièges de la comparaison, des attentes extérieures, et de la perte de soi. C'est poser les bases d'une vie alignée avec qui l'on est, et non avec ce que les autres attendent.</p><h3 style='font-family:Playfair Display,serif;font-size:22px;color:var(--vert);margin:32px 0 16px;font-weight:600;'>3. Les bénéfices : relations vraies, indépendance, avenir préparé</h3><p><strong>Des relations sincères :</strong> quand on sait qui on est, on sait aussi avec qui on peut avancer. On cesse de se forcer à plaire, on attire ceux qui partagent notre vision, nos valeurs.</p><p><strong>Une indépendance intérieure :</strong> bien plus qu'une question financière, l'indépendance réside dans la capacité à ne pas dépendre du regard des autres ni des normes sociales. Se connaître, c'est se libérer de ce carcan.</p><p><strong>Une vie d'adulte préparée :</strong> l'âge adulte ne s'improvise pas. Il demande de la discipline, des choix, des responsabilités. Et ces choix sont plus justes quand ils viennent d'une connaissance solide de soi.</p><h3 style='font-family:Playfair Display,serif;font-size:22px;color:var(--vert);margin:32px 0 16px;font-weight:600;'>4. Le rôle clé des adultes : encadrer sans éteindre</h3><p>Aucun jeune ne peut se construire seul. Parents, enseignants, mentors : vous avez le pouvoir d'éveiller ou d'éteindre un potentiel. Vos mots peuvent soit révéler une graine de génie, soit briser une confiance naissante. Apprenez à écouter, à encourager, à guider sans étouffer.</p><blockquote>Au fond, l'aide de l'homme… c'est l'homme.</blockquote><h3 style='font-family:Playfair Display,serif;font-size:22px;color:var(--vert);margin:32px 0 16px;font-weight:600;'>Conclusion</h3><p>Identifier son potentiel dès le jeune âge, ce n'est pas une simple bonne idée : c'est une nécessité. Pour vivre avec clarté, pour impacter le monde, pour bâtir une génération solide, libre et lucide. Et cela commence maintenant — par une simple décision : apprendre à se connaître, oser se révéler, et ne plus jamais enterrer ce qui nous rend unique.</p><p style='font-style:italic;color:var(--gris);font-size:14px;margin-top:40px;padding-top:20px;border-top:1px solid var(--border);'>Écrit par Grace Kabondo, passionnée des sciences, de développement personnel et d'éducation.</p>"
-};
 
-window.addEventListener('load', function() {
-  charger();
-  // Ajouter l'article par défaut s'il n'existe pas déjà
-  var existe = articles.find(function(a){ return a.id === 1001; });
-  if (!existe) {
-    articles.push(articleDefaut);
-    sauvegarder();
-  }
-  renderHome();
-});
 </script>
 </body>
 </html>
