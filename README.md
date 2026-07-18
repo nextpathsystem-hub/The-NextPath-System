@@ -690,8 +690,28 @@ document.addEventListener('keydown',function(e){
 
 
 
+// ══ ARTICLE PAR DÉFAUT ══
+var articleDefaut = {
+  id: 1001,
+  titre: "Identifier son potentiel dès le plus jeune âge : une clé pour mieux vivre",
+  tag: "Développement personnel",
+  tags: ["Développement personnel", "Jeunesse"],
+  img: "",
+  extrait: "Trop de jeunes avancent dans la vie sans jamais avoir appris à se connaître. Pourtant, en chacun réside un potentiel unique capable d'éclairer un monde trop souvent conformiste.",
+  date: "1 juillet 2026",
+  lecture: "4 min",
+  likes: 0,
+  corps: "<p>Trop de jeunes avancent dans la vie sans jamais avoir appris à se connaître. Ils s'adaptent, se taisent, se comparent… et finissent par douter de leur valeur. Pourtant, en chacun réside un potentiel unique, une touche personnelle capable d'éclairer un monde trop souvent conformiste. Apprendre à reconnaître ce que nous portons en nous dès le plus jeune âge, c'est se donner une chance de vivre avec sens, indépendance et confiance.</p><h3 style='font-family:Playfair Display,serif;font-size:22px;color:var(--vert);margin:32px 0 16px;font-weight:600;'>1. Pourquoi avons-nous peur de nous révéler ?</h3><p>La peur d'échouer, de ne pas être compris, ou de ne pas être à la hauteur, pousse bien des jeunes à se cacher. Se découvrir suppose d'assumer une part de responsabilité : celle de devenir acteur de sa vie. Et cela peut effrayer. Il est plus simple, en apparence, de se fondre dans la masse, d'ignorer ses particularités, que de faire face à ses dons inexploités.</p><p>Mais cette peur est une prison. Elle enferme notre originalité, étouffe notre créativité, et repousse notre épanouissement.</p><blockquote>Plus nous cachons ce que nous sommes, plus nous donnons l'image de quelqu'un qui n'a rien à offrir.</blockquote><h3 style='font-family:Playfair Display,serif;font-size:22px;color:var(--vert);margin:32px 0 16px;font-weight:600;'>2. Se connaître, c'est se libérer</h3><p>Chaque personne porte une particularité : un parfum, un ton, une énergie unique. L'ignorer revient à se couper de ce qui fait notre force. Oser explorer ses dons, même imparfaits, c'est ouvrir une voie vers la croissance personnelle et vers l'impact positif dans notre entourage.</p><p>Se connaître tôt, c'est éviter les pièges de la comparaison, des attentes extérieures, et de la perte de soi. C'est poser les bases d'une vie alignée avec qui l'on est, et non avec ce que les autres attendent.</p><h3 style='font-family:Playfair Display,serif;font-size:22px;color:var(--vert);margin:32px 0 16px;font-weight:600;'>3. Les bénéfices : relations vraies, indépendance, avenir préparé</h3><p><strong>Des relations sincères :</strong> quand on sait qui on est, on sait aussi avec qui on peut avancer. On cesse de se forcer à plaire, on attire ceux qui partagent notre vision, nos valeurs.</p><p><strong>Une indépendance intérieure :</strong> bien plus qu'une question financière, l'indépendance réside dans la capacité à ne pas dépendre du regard des autres ni des normes sociales. Se connaître, c'est se libérer de ce carcan.</p><p><strong>Une vie d'adulte préparée :</strong> l'âge adulte ne s'improvise pas. Il demande de la discipline, des choix, des responsabilités. Et ces choix sont plus justes quand ils viennent d'une connaissance solide de soi.</p><h3 style='font-family:Playfair Display,serif;font-size:22px;color:var(--vert);margin:32px 0 16px;font-weight:600;'>4. Le rôle clé des adultes : encadrer sans éteindre</h3><p>Aucun jeune ne peut se construire seul. Parents, enseignants, mentors : vous avez le pouvoir d'éveiller ou d'éteindre un potentiel. Vos mots peuvent soit révéler une graine de génie, soit briser une confiance naissante. Apprenez à écouter, à encourager, à guider sans étouffer.</p><blockquote>Au fond, l'aide de l'homme… c'est l'homme.</blockquote><h3 style='font-family:Playfair Display,serif;font-size:22px;color:var(--vert);margin:32px 0 16px;font-weight:600;'>Conclusion</h3><p>Identifier son potentiel dès le jeune âge, ce n'est pas une simple bonne idée : c'est une nécessité. Pour vivre avec clarté, pour impacter le monde, pour bâtir une génération solide, libre et lucide. Et cela commence maintenant — par une simple décision : apprendre à se connaître, oser se révéler, et ne plus jamais enterrer ce qui nous rend unique.</p><p style='font-style:italic;color:var(--gris);font-size:14px;margin-top:40px;padding-top:20px;border-top:1px solid var(--border);'>Écrit par Grace Kabondo, passionnée des sciences, de développement personnel et d'éducation.</p>"
+};
+
 window.addEventListener('load', function() {
   charger();
+  // Ajouter l'article par défaut s'il n'existe pas déjà
+  var existe = articles.find(function(a){ return a.id === 1001; });
+  if (!existe) {
+    articles.push(articleDefaut);
+    sauvegarder();
+  }
   renderHome();
 });
 </script>
