@@ -298,7 +298,6 @@ function renderHome() {
     c.innerHTML = '<div class="empty-state">'
       +'<div class="empty-icon">✍️</div>'
       +'<div class="empty-title">Aucun article pour l\'instant.</div>'
-      +'<div class="empty-desc">Le premier article arrive bientôt.<br>Tape <strong>NPADMIN</strong> pour commencer à écrire.</div>'
       +'</div>';
     return;
   }
