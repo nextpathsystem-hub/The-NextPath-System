@@ -322,7 +322,7 @@ footer{background:var(--vert);padding:48px;text-align:center;}
     <div class="footer-logo-dot"></div>
     NextPath Blog
   </div>
-  <div class="footer-copy">© 2026 NextPath System</div>
+  <div class="footer-copy">© 2026 NextPath Blog</div>
 </footer>
 
 <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
@@ -378,6 +378,26 @@ footer{background:var(--vert);padding:48px;text-align:center;}
 </div>
 
 <script>
+// ══ PERSISTANCE ══
+function sauvegarder() {
+  try {
+    localStorage.setItem('np_articles', JSON.stringify(articles));
+    localStorage.setItem('np_comments', JSON.stringify(comments));
+    localStorage.setItem('np_liked', JSON.stringify(liked));
+  } catch(e) { console.log('Storage error:', e); }
+}
+
+function charger() {
+  try {
+    var a = localStorage.getItem('np_articles');
+    var c = localStorage.getItem('np_comments');
+    var l = localStorage.getItem('np_liked');
+    if (a) articles = JSON.parse(a);
+    if (c) comments = JSON.parse(c);
+    if (l) liked = JSON.parse(l);
+  } catch(e) { console.log('Load error:', e); }
+}
+
 var articles = [];
 var comments = {};
 var liked = {};
@@ -525,6 +545,7 @@ function toggleLike(id) {
   if (!a) return;
   liked[id] = !liked[id];
   a.likes += liked[id] ? 1 : -1;
+  sauvegarder();
   var btn = document.getElementById('lbtn-'+id);
   var cnt = document.getElementById('lcnt-'+id);
   if (btn) { btn.className='like-big'+(liked[id]?' liked':''); btn.textContent=liked[id]?'♥ Tu as aimé':'♡ J\'aime cet article'; }
@@ -558,6 +579,7 @@ function ajouterComment(id) {
   if (!comments[id]) comments[id]=[];
   var date = new Date().toLocaleDateString('fr-FR',{day:'2-digit',month:'long',year:'numeric'});
   comments[id].unshift({prenom:p,texte:t,date:date});
+  sauvegarder();
   document.getElementById('cm-prenom').value='';
   document.getElementById('cm-texte').value='';
   var ok = document.getElementById('cm-ok');
@@ -605,6 +627,7 @@ function publier() {
   var extrait=texte.substring(0,160).trim()+(texte.length>160?'...':'');
   var date=new Date().toLocaleDateString('fr-FR',{day:'2-digit',month:'long',year:'numeric'});
   articles.unshift({id:Date.now(),titre:titre,tag:tag,tags:[tag],img:img||'',extrait:extrait,corps:corps,date:date,lecture:mins+' min',likes:0});
+  sauvegarder();
   var msg=document.getElementById('ed-msg');
   msg.style.display='inline';
   setTimeout(function(){ closeEditor(); go('home'); },1200);
@@ -665,7 +688,12 @@ document.addEventListener('keydown',function(e){
   if(kbuf.join(',')===kcode.join(',')) { openEditor(); kbuf=[]; }
 });
 
-window.addEventListener('load',renderHome);
+
+
+window.addEventListener('load', function() {
+  charger();
+  renderHome();
+});
 </script>
 </body>
 </html>
