@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -323,7 +322,7 @@ footer{background:var(--vert);padding:48px;text-align:center;}
     <div class="footer-logo-dot"></div>
     NextPath Blog
   </div>
-  <div class="footer-copy">© 2026 NextPath Blog</div>
+  <div class="footer-copy">© 2026 NextPath System</div>
 </footer>
 
 <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
