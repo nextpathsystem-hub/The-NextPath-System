@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -241,7 +242,7 @@ footer{background:var(--vert);padding:48px;text-align:center;}
 <!-- ACCUEIL -->
 <div class="page active" id="page-home">
   <div class="hero">
-    <span class="hero-eyebrow">NextPath System</span>
+    <span class="hero-eyebrow">NextPath Blog</span>
     <h1>L'endroit où les idées deviennent des actions.</h1>
     <p class="hero-desc">Ressources, réflexions et partages d'idées.</p>
     <div class="hero-divider"></div>
@@ -320,9 +321,9 @@ footer{background:var(--vert);padding:48px;text-align:center;}
 <footer>
   <div class="footer-logo">
     <div class="footer-logo-dot"></div>
-    NextPath System
+    NextPath Blog
   </div>
-  <div class="footer-copy">© 2026 NextPath System</div>
+  <div class="footer-copy">© 2026 NextPath Blog</div>
 </footer>
 
 <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
@@ -646,6 +647,15 @@ function go(p) {
   if(p==='blog') renderBlog();
 }
 function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('open'); }
+
+// Fermer le menu mobile en cliquant en dehors
+document.addEventListener('click', function(e) {
+  var menu = document.getElementById('mobile-menu');
+  var hamburger = document.querySelector('.hamburger');
+  if (menu.classList.contains('open') && !menu.contains(e.target) && !hamburger.contains(e.target)) {
+    menu.classList.remove('open');
+  }
+});
 
 // ══ NPADMIN ══
 var kbuf=[];
